@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -23,23 +24,23 @@
 body{font-family:'DM Sans',sans-serif;background:var(--crem);color:var(--cafe);min-height:100vh;}
 
 /* ── HEADER ── */
-header{background:var(--cafe);color:var(--crem);padding:0 24px;display:flex;align-items:center;
-  justify-content:space-between;height:60px;box-shadow:0 2px 12px rgba(0,0,0,.25);
-  position:sticky;top:0;z-index:100;}
-.logo{font-family:'Playfair Display',serif;font-size:20px;letter-spacing:1px;}
-.logo em{color:var(--dorado2);font-style:italic;}
-.badge{background:var(--dorado);color:var(--cafe);font-size:11px;font-weight:700;
-  padding:3px 8px;border-radius:20px;margin-left:8px;}
-.save-indicator{font-size:11px;color:var(--dorado2);opacity:0;transition:opacity .4s;max-width:200px;text-align:right;}
+header{background:var(–cafe);color:var(–crem);padding:0 24px;display:flex;align-items:center;
+justify-content:space-between;height:60px;box-shadow:0 2px 12px rgba(0,0,0,.25);
+position:sticky;top:0;z-index:100;}
+.logo{font-family:‘Playfair Display’,serif;font-size:20px;letter-spacing:1px;}
+.logo em{color:var(–dorado2);font-style:italic;}
+.badge{background:var(–dorado);color:var(–cafe);font-size:11px;font-weight:700;
+padding:3px 8px;border-radius:20px;margin-left:8px;}
+.save-indicator{font-size:11px;color:var(–dorado2);opacity:0;transition:opacity .4s;max-width:200px;text-align:right;}
 .save-indicator.show{opacity:1;}
 
 /* ── NAV ── */
-nav{background:var(--cafe2);display:flex;overflow-x:auto;padding:0 12px;gap:2px;}
-nav button{background:none;border:none;color:rgba(245,239,224,.6);font-family:'DM Sans',sans-serif;
-  font-size:13px;font-weight:500;padding:11px 16px;cursor:pointer;white-space:nowrap;
-  border-bottom:3px solid transparent;transition:all .2s;}
-nav button:hover{color:var(--dorado2);}
-nav button.active{color:var(--dorado2);border-bottom-color:var(--dorado);background:rgba(201,148,58,.1);}
+nav{background:var(–cafe2);display:flex;overflow-x:auto;padding:0 12px;gap:2px;}
+nav button{background:none;border:none;color:rgba(245,239,224,.6);font-family:‘DM Sans’,sans-serif;
+font-size:13px;font-weight:500;padding:11px 16px;cursor:pointer;white-space:nowrap;
+border-bottom:3px solid transparent;transition:all .2s;}
+nav button:hover{color:var(–dorado2);}
+nav button.active{color:var(–dorado2);border-bottom-color:var(–dorado);background:rgba(201,148,58,.1);}
 
 /* ── LAYOUT ── */
 main{padding:20px;max-width:1200px;margin:0 auto;}
@@ -49,159 +50,194 @@ main{padding:20px;max-width:1200px;margin:0 auto;}
 @media(max-width:700px){.g2,.g3{grid-template-columns:1fr;}}
 
 /* ── CARD ── */
-.card{background:var(--blanco);border-radius:12px;box-shadow:var(--sombra);padding:22px;margin-bottom:18px;}
-.card-title{font-family:'Playfair Display',serif;font-size:17px;margin-bottom:14px;}
+.card{background:var(–blanco);border-radius:12px;box-shadow:var(–sombra);padding:22px;margin-bottom:18px;}
+.card-title{font-family:‘Playfair Display’,serif;font-size:17px;margin-bottom:14px;}
 
 /* ── FORM ── */
 .fg{margin-bottom:13px;}
-label{display:block;font-size:11px;font-weight:700;color:var(--gris);
-  text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px;}
-input,select,textarea{width:100%;padding:9px 13px;border:1.5px solid var(--crem2);
-  border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;background:var(--blanco);
-  color:var(--cafe);transition:border-color .2s;outline:none;}
-input:focus,select:focus,textarea:focus{border-color:var(--dorado);}
+label{display:block;font-size:11px;font-weight:700;color:var(–gris);
+text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px;}
+input,select,textarea{width:100%;padding:9px 13px;border:1.5px solid var(–crem2);
+border-radius:8px;font-family:‘DM Sans’,sans-serif;font-size:14px;background:var(–blanco);
+color:var(–cafe);transition:border-color .2s;outline:none;}
+input:focus,select:focus,textarea:focus{border-color:var(–dorado);}
 textarea{resize:vertical;min-height:70px;}
 
 /* ── BOTONES ── */
 .btn{display:inline-flex;align-items:center;gap:6px;padding:9px 18px;border-radius:8px;
-  border:none;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;
-  cursor:pointer;transition:all .2s;}
-.btn-primary{background:var(--cafe);color:var(--crem);}
-.btn-primary:hover{background:var(--cafe2);}
-.btn-gold{background:var(--dorado);color:var(--cafe);}
-.btn-gold:hover{background:var(--dorado2);}
-.btn-danger{background:var(--rojo);color:#fff;}
+border:none;font-family:‘DM Sans’,sans-serif;font-size:14px;font-weight:600;
+cursor:pointer;transition:all .2s;}
+.btn-primary{background:var(–cafe);color:var(–crem);}
+.btn-primary:hover{background:var(–cafe2);}
+.btn-gold{background:var(–dorado);color:var(–cafe);}
+.btn-gold:hover{background:var(–dorado2);}
+.btn-danger{background:var(–rojo);color:#fff;}
 .btn-danger:hover{opacity:.85;}
-.btn-outline{background:none;border:1.5px solid var(--cafe);color:var(--cafe);}
-.btn-outline:hover{background:var(--cafe);color:var(--crem);}
+.btn-outline{background:none;border:1.5px solid var(–cafe);color:var(–cafe);}
+.btn-outline:hover{background:var(–cafe);color:var(–crem);}
 .btn-sm{padding:6px 11px;font-size:12px;}
 
 /* ── TOGGLES ── */
 .dias-wrap,.roles-wrap,.disp-wrap{display:flex;gap:7px;flex-wrap:wrap;margin-top:6px;}
 .dia-btn,.rol-btn,.disp-btn{
-  padding:7px 13px;border-radius:20px;border:1.5px solid var(--crem2);
-  background:var(--blanco);font-size:12px;font-weight:600;cursor:pointer;
-  transition:all .15s;color:var(--gris);user-select:none;
-  display:inline-flex;align-items:center;gap:5px;
+padding:7px 13px;border-radius:20px;border:1.5px solid var(–crem2);
+background:var(–blanco);font-size:12px;font-weight:600;cursor:pointer;
+transition:all .15s;color:var(–gris);user-select:none;
+display:inline-flex;align-items:center;gap:5px;
 }
-.dia-btn:hover,.disp-btn:hover{border-color:var(--cafe);color:var(--cafe);}
-.rol-btn:hover{border-color:var(--cafe)!important;color:var(--cafe);transform:translateY(-1px);box-shadow:0 2px 8px rgba(74,44,23,.15);}
-.dia-btn.on{background:var(--cafe)!important;color:var(--crem)!important;border-color:var(--cafe)!important;}
-.disp-btn.m.on{background:var(--dorado)!important;color:var(--cafe)!important;border-color:var(--dorado)!important;}
-.disp-btn.t.on{background:var(--azul)!important;color:#fff!important;border-color:var(--azul)!important;}
-.disp-btn.l.on{background:var(--verde)!important;color:#fff!important;border-color:var(--verde)!important;}
+.dia-btn:hover,.disp-btn:hover{border-color:var(–cafe);color:var(–cafe);}
+.rol-btn:hover{border-color:var(–cafe)!important;color:var(–cafe);transform:translateY(-1px);box-shadow:0 2px 8px rgba(74,44,23,.15);}
+.dia-btn.on{background:var(–cafe)!important;color:var(–crem)!important;border-color:var(–cafe)!important;}
+.disp-btn.m.on{background:var(–dorado)!important;color:var(–cafe)!important;border-color:var(–dorado)!important;}
+.disp-btn.t.on{background:var(–azul)!important;color:#fff!important;border-color:var(–azul)!important;}
+.disp-btn.l.on{background:var(–verde)!important;color:#fff!important;border-color:var(–verde)!important;}
 
 /* ── EMPLEADA CARD ── */
-.emp-card{background:var(--blanco);border-radius:12px;box-shadow:var(--sombra);padding:18px;
-  border-left:4px solid var(--dorado);transition:transform .2s,box-shadow .2s;}
+.emp-card{background:var(–blanco);border-radius:12px;box-shadow:var(–sombra);padding:18px;
+border-left:4px solid var(–dorado);transition:transform .2s,box-shadow .2s;}
 .emp-card:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(74,44,23,.18);}
-.avatar{width:50px;height:50px;border-radius:50%;background:var(--crem2);display:flex;
-  align-items:center;justify-content:center;font-family:'Playfair Display',serif;
-  font-size:18px;color:var(--cafe2);border:2px solid var(--dorado);flex-shrink:0;}
+.avatar{width:50px;height:50px;border-radius:50%;background:var(–crem2);display:flex;
+align-items:center;justify-content:center;font-family:‘Playfair Display’,serif;
+font-size:18px;color:var(–cafe2);border:2px solid var(–dorado);flex-shrink:0;}
 
 /* ── TAGS ── */
 .tag{display:inline-block;padding:3px 9px;border-radius:20px;font-size:11px;font-weight:600;margin:2px;}
 .t-activo{background:#d4edda;color:#155724;}.t-inactivo{background:#f8d7da;color:#721c24;}
 .t-nov{background:#fff3cd;color:#856404;}.t-vac{background:#d1ecf1;color:#0c5460;}
 .t-inc{background:#f8d7da;color:#721c24;}.t-perm{background:#e2d9f3;color:#432874;}
-.t-cita{background:#d4edda;color:#155724;}.t-gris{background:var(--crem2);color:var(--cafe2);}
+.t-cita{background:#d4edda;color:#155724;}.t-gris{background:var(–crem2);color:var(–cafe2);}
 
 /* ── HORARIO ── */
 .hor-table{width:100%;border-collapse:collapse;font-size:12px;}
-.hor-table th{background:var(--cafe);color:var(--crem);padding:9px 7px;text-align:center;
-  font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;}
-.hor-table td{border:1px solid var(--crem2);padding:5px;text-align:center;
-  vertical-align:top;min-width:88px;}
+.hor-table th{background:var(–cafe);color:var(–crem);padding:9px 7px;text-align:center;
+font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;}
+.hor-table td{border:1px solid var(–crem2);padding:5px;text-align:center;
+vertical-align:top;min-width:88px;}
 .hor-table tr:nth-child(even) td{background:rgba(245,239,224,.4);}
 .chip{display:inline-block;padding:4px 7px;border-radius:6px;font-size:10px;
-  font-weight:700;margin:2px;white-space:nowrap;}
+font-weight:700;margin:2px;white-space:nowrap;}
 .c-m{background:#FFF3CD;color:#856404;}.c-t{background:#CCE5FF;color:#004085;}
 .c-l{background:#D4EDDA;color:#155724;}.c-n{background:#F8D7DA;color:#721c24;}
 .c-p{background:#E8D5F5;color:#4A0072;} /* partido */
 .c-w{background:#FFE0B2;color:#E65100;} /* advertencia sin asignar */
-.chip-btn{border:none;cursor:pointer;font-family:'DM Sans',sans-serif;}
+.chip-btn{border:none;cursor:pointer;font-family:‘DM Sans’,sans-serif;}
 .chip-btn:hover{opacity:.8;}
 
 /* ── STATS ── */
-.stat{background:var(--cafe);color:var(--crem);border-radius:10px;padding:16px;text-align:center;}
-.stat-n{font-family:'Playfair Display',serif;font-size:30px;color:var(--dorado2);}
+.stat{background:var(–cafe);color:var(–crem);border-radius:10px;padding:16px;text-align:center;}
+.stat-n{font-family:‘Playfair Display’,serif;font-size:30px;color:var(–dorado2);}
 .stat-l{font-size:12px;opacity:.8;margin-top:3px;}
 
 /* ── NOVEDAD ITEM ── */
-.nov-item{background:var(--blanco);border-radius:10px;padding:14px;margin-bottom:10px;
-  border-left:4px solid var(--dorado);display:flex;justify-content:space-between;
-  align-items:flex-start;gap:14px;box-shadow:0 2px 8px rgba(74,44,23,.07);}
+.nov-item{background:var(–blanco);border-radius:10px;padding:14px;margin-bottom:10px;
+border-left:4px solid var(–dorado);display:flex;justify-content:space-between;
+align-items:flex-start;gap:14px;box-shadow:0 2px 8px rgba(74,44,23,.07);}
 
 /* ── ROL ITEM ── */
 .rol-item{display:flex;align-items:center;justify-content:space-between;
-  padding:10px 14px;background:var(--crem);border-radius:8px;margin-bottom:8px;}
+padding:10px 14px;background:var(–crem);border-radius:8px;margin-bottom:8px;}
 
 /* ── MODAL ── */
 .overlay{display:none;position:fixed;inset:0;background:rgba(74,44,23,.55);
-  z-index:200;align-items:center;justify-content:center;padding:16px;}
+z-index:200;align-items:center;justify-content:center;padding:16px;}
 .overlay.open{display:flex;}
-.modal{background:var(--blanco);border-radius:16px;padding:26px;width:100%;
-  max-width:560px;max-height:92vh;overflow-y:auto;
-  box-shadow:0 20px 60px rgba(74,44,23,.3);}
-.modal-title{font-family:'Playfair Display',serif;font-size:19px;margin-bottom:18px;
-  padding-bottom:12px;border-bottom:1px solid var(--crem2);}
+.modal{background:var(–blanco);border-radius:16px;padding:26px;width:100%;
+max-width:560px;max-height:92vh;overflow-y:auto;
+box-shadow:0 20px 60px rgba(74,44,23,.3);}
+.modal-title{font-family:‘Playfair Display’,serif;font-size:19px;margin-bottom:18px;
+padding-bottom:12px;border-bottom:1px solid var(–crem2);}
 .modal-footer{display:flex;gap:10px;justify-content:flex-end;margin-top:18px;
-  padding-top:14px;border-top:1px solid var(--crem2);}
+padding-top:14px;border-top:1px solid var(–crem2);}
 
 /* ── DISPONIBILIDAD SEMANAL ── */
 /* ── DISPONIBILIDAD SEMANAL — horas exactas ── */
 .disp-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-top:8px;}
 .disp-col{text-align:center;}
-.disp-lbl{font-size:10px;font-weight:700;color:var(--gris);text-transform:uppercase;
-  margin-bottom:5px;letter-spacing:.3px;}
-.disp-card{border:1.5px solid var(--crem2);border-radius:9px;padding:6px 4px;
-  background:var(--blanco);transition:border-color .15s;min-height:80px;}
+.disp-lbl{font-size:10px;font-weight:700;color:var(–gris);text-transform:uppercase;
+margin-bottom:5px;letter-spacing:.3px;}
+.disp-card{border:1.5px solid var(–crem2);border-radius:9px;padding:6px 4px;
+background:var(–blanco);transition:border-color .15s;min-height:80px;}
 .disp-card.libre{background:#F8D7DA;border-color:#8B2020;}
 .disp-card.tiene-horas{background:#E8F5E9;border-color:#2D4A2D;}
-.disp-card.sin-def{background:var(--crem);border-color:var(--crem2);}
-.disp-time{width:100%;border:1px solid var(--crem2);background:var(--blanco);font-size:10px;
-  font-weight:600;color:var(--cafe);text-align:center;padding:3px 2px;border-radius:5px;
-  font-family:'DM Sans',sans-serif;cursor:pointer;outline:none;margin-bottom:2px;}
-.disp-time:focus{border-color:var(--dorado);}
-.disp-sep{font-size:9px;color:var(--gris);display:block;text-align:center;line-height:1;margin:1px 0;}
+.disp-card.sin-def{background:var(–crem);border-color:var(–crem2);}
+.disp-time{width:100%;border:1px solid var(–crem2);background:var(–blanco);font-size:10px;
+font-weight:600;color:var(–cafe);text-align:center;padding:3px 2px;border-radius:5px;
+font-family:‘DM Sans’,sans-serif;cursor:pointer;outline:none;margin-bottom:2px;}
+.disp-time:focus{border-color:var(–dorado);}
+.disp-sep{font-size:9px;color:var(–gris);display:block;text-align:center;line-height:1;margin:1px 0;}
 .disp-libre-btn{width:100%;margin-top:4px;padding:3px;border-radius:5px;
-  border:1px solid var(--crem2);background:transparent;font-size:10px;
-  cursor:pointer;font-family:'DM Sans',sans-serif;color:var(--gris);
-  transition:all .15s;}
+border:1px solid var(–crem2);background:transparent;font-size:10px;
+cursor:pointer;font-family:‘DM Sans’,sans-serif;color:var(–gris);
+transition:all .15s;}
 .disp-libre-btn:hover{background:#F8D7DA;border-color:#8B2020;color:#8B2020;}
 .disp-libre-btn.activo{background:#F8D7DA;border-color:#8B2020;color:#8B2020;font-weight:700;}
 
 /* ── UTILS ── */
 .flex-between{display:flex;justify-content:space-between;align-items:center;}
 .mb16{margin-bottom:16px;}
-.small{font-size:12px;color:var(--gris);}
-.divider{border:none;border-top:1px solid var(--crem2);margin:14px 0;}
-.empty{text-align:center;padding:36px;color:var(--gris);}
+.small{font-size:12px;color:var(–gris);}
+.divider{border:none;border-top:1px solid var(–crem2);margin:14px 0;}
+.empty{text-align:center;padding:36px;color:var(–gris);}
 .empty-ico{font-size:38px;margin-bottom:10px;}
 .semana-nav{display:flex;align-items:center;gap:10px;}
-.semana-lbl{font-family:'Playfair Display',serif;font-size:15px;min-width:210px;text-align:center;}
+.semana-lbl{font-family:‘Playfair Display’,serif;font-size:15px;min-width:210px;text-align:center;}
 
 /* ── TOAST ── */
-#toast{position:fixed;bottom:22px;right:22px;background:var(--cafe);color:var(--crem);
-  padding:11px 18px;border-radius:10px;font-size:14px;opacity:0;transform:translateY(8px);
-  transition:all .3s;z-index:999;max-width:280px;pointer-events:none;}
+#toast{position:fixed;bottom:22px;right:22px;background:var(–cafe);color:var(–crem);
+padding:11px 18px;border-radius:10px;font-size:14px;opacity:0;transform:translateY(8px);
+transition:all .3s;z-index:999;max-width:280px;pointer-events:none;}
 #toast.show{opacity:1;transform:translateY(0);}
 #toast.ok{border-left:4px solid #28a745;}
-#toast.err{border-left:4px solid var(--rojo);}
+#toast.err{border-left:4px solid var(–rojo);}
+/* ── Drag & drop filas horario ── */
+.drag-handle{cursor:grab;font-size:15px;color:#bbb;padding:0 7px 0 0;
+user-select:none;display:inline-block;vertical-align:middle;transition:color .15s;}
+.drag-handle:hover{color:var(–dorado);}
+.drag-handle:active{cursor:grabbing;}
+#hor-body tr{transition:background .12s;}
+#hor-body tr.drag-over-top{border-top:3px solid var(–dorado);}
+#hor-body tr.drag-over-bot{border-bottom:3px solid var(–dorado);}
+#hor-body tr.is-dragging{opacity:.4;}
+
+/* ── Panel Asistente de Disponibilidad ── */
+#panel-asistente{
+position:fixed;right:0;top:0;height:100vh;width:380px;max-width:95vw;
+background:var(–blanco);box-shadow:-4px 0 24px rgba(74,44,23,.18);
+z-index:2000;display:flex;flex-direction:column;
+transform:translateX(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);
+}
+#panel-asistente.open{transform:translateX(0);}
+#asist-header{background:var(–cafe);color:var(–crem);padding:16px 18px;
+display:flex;align-items:center;justify-content:space-between;flex-shrink:0;}
+#asist-messages{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px;}
+.asist-msg-user{align-self:flex-end;background:var(–cafe);color:var(–crem);
+padding:8px 13px;border-radius:16px 16px 4px 16px;font-size:13px;max-width:80%;}
+.asist-msg-bot{align-self:flex-start;background:var(–crem2);color:var(–cafe);
+padding:8px 13px;border-radius:16px 16px 16px 4px;font-size:13px;max-width:88%;line-height:1.5;}
+.asist-msg-bot b{color:var(–cafe2);}
+#asist-input-wrap{padding:12px;border-top:1px solid var(–crem2);
+display:flex;gap:8px;flex-shrink:0;background:var(–blanco);}
+#asist-input{flex:1;padding:9px 13px;border:1.5px solid var(–crem2);border-radius:20px;
+font-size:13px;font-family:‘DM Sans’,sans-serif;resize:none;outline:none;max-height:100px;}
+#asist-input:focus{border-color:var(–dorado);}
+#asist-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.3);z-index:1999;}
+#asist-overlay.open{display:block;}
 
 /* ── Drag & drop filas horario ── */
 .drag-handle{cursor:grab;font-size:15px;color:#bbb;padding:0 7px 0 0;
-  user-select:none;display:inline-block;vertical-align:middle;transition:color .15s;}
-.drag-handle:hover{color:var(--dorado);}
+user-select:none;display:inline-block;vertical-align:middle;transition:color .15s;}
+.drag-handle:hover{color:var(–dorado);}
 .drag-handle:active{cursor:grabbing;}
 #hor-body tr{transition:background .12s;}
-#hor-body tr.drag-over-top{border-top:3px solid var(--dorado);}
-#hor-body tr.drag-over-bot{border-bottom:3px solid var(--dorado);}
+#hor-body tr.drag-over-top{border-top:3px solid var(–dorado);}
+#hor-body tr.drag-over-bot{border-bottom:3px solid var(–dorado);}
 #hor-body tr.is-dragging{opacity:.4;}
 </style>
-<!-- Firebase SDK -->
+
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+
 </head>
 <body>
 
@@ -231,6 +267,7 @@ textarea{resize:vertical;min-height:70px;}
 <main>
 
 <!-- DASHBOARD -->
+
 <div id="pg-dashboard" class="page active">
   <div class="g3 mb16" id="stats"></div>
   <div class="g2">
@@ -240,6 +277,7 @@ textarea{resize:vertical;min-height:70px;}
 </div>
 
 <!-- EMPLEADAS -->
+
 <div id="pg-empleadas" class="page">
   <div class="flex-between mb16">
     <h2 style="font-family:'Playfair Display',serif;font-size:21px">Perfiles de Empleadas</h2>
@@ -249,6 +287,7 @@ textarea{resize:vertical;min-height:70px;}
 </div>
 
 <!-- HORARIOS -->
+
 <div id="pg-horarios" class="page">
   <div class="flex-between mb16">
     <div class="semana-nav">
@@ -288,6 +327,7 @@ textarea{resize:vertical;min-height:70px;}
 </div>
 
 <!-- NOVEDADES -->
+
 <div id="pg-novedades" class="page">
   <div class="flex-between mb16">
     <h2 style="font-family:'Playfair Display',serif;font-size:21px">Novedades Semanales</h2>
@@ -326,6 +366,7 @@ textarea{resize:vertical;min-height:70px;}
 </div>
 
 <!-- ROLES -->
+
 <div id="pg-roles" class="page">
   <div class="flex-between mb16">
     <h2 style="font-family:'Playfair Display',serif;font-size:21px">Gestión de Cargos</h2>
@@ -353,6 +394,7 @@ textarea{resize:vertical;min-height:70px;}
 </main>
 
 <!-- ═══ MODAL EMPLEADA ═══ -->
+
 <div class="overlay" id="m-emp">
   <div class="modal">
     <div class="modal-title" id="m-emp-title">➕ Nueva Empleada</div>
@@ -424,6 +466,7 @@ textarea{resize:vertical;min-height:70px;}
 </div>
 
 <!-- ═══ MODAL VER EMPLEADA ═══ -->
+
 <div class="overlay" id="m-ver">
   <div class="modal">
     <div id="ver-body"></div>
@@ -435,6 +478,7 @@ textarea{resize:vertical;min-height:70px;}
 </div>
 
 <!-- ═══ MODAL NOVEDAD ═══ -->
+
 <div class="overlay" id="m-nov">
   <div class="modal">
     <div class="modal-title" id="m-nov-title">📋 Registrar Novedad</div>
@@ -496,6 +540,7 @@ textarea{resize:vertical;min-height:70px;}
 </div>
 
 <!-- ═══ MODAL CARGO ═══ -->
+
 <div class="overlay" id="m-rol">
   <div class="modal">
     <div class="modal-title" id="m-rol-title">🏷️ Nuevo Cargo</div>
@@ -514,6 +559,7 @@ textarea{resize:vertical;min-height:70px;}
 </div>
 
 <!-- ═══ MODAL EDITAR HORAS DE TURNO ═══ -->
+
 <div class="overlay" id="m-edit-horas">
   <div class="modal" style="max-width:340px">
     <div class="modal-title">✏️ Editar horas del turno</div>
@@ -546,24 +592,6 @@ textarea{resize:vertical;min-height:70px;}
 // ══════════════════════════════════════════════════
 //  PERSISTENCIA — localStorage con detección robusta
 // ══════════════════════════════════════════════════
-// ══════════════════════════════════════════════════════════════════
-// FIREBASE — sincronización en tiempo real entre dispositivos
-// ══════════════════════════════════════════════════════════════════
-var _fbConfig = {
-  apiKey: "AIzaSyCny4LH_Jn98S7_Fu414HBqiTqZl5wYWIc",
-  authDomain: "horarios-sessanio-v7.firebaseapp.com",
-  projectId: "horarios-sessanio-v7",
-  storageBucket: "horarios-sessanio-v7.firebasestorage.app",
-  messagingSenderId: "784759066547",
-  appId: "1:784759066547:web:472931d61c076a03e9c5c6"
-};
-var _fbApp  = firebase.initializeApp(_fbConfig);
-var _db     = firebase.firestore(_fbApp);
-var _docRef = _db.collection('sessanio').doc('estado');
-var _fbOnline   = true;   // se pone false si hay error de red
-var _unsubscribe = null;  // para detener el listener si hace falta
-var _lastSaveTs  = 0;     // timestamp del último guardado local para evitar bucles
-
 var STORE_KEY = 'sessanio_v63';
 var _storageOk = false;
 
@@ -701,23 +729,22 @@ function loadState(){
 
 function saveState(){
   var ind = document.getElementById('save-ind');
-  // 1. Siempre guardar en localStorage como respaldo offline
-  if(_storageOk){
-    try{ localStorage.setItem(STORE_KEY, JSON.stringify(S)); } catch(e){}
+  if(!_storageOk){
+    if(ind){ ind.textContent = '⚠️ Sin persistencia'; ind.classList.add('show'); }
+    return;
   }
-  // 2. Guardar en Firestore para sincronización entre dispositivos
-  _lastSaveTs = Date.now();
-  var ts = _lastSaveTs;
-  if(ind){ ind.textContent='☁️ Sincronizando…'; ind.classList.add('show'); }
-  _docRef.set(S).then(function(){
-    if(Date.now()-ts < 5000){
-      if(ind){ ind.textContent='✅ Sincronizado'; ind.classList.add('show'); setTimeout(function(){ ind.classList.remove('show'); },2500); }
+  try{
+    var json = JSON.stringify(S);
+    localStorage.setItem(STORE_KEY, json);
+    var verify = localStorage.getItem(STORE_KEY);
+    if(verify){
+      if(ind){ ind.textContent='💾 Guardado'; ind.classList.add('show'); setTimeout(function(){ ind.classList.remove('show'); }, 2500); }
+    } else {
+      if(ind){ ind.textContent='⚠️ No se pudo guardar'; ind.classList.add('show'); }
     }
-  }).catch(function(err){
-    // Sin conexión → solo localStorage
-    if(ind){ ind.textContent='💾 Local (sin red)'; ind.classList.add('show'); setTimeout(function(){ ind.classList.remove('show'); },3000); }
-    console.warn('Firestore error:', err);
-  });
+  } catch(err){
+    if(ind){ ind.textContent='⚠️ '+err.message; ind.classList.add('show'); }
+  }
 }
 
 // ── DEBUG: muestra estado real en pantalla ──
@@ -1964,725 +1991,946 @@ document.getElementById('btn-pdf').addEventListener('click', function(){
     +'  table{font-size:10px}'
     +'}'
     +'</style></head><body>'
-    +'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">'
-    +'<div>'
-    +'<div style="font-size:18px;font-weight:700;color:#8B2020">☕ Sessanio Brunch e Caffé</div>'
-    +'<div style="font-size:13px;color:#666;margin-top:2px">Horario '+wk+' — '+fmtFecha(fechas[0])+' al '+fmtFecha(fechas[6])+'</div>'
-    +'</div>'
-    +'<button class="no-print" onclick="window.print()" style="padding:8px 18px;background:#8B2020;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px">🖨️ Imprimir</button>'
-    +'</div>';
 
-  // ── Novedades reales de la semana (excluye las auto-generadas) ────────
-  var novsHtml = '';
-  var fi0 = fechas[0].toISOString().slice(0,10);
-  var fi6 = fechas[6].toISOString().slice(0,10);
-  var novsDelPeriodo = (S.novedades||[]).filter(function(n){
-    if(n.auto) return false;
-    var nFi = n.fi||''; var nFf = n.ff||n.fi||'';
-    return nFi <= fi6 && nFf >= fi0;
-  });
-  var TIPOS_PDF = {
-    incapacidad:'🤒 Incapacidad', vacaciones:'🏖️ Vacaciones',
-    calamidad:'🚨 Calamidad', ausencia:'🚫 Ausencia',
-    cita_medica:'🏥 Cita médica', permiso:'📝 Permiso',
-    llegada_tarde:'⏰ Llegada tarde', salida_temprana:'🏃 Salida temprana'
-  };
-  if(novsDelPeriodo.length > 0){
-    novsHtml = '<div style="margin-top:16px">'
-      +'<div style="font-weight:700;font-size:12px;margin-bottom:6px;color:#4A2C17">📋 Novedades de la semana:</div>'
-      +'<table style="font-size:10px"><thead><tr style="background:#f5f0e8">'
-      +'<th style="padding:4px 8px;text-align:left">Empleada</th>'
-      +'<th style="padding:4px 8px">Tipo</th>'
-      +'<th style="padding:4px 8px">Fecha inicio</th>'
-      +'<th style="padding:4px 8px">Fecha fin</th>'
-      +'<th style="padding:4px 8px;text-align:left">Observación</th>'
-      +'</tr></thead><tbody>'
-      +novsDelPeriodo.map(function(n){
-        var emp2 = S.empleadas.find(function(x){ return x.id===n.empId; });
-        var nombre = emp2 ? emp2.nombre.split(' ').slice(0,2).join(' ') : '—';
-        var tipo = TIPOS_PDF[n.tipo] || n.tipo;
-        return '<tr>'
-          +'<td style="padding:3px 8px;font-weight:600">'+nombre+'</td>'
-          +'<td style="padding:3px 8px;text-align:center">'+tipo+'</td>'
-          +'<td style="padding:3px 8px;text-align:center">'+n.fi+'</td>'
-          +'<td style="padding:3px 8px;text-align:center">'+(n.ff||n.fi)+'</td>'
-          +'<td style="padding:3px 8px;color:#666">'+(n.obs||'—')+'</td>'
-          +'</tr>';
-      }).join('')
-      +'</tbody></table></div>';
-  }
+```
++'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">'
++'<div>'
++'<div style="font-size:18px;font-weight:700;color:#8B2020">☕ Sessanio Brunch e Caffé</div>'
++'<div style="font-size:13px;color:#666;margin-top:2px">Horario '+wk+' — '+fmtFecha(fechas[0])+' al '+fmtFecha(fechas[6])+'</div>'
++'</div>'
++'<button class="no-print" onclick="window.print()" style="padding:8px 18px;background:#8B2020;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px">🖨️ Imprimir</button>'
++'</div>';
+```
 
-  // ── Ensamblar HTML completo del PDF ───────────────────────────────────
-  var html_pdf2 = html_pdf
-    +'<table><thead>'+thead+'</thead><tbody>'+filas+'</tbody></table>'
-    +alertasHtml
-    +novsHtml
-    +'<div style="margin-top:20px;font-size:9px;color:#aaa;text-align:right">Generado: '+new Date().toLocaleString('es-CO')+'</div>'
-    +'</body></html>';
+// ── Novedades reales de la semana (excluye las auto-generadas) ────────
+var novsHtml = ‘’;
+var fi0 = fechas[0].toISOString().slice(0,10);
+var fi6 = fechas[6].toISOString().slice(0,10);
+var novsDelPeriodo = (S.novedades||[]).filter(function(n){
+if(n.auto) return false;
+var nFi = n.fi||’’; var nFf = n.ff||n.fi||’’;
+return nFi <= fi6 && nFf >= fi0;
+});
+var TIPOS_PDF = {
+incapacidad:‘🤒 Incapacidad’, vacaciones:‘🏖️ Vacaciones’,
+calamidad:‘🚨 Calamidad’, ausencia:‘🚫 Ausencia’,
+cita_medica:‘🏥 Cita médica’, permiso:‘📝 Permiso’,
+llegada_tarde:‘⏰ Llegada tarde’, salida_temprana:‘🏃 Salida temprana’
+};
+if(novsDelPeriodo.length > 0){
+novsHtml = ‘<div style="margin-top:16px">’
++’<div style="font-weight:700;font-size:12px;margin-bottom:6px;color:#4A2C17">📋 Novedades de la semana:</div>’
++’<table style="font-size:10px"><thead><tr style="background:#f5f0e8">’
++’<th style="padding:4px 8px;text-align:left">Empleada</th>’
++’<th style="padding:4px 8px">Tipo</th>’
++’<th style="padding:4px 8px">Fecha inicio</th>’
++’<th style="padding:4px 8px">Fecha fin</th>’
++’<th style="padding:4px 8px;text-align:left">Observación</th>’
++’</tr></thead><tbody>’
++novsDelPeriodo.map(function(n){
+var emp2 = S.empleadas.find(function(x){ return x.id===n.empId; });
+var nombre = emp2 ? emp2.nombre.split(’ ‘).slice(0,2).join(’ ‘) : ‘—’;
+var tipo = TIPOS_PDF[n.tipo] || n.tipo;
+return ‘<tr>’
++’<td style="padding:3px 8px;font-weight:600">’+nombre+’</td>’
++’<td style="padding:3px 8px;text-align:center">’+tipo+’</td>’
++’<td style="padding:3px 8px;text-align:center">’+n.fi+’</td>’
++’<td style="padding:3px 8px;text-align:center">’+(n.ff||n.fi)+’</td>’
++’<td style="padding:3px 8px;color:#666">’+(n.obs||’—’)+’</td>’
++’</tr>’;
+}).join(’’)
++’</tbody></table></div>’;
+}
 
-  var ventana = window.open('','_blank','width=900,height=650');
-  ventana.document.write(html_pdf2);
-  ventana.document.close();
-  toast('🖨️ Horario abierto para imprimir','ok');
+// ── Ensamblar HTML completo del PDF ───────────────────────────────────
+var html_pdf2 = html_pdf
++’<table><thead>’+thead+’</thead><tbody>’+filas+’</tbody></table>’
++alertasHtml
++novsHtml
++’<div style="margin-top:20px;font-size:9px;color:#aaa;text-align:right">Generado: ‘+new Date().toLocaleString(‘es-CO’)+’</div>’
++’</body></html>’;
+
+var ventana = window.open(’’,’_blank’,‘width=900,height=650’);
+ventana.document.write(html_pdf2);
+ventana.document.close();
+toast(‘🖨️ Horario abierto para imprimir’,‘ok’);
 });
 
-document.getElementById('btn-auto').addEventListener('click', function(){
-  var wk    = weekKey();
-  var lunes = getLunes();
-  if(!S.horarios[wk]) S.horarios[wk] = {};
+document.getElementById(‘btn-auto’).addEventListener(‘click’, function(){
+var wk    = weekKey();
+var lunes = getLunes();
+if(!S.horarios[wk]) S.horarios[wk] = {};
 
-  // ── Guardar snapshot del horario actual ANTES de sobrescribir ──────────
-  _snapshotAuto = {
-    wk: wk,
-    horarios: JSON.parse(JSON.stringify(S.horarios[wk]))
-  };
-  // Mostrar botón Deshacer
-  var btnUndo = document.getElementById('btn-undo');
-  if(btnUndo) btnUndo.style.display = 'inline-flex';
+// ── Guardar snapshot del horario actual ANTES de sobrescribir ──────────
+_snapshotAuto = {
+wk: wk,
+horarios: JSON.parse(JSON.stringify(S.horarios[wk]))
+};
+// Mostrar botón Deshacer
+var btnUndo = document.getElementById(‘btn-undo’);
+if(btnUndo) btnUndo.style.display = ‘inline-flex’;
 
-  var ROL_COCINA='r1', ROL_MESERA='r2', ROL_BARISTA='r3', ROL_PASTELERA='r6';
-  var DIAS_N=['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado','Domingo'];
+var ROL_COCINA=‘r1’, ROL_MESERA=‘r2’, ROL_BARISTA=‘r3’, ROL_PASTELERA=‘r6’;
+var DIAS_N=[‘Lunes’,‘Martes’,‘Miércoles’,‘Jueves’,‘Viernes’,‘Sábado’,‘Domingo’];
 
-  var activas = S.empleadas.filter(function(e){ return e.estado==='activo'; });
-  var wkNum   = parseInt(wk.split('-S')[1]) || 0;
+var activas = S.empleadas.filter(function(e){ return e.estado===‘activo’; });
+var wkNum   = parseInt(wk.split(’-S’)[1]) || 0;
 
-  // ── Utilidades ──────────────────────────────────────────────────────────
-  function toMin(t){
-    if(!t) return null;
-    var p=t.split(':'); return parseInt(p[0])*60+parseInt(p[1]);
+// ── Utilidades ──────────────────────────────────────────────────────────
+function toMin(t){
+if(!t) return null;
+var p=t.split(’:’); return parseInt(p[0])*60+parseInt(p[1]);
+}
+function fmtMin(m){
+return (Math.floor(m/60)<10?‘0’:’’)+Math.floor(m/60)+’:’+(m%60<10?‘0’:’’)+(m%60);
+}
+function getDisp(e,d){ return (e.dispSemanal||{})[String(d)]||null; }
+
+// Disponibilidad real del empleado ese día (mín 2h). Retorna {desde,hasta} o null.
+function dispHoy(e,d){
+if(e.descansos && e.descansos.indexOf(d)>=0) return null;
+var v=getDisp(e,d);
+if(!v||v.libre||!v.desde||!v.hasta) return null;
+var a=toMin(v.desde), b=toMin(v.hasta);
+if(a===null||b===null||b<=a||(b-a)<120) return null;
+return v;
+}
+
+// Recortar a máx 7h (420 min)
+function recortar7h(desde,hasta){
+// Sin límite — horas extra son válidas
+return {desde:desde, hasta:hasta};
+}
+
+// ¿Cubre la franja Mañana? (entra ≤08:00, sale ≥12:00)
+function cubreM(desde,hasta){
+return toMin(desde)<=480 && toMin(hasta)>=720;
+}
+// ¿Cubre la franja Tarde? (entra ≤15:00, sale ≥20:00)
+function cubreT(desde,hasta){
+return toMin(desde)<=900 && toMin(hasta)>=1200;
+}
+
+// Ajustar horas a una franja específica y recortar a 7h
+// franja ‘M’: fijar entrada al máx(desde, 08:00), salida máx 15:00
+// franja ‘T’: fijar entrada al máx(desde, 13:00), salida máx 20:00
+function horasFranja(desde,hasta,fr){
+var a=toMin(desde), b=toMin(hasta);
+if(fr===‘M’){
+var entrada = Math.max(a, 480);  // mín 08:00
+var salida  = Math.min(b, 1200); // máx 20:00 (horas extra permitidas)
+var r=recortar7h(fmtMin(entrada), fmtMin(salida));
+return r;
+} else {
+var entrada2= Math.max(a, 780);  // mín 13:00
+var salida2 = Math.min(b, 1320); // máx 22:00 (horas extra permitidas)
+var r2=recortar7h(fmtMin(entrada2), fmtMin(salida2));
+return r2;
+}
+}
+
+// ¿Puede trabajar la franja indicada?
+function puedeFranja(v, fr){
+if(fr===‘M’) return cubreM(v.desde, v.hasta);
+if(fr===‘T’) return cubreT(v.desde, v.hasta);
+return false;
+}
+
+// ── Clasificar empleados ─────────────────────────────────────────────────
+var pasteleras   = activas.filter(function(e){ return e.roles.indexOf(ROL_PASTELERA)>=0; });
+var polivalentes = activas.filter(function(e){
+return e.roles.indexOf(ROL_COCINA)>=0
+&& (e.roles.indexOf(ROL_MESERA)>=0||e.roles.indexOf(ROL_BARISTA)>=0)
+&& e.roles.indexOf(ROL_PASTELERA)<0;
+});
+var soloCocineras= activas.filter(function(e){
+return e.roles.indexOf(ROL_COCINA)>=0
+&& e.roles.indexOf(ROL_MESERA)<0 && e.roles.indexOf(ROL_BARISTA)<0
+&& e.roles.indexOf(ROL_PASTELERA)<0;
+});
+var front        = activas.filter(function(e){
+return e.roles.indexOf(ROL_PASTELERA)<0 && e.roles.indexOf(ROL_COCINA)<0
+&& (e.roles.indexOf(ROL_MESERA)>=0||e.roles.indexOf(ROL_BARISTA)>=0);
+});
+var yaClasif = pasteleras.concat(polivalentes).concat(soloCocineras).concat(front);
+var grupoApoyo   = activas.filter(function(e){ return yaClasif.indexOf(e)<0; });
+
+// ── Descanso rotativo — solo si NO tiene ya días libres fijos ──────────────
+// (evita que Martha/Sisley/etc. acumulen un 3er descanso encima de los fijos)
+var descRot={}, rotDias=[1,2,3,4,5];
+activas.forEach(function(e,idx){
+// Contar días que ya tiene libres por perfil (descansos fijos + dispSemanal.libre)
+var diasLibresFijos = (e.descansos||[]).length;
+var diasLibresDisp  = Object.values(e.dispSemanal||{}).filter(function(v){ return v && v.libre; }).length;
+var totalLibres = Math.max(diasLibresFijos, diasLibresDisp);
+// Si ya tiene al menos 1 día libre registrado → no necesita rotativo
+if(totalLibres >= 1) return;
+var cnt=0; for(var dd=0;dd<7;dd++){ if(dispHoy(e,dd)) cnt++; }
+if(cnt<6) return;
+var intentos=0, dia=rotDias[(wkNum+idx)%rotDias.length];
+while(intentos<5){
+var conf=soloCocineras.indexOf(e)>=0&&soloCocineras.some(function(c){
+return c.id!==e.id&&descRot[c.id]===dia;
+});
+if(!conf) break;
+intentos++; dia=rotDias[(wkNum+idx+intentos)%rotDias.length];
+}
+descRot[e.id]=dia;
+});
+
+activas.forEach(function(e){ if(!S.horarios[wk][e.id]) S.horarios[wk][e.id]={}; });
+
+// ── Novedades auto generadas por falta de cobertura ─────────────────────
+// (se limpian las auto-generadas anteriores de esta semana antes de regenerar)
+S.novedades = S.novedades.filter(function(n){
+return !(n.tipo===‘ausencia’ && n.semKey===wk && n.auto===true);
+});
+
+// ── Asignación día a día ─────────────────────────────────────────────────
+for(var d=0; d<7; d++){
+var dk=String(d);
+var f=new Date(lunes); f.setDate(lunes.getDate()+d);
+var fs=f.toISOString().slice(0,10);
+
+```
+function bloqueado(e){
+  return S.novedades.some(function(n){
+    return n.empId===e.id&&n.fi<=fs&&(n.ff||n.fi)>=fs
+      &&['incapacidad','vacaciones','calamidad','ausencia'].indexOf(n.tipo)>=0
+      &&!n.auto;
+  });
+}
+function descansaHoy(e){ return descRot[e.id]===d||(e.descansos&&e.descansos.indexOf(d)>=0); }
+function puedeHoy(e){ return !bloqueado(e)&&!descansaHoy(e)&&!!dispHoy(e,d); }
+
+// ── TRACKER de cobertura por franja ─────────────────────────────────
+// Cada franja (M y T) necesita: 1 Cocina + 1 Mesera + 1 Barista
+var cub = {
+  cocina:    {M:null, T:null},
+  mesera:    {M:null, T:null},
+  barista:   {M:null, T:null},
+  pastelera: {M:null, T:null}  // rastreo adicional de pastelería
+};
+
+// Guardar turno helper
+function asignar(e, fr, rol){
+  var v = dispHoy(e,d);
+  var h = horasFranja(v.desde, v.hasta, fr);
+  // Validar que las horas son coherentes (mín 2h)
+  if(toMin(h.hasta)-toMin(h.desde) < 120){
+    S.horarios[wk][e.id][dk]='libre'; return false;
   }
-  function fmtMin(m){
-    return (Math.floor(m/60)<10?'0':'')+Math.floor(m/60)+':'+(m%60<10?'0':'')+(m%60);
-  }
-  function getDisp(e,d){ return (e.dispSemanal||{})[String(d)]||null; }
+  S.horarios[wk][e.id][dk]='partido:'+h.desde+'-'+h.hasta+'|'+rol;
+  var cubKey = rol==='r1'?'cocina':rol==='r2'?'mesera':rol==='r3'?'barista':rol==='r6'?'pastelera':'otro';
+  if(cub[cubKey]) cub[cubKey][fr]=e.id;
+  return true;
+}
 
-  // Disponibilidad real del empleado ese día (mín 2h). Retorna {desde,hasta} o null.
-  function dispHoy(e,d){
-    if(e.descansos && e.descansos.indexOf(d)>=0) return null;
-    var v=getDisp(e,d);
-    if(!v||v.libre||!v.desde||!v.hasta) return null;
-    var a=toMin(v.desde), b=toMin(v.hasta);
-    if(a===null||b===null||b<=a||(b-a)<120) return null;
-    return v;
-  }
+// ═══════════════════════════════════════════════════════════════════
+// PASO 1 — COCINA: garantizar 1 cocinero en M y 1 en T
+// ═══════════════════════════════════════════════════════════════════
+//
+// Estrategia:
+//   a) Cocineras puras: alternar semana a semana quién va a M y quién a T
+//   b) Si alguna franja queda sin cubrir → polivalentes → pasteleras (si tienen r1)
+//   c) Si aun así falta → novedad automática
 
-  // Recortar a máx 7h (420 min)
-  function recortar7h(desde,hasta){
-    // Sin límite — horas extra son válidas
-    return {desde:desde, hasta:hasta};
-  }
+// Ordenar cocineras puras alternando cada semana
+var cocList = (wkNum%2===0) ? soloCocineras.slice() : soloCocineras.slice().reverse();
 
-  // ¿Cubre la franja Mañana? (entra ≤08:00, sale ≥12:00)
-  function cubreM(desde,hasta){
-    return toMin(desde)<=480 && toMin(hasta)>=720;
+// Intentar cubrir M primero con la primera cocinera disponible, T con la segunda
+// Pero si la primera solo puede T (no disponible mañana), va a T
+cocList.forEach(function(coc){
+  if(!puedeHoy(coc)){ S.horarios[wk][coc.id][dk]='libre'; return; }
+  var v=dispHoy(coc,d);
+  // Determinar a qué franja asignarla para complementar la otra
+  // Prioridad: cubrir la franja que aún no tiene cocinero
+  if(!cub.cocina.M && puedeFranja(v,'M') && cub.cocina.T){
+    // Tarde ya cubierta, cubrir mañana
+    asignar(coc,'M',ROL_COCINA);
+  } else if(!cub.cocina.T && puedeFranja(v,'T') && cub.cocina.M){
+    // Mañana ya cubierta, cubrir tarde
+    asignar(coc,'T',ROL_COCINA);
+  } else if(!cub.cocina.M && puedeFranja(v,'M')){
+    // Nadie aún, asignar mañana (la siguiente irá a tarde)
+    asignar(coc,'M',ROL_COCINA);
+  } else if(!cub.cocina.T && puedeFranja(v,'T')){
+    // Mañana ya tomada, asignar tarde
+    asignar(coc,'T',ROL_COCINA);
+  } else {
+    // Ambas cubiertas o no puede ninguna franja → libre
+    S.horarios[wk][coc.id][dk]='libre';
   }
-  // ¿Cubre la franja Tarde? (entra ≤15:00, sale ≥20:00)
-  function cubreT(desde,hasta){
-    return toMin(desde)<=900 && toMin(hasta)>=1200;
-  }
+});
 
-  // Ajustar horas a una franja específica y recortar a 7h
-  // franja 'M': fijar entrada al máx(desde, 08:00), salida máx 15:00
-  // franja 'T': fijar entrada al máx(desde, 13:00), salida máx 20:00
-  function horasFranja(desde,hasta,fr){
-    var a=toMin(desde), b=toMin(hasta);
-    if(fr==='M'){
-      var entrada = Math.max(a, 480);  // mín 08:00
-      var salida  = Math.min(b, 1200); // máx 20:00 (horas extra permitidas)
-      var r=recortar7h(fmtMin(entrada), fmtMin(salida));
-      return r;
+// Polivalentes: primero cubrir cocina si falta
+polivalentes.forEach(function(pol){
+  if(!puedeHoy(pol)){ S.horarios[wk][pol.id][dk]='libre'; return; }
+  var v=dispHoy(pol,d);
+  if(!cub.cocina.M && puedeFranja(v,'M')){
+    asignar(pol,'M',ROL_COCINA);
+  } else if(!cub.cocina.T && puedeFranja(v,'T')){
+    asignar(pol,'T',ROL_COCINA);
+  }
+  // Si ya se asignó (cocina), no hace nada más aquí
+  // Si no se asignó aún → se asigna en el paso de servicio abajo
+});
+
+// Pasteleras con cocina (r1+r6): cubrir si aún falta
+pasteleras.forEach(function(pas){
+  if(!puedeHoy(pas)){ S.horarios[wk][pas.id][dk]='libre'; return; }
+  if(pas.roles.indexOf(ROL_COCINA)<0) return; // sin cocina, se maneja después
+  var v=dispHoy(pas,d);
+  if(!cub.cocina.M && puedeFranja(v,'M')){
+    asignar(pas,'M',ROL_COCINA);
+  } else if(!cub.cocina.T && puedeFranja(v,'T')){
+    asignar(pas,'T',ROL_COCINA);
+  }
+  // Si no cubrió cocina, se asigna su turno normal abajo
+});
+
+// ═══════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════
+// PASO 2 — SERVICIO: algoritmo de asignación óptima
+// ═══════════════════════════════════════════════════════════════════
+//
+// PROBLEMA del greedy simple: si Karen (r2,r3) puede M y T, y se le
+// asigna a Tarde primero, Mañana queda sin mesera aunque Karen podía cubrirla.
+//
+// SOLUCIÓN: construir la lista de TODOS los slots que hay que cubrir,
+// luego asignar a las personas MÁS INFLEXIBLES primero (las que solo
+// pueden UN slot específico), y las polivalentes llenan los huecos.
+//
+// Slots a cubrir: M-Mesera, M-Barista, T-Mesera, T-Barista
+// Empleado inflexible = solo puede 1 combinación de franja+rol
+
+// Reunir candidatos de servicio (no asignados aún)
+var polSinAsig = polivalentes.filter(function(p){
+  return !S.horarios[wk][p.id] || S.horarios[wk][p.id][dk]===undefined;
+});
+// ═══════════════════════════════════════════════════════════════════
+// PASO 1.5 — PASTELERAS en su turno propio (si no fueron a cocina)
+// Regla: pastelera pura (sin r2/r3) trabaja UNA vez al día en rol pastelería
+// Preferencia: turno tarde; si no puede, mañana
+// ═══════════════════════════════════════════════════════════════════
+pasteleras.forEach(function(pas){
+  // Si ya tiene turno asignado (fue a cocina) → no tocar
+  if(S.horarios[wk][pas.id][dk]!==undefined) return;
+  // Si no puede trabajar hoy → libre
+  if(!puedeHoy(pas)){ S.horarios[wk][pas.id][dk]='libre'; return; }
+  var v = dispHoy(pas, d);
+  if(!v){ S.horarios[wk][pas.id][dk]='libre'; return; }
+  // Asignar en el turno disponible — preferir tarde, luego mañana
+  var soloCocinera = pas.roles.indexOf(ROL_MESERA)<0 && pas.roles.indexOf(ROL_BARISTA)<0;
+  if(soloCocinera){
+    // Pastelera pura: asignar en su rol pastelería
+    if(puedeFranja(v,'T')){
+      asignar(pas, 'T', ROL_PASTELERA);
+    } else if(puedeFranja(v,'M')){
+      asignar(pas, 'M', ROL_PASTELERA);
     } else {
-      var entrada2= Math.max(a, 780);  // mín 13:00
-      var salida2 = Math.min(b, 1320); // máx 22:00 (horas extra permitidas)
-      var r2=recortar7h(fmtMin(entrada2), fmtMin(salida2));
-      return r2;
+      S.horarios[wk][pas.id][dk]='libre';
     }
   }
+  // Pastelera con r1 (Martha): ya manejada en Paso 1, no tocar aquí
+});
 
-  // ¿Puede trabajar la franja indicada?
-  function puedeFranja(v, fr){
-    if(fr==='M') return cubreM(v.desde, v.hasta);
-    if(fr==='T') return cubreT(v.desde, v.hasta);
-    return false;
+var pasSinAsig = pasteleras.filter(function(p){
+  return !S.horarios[wk][p.id] || S.horarios[wk][p.id][dk]===undefined;
+});
+var candidatos = front.concat(polSinAsig).concat(grupoApoyo).concat(pasSinAsig);
+
+// Para cada candidato calcular en qué slots puede trabajar
+function slotsDisp(e){
+  if(!puedeHoy(e)) return [];
+  var v=dispHoy(e,d);
+  if(!v) return [];
+  var pM=puedeFranja(v,'M'), pT=puedeFranja(v,'T');
+  var r2=e.roles.indexOf(ROL_MESERA)>=0, r3=e.roles.indexOf(ROL_BARISTA)>=0;
+  var r6=e.roles.indexOf(ROL_PASTELERA)>=0;
+  var res=[];
+  if(r2){ if(pM) res.push({fr:'M',rol:ROL_MESERA}); if(pT) res.push({fr:'T',rol:ROL_MESERA}); }
+  if(r3){ if(pM) res.push({fr:'M',rol:ROL_BARISTA}); if(pT) res.push({fr:'T',rol:ROL_BARISTA}); }
+  if(!r2&&!r3&&r6){ if(pT) res.push({fr:'T',rol:ROL_PASTELERA}); else if(pM) res.push({fr:'M',rol:ROL_PASTELERA}); }
+  if(!r2&&!r3&&!r6){ if(pT) res.push({fr:'T',rol:e.roles[0]||'r4'}); else if(pM) res.push({fr:'M',rol:e.roles[0]||'r4'}); }
+  return res;
+}
+
+// Slots objetivo (lo que falta cubrir), ordenados por urgencia
+// Urgencia: mañana y tarde tienen igual peso, pero cubrimos todos los que podamos
+var slotsObj = [
+  {fr:'M', rol:ROL_MESERA,  key:'mesera.M'},
+  {fr:'M', rol:ROL_BARISTA, key:'barista.M'},
+  {fr:'T', rol:ROL_MESERA,  key:'mesera.T'},
+  {fr:'T', rol:ROL_BARISTA, key:'barista.T'},
+].filter(function(s){
+  return !cub[s.rol===ROL_MESERA?'mesera':'barista'][s.fr];
+});
+
+// Ordenar candidatos: menos opciones primero (más inflexibles → asignar antes)
+candidatos.sort(function(a,b){
+  return slotsDisp(a).length - slotsDisp(b).length;
+});
+
+// Para cada candidato elegir el slot que cubra la necesidad MÁS URGENTE
+// "Más urgente" = el slot donde hay menos candidatos que puedan cubrirlo
+function candidatosPorSlot(slot, restantes){
+  return restantes.filter(function(e){
+    return slotsDisp(e).some(function(s){ return s.fr===slot.fr && s.rol===slot.rol; });
+  });
+}
+
+candidatos.forEach(function(e){
+  if(!puedeHoy(e)){ S.horarios[wk][e.id][dk]='libre'; return; }
+  if(S.horarios[wk][e.id] && S.horarios[wk][e.id][dk]!==undefined) return;
+
+  var slots = slotsDisp(e);
+  if(!slots.length){ S.horarios[wk][e.id][dk]='libre'; return; }
+
+  // Filtrar solo los slots que aún no están cubiertos
+  var pendientes = slots.filter(function(s){
+    var k = s.rol===ROL_MESERA?'mesera':s.rol===ROL_BARISTA?'barista':null;
+    if(!k) return true; // apoyo/pastelera → siempre
+    return !cub[k][s.fr];
+  });
+
+  if(!pendientes.length){
+    // Todos los slots que puede ya están cubiertos → libre
+    S.horarios[wk][e.id][dk]='libre'; return;
   }
 
-  // ── Clasificar empleados ─────────────────────────────────────────────────
-  var pasteleras   = activas.filter(function(e){ return e.roles.indexOf(ROL_PASTELERA)>=0; });
-  var polivalentes = activas.filter(function(e){
-    return e.roles.indexOf(ROL_COCINA)>=0
-      && (e.roles.indexOf(ROL_MESERA)>=0||e.roles.indexOf(ROL_BARISTA)>=0)
-      && e.roles.indexOf(ROL_PASTELERA)<0;
-  });
-  var soloCocineras= activas.filter(function(e){
-    return e.roles.indexOf(ROL_COCINA)>=0
-      && e.roles.indexOf(ROL_MESERA)<0 && e.roles.indexOf(ROL_BARISTA)<0
-      && e.roles.indexOf(ROL_PASTELERA)<0;
-  });
-  var front        = activas.filter(function(e){
-    return e.roles.indexOf(ROL_PASTELERA)<0 && e.roles.indexOf(ROL_COCINA)<0
-      && (e.roles.indexOf(ROL_MESERA)>=0||e.roles.indexOf(ROL_BARISTA)>=0);
-  });
-  var yaClasif = pasteleras.concat(polivalentes).concat(soloCocineras).concat(front);
-  var grupoApoyo   = activas.filter(function(e){ return yaClasif.indexOf(e)<0; });
-
-  // ── Descanso rotativo — solo si NO tiene ya días libres fijos ──────────────
-  // (evita que Martha/Sisley/etc. acumulen un 3er descanso encima de los fijos)
-  var descRot={}, rotDias=[1,2,3,4,5];
-  activas.forEach(function(e,idx){
-    // Contar días que ya tiene libres por perfil (descansos fijos + dispSemanal.libre)
-    var diasLibresFijos = (e.descansos||[]).length;
-    var diasLibresDisp  = Object.values(e.dispSemanal||{}).filter(function(v){ return v && v.libre; }).length;
-    var totalLibres = Math.max(diasLibresFijos, diasLibresDisp);
-    // Si ya tiene al menos 1 día libre registrado → no necesita rotativo
-    if(totalLibres >= 1) return;
-    var cnt=0; for(var dd=0;dd<7;dd++){ if(dispHoy(e,dd)) cnt++; }
-    if(cnt<6) return;
-    var intentos=0, dia=rotDias[(wkNum+idx)%rotDias.length];
-    while(intentos<5){
-      var conf=soloCocineras.indexOf(e)>=0&&soloCocineras.some(function(c){
-        return c.id!==e.id&&descRot[c.id]===dia;
-      });
-      if(!conf) break;
-      intentos++; dia=rotDias[(wkNum+idx+intentos)%rotDias.length];
-    }
-    descRot[e.id]=dia;
+  // Elegir el slot más urgente: el que tiene MENOS candidatos restantes capaces de cubrirlo
+  var restantes = candidatos.filter(function(x){
+    return !S.horarios[wk][x.id] || S.horarios[wk][x.id][dk]===undefined;
   });
 
-  activas.forEach(function(e){ if(!S.horarios[wk][e.id]) S.horarios[wk][e.id]={}; });
-
-  // ── Novedades auto generadas por falta de cobertura ─────────────────────
-  // (se limpian las auto-generadas anteriores de esta semana antes de regenerar)
-  S.novedades = S.novedades.filter(function(n){
-    return !(n.tipo==='ausencia' && n.semKey===wk && n.auto===true);
+  var mejorSlot = null, menorCandidatos = 9999;
+  pendientes.forEach(function(s){
+    var cnt = candidatosPorSlot(s, restantes).length;
+    if(cnt < menorCandidatos){ menorCandidatos=cnt; mejorSlot=s; }
   });
 
-  // ── Asignación día a día ─────────────────────────────────────────────────
-  for(var d=0; d<7; d++){
-    var dk=String(d);
-    var f=new Date(lunes); f.setDate(lunes.getDate()+d);
-    var fs=f.toISOString().slice(0,10);
+  if(!mejorSlot) mejorSlot = pendientes[0];
 
-    function bloqueado(e){
-      return S.novedades.some(function(n){
-        return n.empId===e.id&&n.fi<=fs&&(n.ff||n.fi)>=fs
-          &&['incapacidad','vacaciones','calamidad','ausencia'].indexOf(n.tipo)>=0
-          &&!n.auto;
-      });
-    }
-    function descansaHoy(e){ return descRot[e.id]===d||(e.descansos&&e.descansos.indexOf(d)>=0); }
-    function puedeHoy(e){ return !bloqueado(e)&&!descansaHoy(e)&&!!dispHoy(e,d); }
-
-    // ── TRACKER de cobertura por franja ─────────────────────────────────
-    // Cada franja (M y T) necesita: 1 Cocina + 1 Mesera + 1 Barista
-    var cub = {
-      cocina:    {M:null, T:null},
-      mesera:    {M:null, T:null},
-      barista:   {M:null, T:null},
-      pastelera: {M:null, T:null}  // rastreo adicional de pastelería
-    };
-
-    // Guardar turno helper
-    function asignar(e, fr, rol){
-      var v = dispHoy(e,d);
-      var h = horasFranja(v.desde, v.hasta, fr);
-      // Validar que las horas son coherentes (mín 2h)
-      if(toMin(h.hasta)-toMin(h.desde) < 120){
-        S.horarios[wk][e.id][dk]='libre'; return false;
-      }
-      S.horarios[wk][e.id][dk]='partido:'+h.desde+'-'+h.hasta+'|'+rol;
-      var cubKey = rol==='r1'?'cocina':rol==='r2'?'mesera':rol==='r3'?'barista':rol==='r6'?'pastelera':'otro';
-      if(cub[cubKey]) cub[cubKey][fr]=e.id;
-      return true;
-    }
-
-    // ═══════════════════════════════════════════════════════════════════
-    // PASO 1 — COCINA: garantizar 1 cocinero en M y 1 en T
-    // ═══════════════════════════════════════════════════════════════════
-    //
-    // Estrategia:
-    //   a) Cocineras puras: alternar semana a semana quién va a M y quién a T
-    //   b) Si alguna franja queda sin cubrir → polivalentes → pasteleras (si tienen r1)
-    //   c) Si aun así falta → novedad automática
-
-    // Ordenar cocineras puras alternando cada semana
-    var cocList = (wkNum%2===0) ? soloCocineras.slice() : soloCocineras.slice().reverse();
-
-    // Intentar cubrir M primero con la primera cocinera disponible, T con la segunda
-    // Pero si la primera solo puede T (no disponible mañana), va a T
-    cocList.forEach(function(coc){
-      if(!puedeHoy(coc)){ S.horarios[wk][coc.id][dk]='libre'; return; }
-      var v=dispHoy(coc,d);
-      // Determinar a qué franja asignarla para complementar la otra
-      // Prioridad: cubrir la franja que aún no tiene cocinero
-      if(!cub.cocina.M && puedeFranja(v,'M') && cub.cocina.T){
-        // Tarde ya cubierta, cubrir mañana
-        asignar(coc,'M',ROL_COCINA);
-      } else if(!cub.cocina.T && puedeFranja(v,'T') && cub.cocina.M){
-        // Mañana ya cubierta, cubrir tarde
-        asignar(coc,'T',ROL_COCINA);
-      } else if(!cub.cocina.M && puedeFranja(v,'M')){
-        // Nadie aún, asignar mañana (la siguiente irá a tarde)
-        asignar(coc,'M',ROL_COCINA);
-      } else if(!cub.cocina.T && puedeFranja(v,'T')){
-        // Mañana ya tomada, asignar tarde
-        asignar(coc,'T',ROL_COCINA);
-      } else {
-        // Ambas cubiertas o no puede ninguna franja → libre
-        S.horarios[wk][coc.id][dk]='libre';
-      }
-    });
-
-    // Polivalentes: primero cubrir cocina si falta
-    polivalentes.forEach(function(pol){
-      if(!puedeHoy(pol)){ S.horarios[wk][pol.id][dk]='libre'; return; }
-      var v=dispHoy(pol,d);
-      if(!cub.cocina.M && puedeFranja(v,'M')){
-        asignar(pol,'M',ROL_COCINA);
-      } else if(!cub.cocina.T && puedeFranja(v,'T')){
-        asignar(pol,'T',ROL_COCINA);
-      }
-      // Si ya se asignó (cocina), no hace nada más aquí
-      // Si no se asignó aún → se asigna en el paso de servicio abajo
-    });
-
-    // Pasteleras con cocina (r1+r6): cubrir si aún falta
-    pasteleras.forEach(function(pas){
-      if(!puedeHoy(pas)){ S.horarios[wk][pas.id][dk]='libre'; return; }
-      if(pas.roles.indexOf(ROL_COCINA)<0) return; // sin cocina, se maneja después
-      var v=dispHoy(pas,d);
-      if(!cub.cocina.M && puedeFranja(v,'M')){
-        asignar(pas,'M',ROL_COCINA);
-      } else if(!cub.cocina.T && puedeFranja(v,'T')){
-        asignar(pas,'T',ROL_COCINA);
-      }
-      // Si no cubrió cocina, se asigna su turno normal abajo
-    });
-
-    // ═══════════════════════════════════════════════════════════════════
-    // ═══════════════════════════════════════════════════════════════════
-    // PASO 2 — SERVICIO: algoritmo de asignación óptima
-    // ═══════════════════════════════════════════════════════════════════
-    //
-    // PROBLEMA del greedy simple: si Karen (r2,r3) puede M y T, y se le
-    // asigna a Tarde primero, Mañana queda sin mesera aunque Karen podía cubrirla.
-    //
-    // SOLUCIÓN: construir la lista de TODOS los slots que hay que cubrir,
-    // luego asignar a las personas MÁS INFLEXIBLES primero (las que solo
-    // pueden UN slot específico), y las polivalentes llenan los huecos.
-    //
-    // Slots a cubrir: M-Mesera, M-Barista, T-Mesera, T-Barista
-    // Empleado inflexible = solo puede 1 combinación de franja+rol
-
-    // Reunir candidatos de servicio (no asignados aún)
-    var polSinAsig = polivalentes.filter(function(p){
-      return !S.horarios[wk][p.id] || S.horarios[wk][p.id][dk]===undefined;
-    });
-    // ═══════════════════════════════════════════════════════════════════
-    // PASO 1.5 — PASTELERAS en su turno propio (si no fueron a cocina)
-    // Regla: pastelera pura (sin r2/r3) trabaja UNA vez al día en rol pastelería
-    // Preferencia: turno tarde; si no puede, mañana
-    // ═══════════════════════════════════════════════════════════════════
-    pasteleras.forEach(function(pas){
-      // Si ya tiene turno asignado (fue a cocina) → no tocar
-      if(S.horarios[wk][pas.id][dk]!==undefined) return;
-      // Si no puede trabajar hoy → libre
-      if(!puedeHoy(pas)){ S.horarios[wk][pas.id][dk]='libre'; return; }
-      var v = dispHoy(pas, d);
-      if(!v){ S.horarios[wk][pas.id][dk]='libre'; return; }
-      // Asignar en el turno disponible — preferir tarde, luego mañana
-      var soloCocinera = pas.roles.indexOf(ROL_MESERA)<0 && pas.roles.indexOf(ROL_BARISTA)<0;
-      if(soloCocinera){
-        // Pastelera pura: asignar en su rol pastelería
-        if(puedeFranja(v,'T')){
-          asignar(pas, 'T', ROL_PASTELERA);
-        } else if(puedeFranja(v,'M')){
-          asignar(pas, 'M', ROL_PASTELERA);
-        } else {
-          S.horarios[wk][pas.id][dk]='libre';
-        }
-      }
-      // Pastelera con r1 (Martha): ya manejada en Paso 1, no tocar aquí
-    });
-
-    var pasSinAsig = pasteleras.filter(function(p){
-      return !S.horarios[wk][p.id] || S.horarios[wk][p.id][dk]===undefined;
-    });
-    var candidatos = front.concat(polSinAsig).concat(grupoApoyo).concat(pasSinAsig);
-
-    // Para cada candidato calcular en qué slots puede trabajar
-    function slotsDisp(e){
-      if(!puedeHoy(e)) return [];
-      var v=dispHoy(e,d);
-      if(!v) return [];
-      var pM=puedeFranja(v,'M'), pT=puedeFranja(v,'T');
-      var r2=e.roles.indexOf(ROL_MESERA)>=0, r3=e.roles.indexOf(ROL_BARISTA)>=0;
-      var r6=e.roles.indexOf(ROL_PASTELERA)>=0;
-      var res=[];
-      if(r2){ if(pM) res.push({fr:'M',rol:ROL_MESERA}); if(pT) res.push({fr:'T',rol:ROL_MESERA}); }
-      if(r3){ if(pM) res.push({fr:'M',rol:ROL_BARISTA}); if(pT) res.push({fr:'T',rol:ROL_BARISTA}); }
-      if(!r2&&!r3&&r6){ if(pT) res.push({fr:'T',rol:ROL_PASTELERA}); else if(pM) res.push({fr:'M',rol:ROL_PASTELERA}); }
-      if(!r2&&!r3&&!r6){ if(pT) res.push({fr:'T',rol:e.roles[0]||'r4'}); else if(pM) res.push({fr:'M',rol:e.roles[0]||'r4'}); }
-      return res;
-    }
-
-    // Slots objetivo (lo que falta cubrir), ordenados por urgencia
-    // Urgencia: mañana y tarde tienen igual peso, pero cubrimos todos los que podamos
-    var slotsObj = [
-      {fr:'M', rol:ROL_MESERA,  key:'mesera.M'},
-      {fr:'M', rol:ROL_BARISTA, key:'barista.M'},
-      {fr:'T', rol:ROL_MESERA,  key:'mesera.T'},
-      {fr:'T', rol:ROL_BARISTA, key:'barista.T'},
-    ].filter(function(s){
-      return !cub[s.rol===ROL_MESERA?'mesera':'barista'][s.fr];
-    });
-
-    // Ordenar candidatos: menos opciones primero (más inflexibles → asignar antes)
-    candidatos.sort(function(a,b){
-      return slotsDisp(a).length - slotsDisp(b).length;
-    });
-
-    // Para cada candidato elegir el slot que cubra la necesidad MÁS URGENTE
-    // "Más urgente" = el slot donde hay menos candidatos que puedan cubrirlo
-    function candidatosPorSlot(slot, restantes){
-      return restantes.filter(function(e){
-        return slotsDisp(e).some(function(s){ return s.fr===slot.fr && s.rol===slot.rol; });
-      });
-    }
-
-    candidatos.forEach(function(e){
-      if(!puedeHoy(e)){ S.horarios[wk][e.id][dk]='libre'; return; }
-      if(S.horarios[wk][e.id] && S.horarios[wk][e.id][dk]!==undefined) return;
-
-      var slots = slotsDisp(e);
-      if(!slots.length){ S.horarios[wk][e.id][dk]='libre'; return; }
-
-      // Filtrar solo los slots que aún no están cubiertos
-      var pendientes = slots.filter(function(s){
-        var k = s.rol===ROL_MESERA?'mesera':s.rol===ROL_BARISTA?'barista':null;
-        if(!k) return true; // apoyo/pastelera → siempre
-        return !cub[k][s.fr];
-      });
-
-      if(!pendientes.length){
-        // Todos los slots que puede ya están cubiertos → libre
-        S.horarios[wk][e.id][dk]='libre'; return;
-      }
-
-      // Elegir el slot más urgente: el que tiene MENOS candidatos restantes capaces de cubrirlo
-      var restantes = candidatos.filter(function(x){
-        return !S.horarios[wk][x.id] || S.horarios[wk][x.id][dk]===undefined;
-      });
-
-      var mejorSlot = null, menorCandidatos = 9999;
-      pendientes.forEach(function(s){
-        var cnt = candidatosPorSlot(s, restantes).length;
-        if(cnt < menorCandidatos){ menorCandidatos=cnt; mejorSlot=s; }
-      });
-
-      if(!mejorSlot) mejorSlot = pendientes[0];
-
-      if(!asignar(e, mejorSlot.fr, mejorSlot.rol)){
-        S.horarios[wk][e.id][dk]='libre';
-      }
-    });
-
-    // ── Sin asignar → libre ─────────────────────────────────────────────
-    activas.forEach(function(e){
-      if(S.horarios[wk][e.id][dk]===undefined) S.horarios[wk][e.id][dk]='libre';
-    });
-
-    // ═══════════════════════════════════════════════════════════════════
-    // PASO 3 — NOVEDADES AUTOMÁTICAS por falta de cobertura
-    // ═══════════════════════════════════════════════════════════════════
-    // ¿Hay pastelera activa que pueda trabajar hoy?
-    var hayPastelera = pasteleras.some(function(p){ return puedeHoy(p); });
-    var faltasM=[], faltasT=[];
-    if(!cub.cocina.M)  faltasM.push('Cocina');
-    if(!cub.mesera.M)  faltasM.push('Mesera');
-    if(!cub.barista.M) faltasM.push('Barista');
-    if(!cub.cocina.T)  faltasT.push('Cocina');
-    if(!cub.mesera.T)  faltasT.push('Mesera');
-    if(!cub.barista.T) faltasT.push('Barista');
-    // Novedad de pastelería: solo si hay pastelera activa y no fue asignada en ninguna franja
-    if(hayPastelera && !cub.pastelera.M && !cub.pastelera.T && !cub.cocina.M && !cub.cocina.T){
-      faltasT.push('Pastelería');
-    }
-
-    function crearNovAuto(turno, roles){
-      var id='auto_'+wk+'_d'+d+'_'+turno+'_'+Date.now()+'_'+Math.random().toString(36).slice(2,6);
-      var txtRoles = roles.join(', ');
-      S.novedades.push({
-        id:id, empId:'', semKey:wk, fi:fs, ff:fs,
-        tipo:'ausencia',
-        desc:'⚠️ Sin cobertura '+turno+' — '+txtRoles+' ('+DIAS_N[d]+')',
-        obs: '⚠️ SIN COBERTURA '+turno+': '+txtRoles+' — '+DIAS_N[d],
-        estado:'pendiente',
-        soporte:'pendiente',
-        auto:true
-      });
-    }
-    if(faltasM.length) crearNovAuto('MAÑANA', faltasM);
-    if(faltasT.length) crearNovAuto('TARDE',  faltasT);
+  if(!asignar(e, mejorSlot.fr, mejorSlot.rol)){
+    S.horarios[wk][e.id][dk]='libre';
   }
+});
 
-  saveState();
-  renderHor();
-  toast('✅ Horario generado');
+// ── Sin asignar → libre ─────────────────────────────────────────────
+activas.forEach(function(e){
+  if(S.horarios[wk][e.id][dk]===undefined) S.horarios[wk][e.id][dk]='libre';
+});
+
+// ═══════════════════════════════════════════════════════════════════
+// PASO 3 — NOVEDADES AUTOMÁTICAS por falta de cobertura
+// ═══════════════════════════════════════════════════════════════════
+// ¿Hay pastelera activa que pueda trabajar hoy?
+var hayPastelera = pasteleras.some(function(p){ return puedeHoy(p); });
+var faltasM=[], faltasT=[];
+if(!cub.cocina.M)  faltasM.push('Cocina');
+if(!cub.mesera.M)  faltasM.push('Mesera');
+if(!cub.barista.M) faltasM.push('Barista');
+if(!cub.cocina.T)  faltasT.push('Cocina');
+if(!cub.mesera.T)  faltasT.push('Mesera');
+if(!cub.barista.T) faltasT.push('Barista');
+// Novedad de pastelería: solo si hay pastelera activa y no fue asignada en ninguna franja
+if(hayPastelera && !cub.pastelera.M && !cub.pastelera.T && !cub.cocina.M && !cub.cocina.T){
+  faltasT.push('Pastelería');
+}
+
+function crearNovAuto(turno, roles){
+  var id='auto_'+wk+'_d'+d+'_'+turno+'_'+Date.now()+'_'+Math.random().toString(36).slice(2,6);
+  var txtRoles = roles.join(', ');
+  S.novedades.push({
+    id:id, empId:'', semKey:wk, fi:fs, ff:fs,
+    tipo:'ausencia',
+    desc:'⚠️ Sin cobertura '+turno+' — '+txtRoles+' ('+DIAS_N[d]+')',
+    obs: '⚠️ SIN COBERTURA '+turno+': '+txtRoles+' — '+DIAS_N[d],
+    estado:'pendiente',
+    soporte:'pendiente',
+    auto:true
+  });
+}
+if(faltasM.length) crearNovAuto('MAÑANA', faltasM);
+if(faltasT.length) crearNovAuto('TARDE',  faltasT);
+```
+
+}
+
+saveState();
+renderHor();
+toast(‘✅ Horario generado’);
 });
 
 // ══════ NOVEDADES ══════
 function renderNovs(){
-  var fe=document.getElementById('f-emp'), cv=fe.value;
-  fe.innerHTML='<option value="">Todas las empleadas</option>'
-    +S.empleadas.map(function(e){ return '<option value="'+e.id+'">'+e.nombre.split(' ').slice(0,2).join(' ')+'</option>'; }).join('');
-  fe.value=cv;
-  var fs=document.getElementById('f-semana'), sv=fs.value;
-  var sems=[]; S.novedades.forEach(function(n){ if(sems.indexOf(n.semKey)<0) sems.push(n.semKey); }); sems.sort().reverse();
-  fs.innerHTML='<option value="">Todas las semanas</option>'+sems.map(function(s){ return '<option value="'+s+'">'+s+'</option>'; }).join('');
-  fs.value=sv;
-  var novs=S.novedades.slice().sort(function(a,b){ return b.fi.localeCompare(a.fi); });
-  if(fs.value) novs=novs.filter(function(n){ return n.semKey===fs.value; });
-  var ft=document.getElementById('f-tipo').value; if(ft) novs=novs.filter(function(n){ return n.tipo===ft; });
-  if(fe.value) novs=novs.filter(function(n){
-    // Las novedades auto (empId vacío) se muestran siempre, no se filtran por empleada
-    return n.empId===fe.value || (!n.empId && n.auto);
-  });
-  var fst=document.getElementById('f-estado').value; if(fst) novs=novs.filter(function(n){ return n.estado===fst; });
-  var list=document.getElementById('nov-list');
-  list.innerHTML=novs.length===0
-    ?'<div class="empty"><div class="empty-ico">📋</div>No hay novedades con esos filtros</div>'
-    :novs.map(function(n){
-        var e=getEmp(n.empId);
-        return '<div class="nov-item">'
-          +'<div style="flex:1">'
-          +'<div style="font-weight:600;font-size:15px;margin-bottom:4px">'+(e?e.nombre:'—')+'</div>'
-          +'<span class="tag '+(TIPO_TAG[n.tipo]||'t-nov')+'">'+(TIPOS[n.tipo]||n.tipo)+'</span>'
-          +'<span class="tag '+(EST_TAG[n.estado]||'t-gris')+'">'+(EST_LBL[n.estado]||n.estado)+'</span>'
-          +'<div style="font-size:13px;margin-top:6px">'+(n.desc||n.obs||'Sin descripción')+'</div>'
-          +'<div class="small" style="margin-top:5px">📅 '+n.fi+(n.ff&&n.ff!==n.fi?' → '+n.ff:'')
-            +(n.hi?' · ⏰ '+n.hi+(n.hf?' – '+n.hf:''):'')
-            +' · Soporte: '+(n.soporte==='si'?'✅ Sí':n.soporte==='no'?'❌ No':n.soporte==='pendiente'?'⏳':'—')+'</div>'
-          +'<div class="small">Semana: '+n.semKey+'</div>'
-          +'</div>'
-          +'<div style="display:flex;flex-direction:column;gap:6px;flex-shrink:0">'
-          +'<button class="btn btn-sm btn-outline" data-nid="'+n.id+'" data-action="edit">✏️</button>'
-          +'<button class="btn btn-sm btn-danger" data-nid="'+n.id+'" data-action="del">🗑️</button>'
-          +'</div></div>';
-      }).join('');
+var fe=document.getElementById(‘f-emp’), cv=fe.value;
+fe.innerHTML=’<option value="">Todas las empleadas</option>’
++S.empleadas.map(function(e){ return ‘<option value="'+e.id+'">’+e.nombre.split(’ ‘).slice(0,2).join(’ ‘)+’</option>’; }).join(’’);
+fe.value=cv;
+var fs=document.getElementById(‘f-semana’), sv=fs.value;
+var sems=[]; S.novedades.forEach(function(n){ if(sems.indexOf(n.semKey)<0) sems.push(n.semKey); }); sems.sort().reverse();
+fs.innerHTML=’<option value="">Todas las semanas</option>’+sems.map(function(s){ return ‘<option value="'+s+'">’+s+’</option>’; }).join(’’);
+fs.value=sv;
+var novs=S.novedades.slice().sort(function(a,b){ return b.fi.localeCompare(a.fi); });
+if(fs.value) novs=novs.filter(function(n){ return n.semKey===fs.value; });
+var ft=document.getElementById(‘f-tipo’).value; if(ft) novs=novs.filter(function(n){ return n.tipo===ft; });
+if(fe.value) novs=novs.filter(function(n){
+// Las novedades auto (empId vacío) se muestran siempre, no se filtran por empleada
+return n.empId===fe.value || (!n.empId && n.auto);
+});
+var fst=document.getElementById(‘f-estado’).value; if(fst) novs=novs.filter(function(n){ return n.estado===fst; });
+var list=document.getElementById(‘nov-list’);
+list.innerHTML=novs.length===0
+?’<div class="empty"><div class="empty-ico">📋</div>No hay novedades con esos filtros</div>’
+:novs.map(function(n){
+var e=getEmp(n.empId);
+return ‘<div class="nov-item">’
++’<div style="flex:1">’
++’<div style="font-weight:600;font-size:15px;margin-bottom:4px">’+(e?e.nombre:’—’)+’</div>’
++’<span class="tag '+(TIPO_TAG[n.tipo]||'t-nov')+'">’+(TIPOS[n.tipo]||n.tipo)+’</span>’
++’<span class="tag '+(EST_TAG[n.estado]||'t-gris')+'">’+(EST_LBL[n.estado]||n.estado)+’</span>’
++’<div style="font-size:13px;margin-top:6px">’+(n.desc||n.obs||‘Sin descripción’)+’</div>’
++’<div class="small" style="margin-top:5px">📅 ‘+n.fi+(n.ff&&n.ff!==n.fi?’ → ‘+n.ff:’’)
++(n.hi?’ · ⏰ ‘+n.hi+(n.hf?’ – ‘+n.hf:’’):’’)
++’ · Soporte: ‘+(n.soporte===‘si’?‘✅ Sí’:n.soporte===‘no’?‘❌ No’:n.soporte===‘pendiente’?‘⏳’:’—’)+’</div>’
++’<div class="small">Semana: ‘+n.semKey+’</div>’
++’</div>’
++’<div style="display:flex;flex-direction:column;gap:6px;flex-shrink:0">’
++’<button class="btn btn-sm btn-outline" data-nid="'+n.id+'" data-action="edit">✏️</button>’
++’<button class="btn btn-sm btn-danger" data-nid="'+n.id+'" data-action="del">🗑️</button>’
++’</div></div>’;
+}).join(’’);
 }
 
 function openNovModal(id){
-  document.getElementById('m-nov-title').textContent = id ? '✏️ Editar Novedad' : '📋 Registrar Novedad';
-  document.getElementById('ni').value = id||'';
-  document.getElementById('n-emp').innerHTML =
-    S.empleadas.map(function(e){ return '<option value="'+e.id+'">'+e.nombre+'</option>'; }).join('');
-  var hoy=new Date().toISOString().slice(0,10);
-  var wk=weekKey(S.weekOff);
-  var l=getLunes(S.weekOff), dm=new Date(l); dm.setDate(l.getDate()+6);
-  document.getElementById('n-semref').value = fmtDate(l)+' – '+fmtDate(dm)+' '+l.getFullYear()+' ('+wk+')';
-  var n = id ? S.novedades.find(function(x){ return x.id===id; }) : null;
-  document.getElementById('n-tipo').value    = n ? n.tipo : 'cita_medica';
-  document.getElementById('n-emp').value     = n ? n.empId : (S.empleadas[0]?S.empleadas[0].id:'');
-  document.getElementById('n-fi').value      = n ? n.fi : hoy;
-  document.getElementById('n-ff').value      = n ? (n.ff||'') : '';
-  document.getElementById('n-hi').value      = n ? (n.hi||'') : '';
-  document.getElementById('n-hf').value      = n ? (n.hf||'') : '';
-  document.getElementById('n-desc').value    = n ? n.desc : '';
-  document.getElementById('n-soporte').value = n ? n.soporte : 'pendiente';
-  document.getElementById('n-estado').value  = n ? n.estado : 'pendiente';
-  if(n&&n.semRef) document.getElementById('n-semref').value=n.semRef;
-  updateNovFields(); openModal('m-nov');
+document.getElementById(‘m-nov-title’).textContent = id ? ‘✏️ Editar Novedad’ : ‘📋 Registrar Novedad’;
+document.getElementById(‘ni’).value = id||’’;
+document.getElementById(‘n-emp’).innerHTML =
+S.empleadas.map(function(e){ return ‘<option value="'+e.id+'">’+e.nombre+’</option>’; }).join(’’);
+var hoy=new Date().toISOString().slice(0,10);
+var wk=weekKey(S.weekOff);
+var l=getLunes(S.weekOff), dm=new Date(l); dm.setDate(l.getDate()+6);
+document.getElementById(‘n-semref’).value = fmtDate(l)+’ – ‘+fmtDate(dm)+’ ‘+l.getFullYear()+’ (’+wk+’)’;
+var n = id ? S.novedades.find(function(x){ return x.id===id; }) : null;
+document.getElementById(‘n-tipo’).value    = n ? n.tipo : ‘cita_medica’;
+document.getElementById(‘n-emp’).value     = n ? n.empId : (S.empleadas[0]?S.empleadas[0].id:’’);
+document.getElementById(‘n-fi’).value      = n ? n.fi : hoy;
+document.getElementById(‘n-ff’).value      = n ? (n.ff||’’) : ‘’;
+document.getElementById(‘n-hi’).value      = n ? (n.hi||’’) : ‘’;
+document.getElementById(‘n-hf’).value      = n ? (n.hf||’’) : ‘’;
+document.getElementById(‘n-desc’).value    = n ? n.desc : ‘’;
+document.getElementById(‘n-soporte’).value = n ? n.soporte : ‘pendiente’;
+document.getElementById(‘n-estado’).value  = n ? n.estado : ‘pendiente’;
+if(n&&n.semRef) document.getElementById(‘n-semref’).value=n.semRef;
+updateNovFields(); openModal(‘m-nov’);
 }
 
 function updateNovFields(){
-  var t=document.getElementById('n-tipo').value;
-  document.getElementById('n-horas-wrap').style.display =
-    ['llegada_tarde','salida_temprana','cita_medica','cambio_turno'].indexOf(t)>=0 ? 'block' : 'none';
+var t=document.getElementById(‘n-tipo’).value;
+document.getElementById(‘n-horas-wrap’).style.display =
+[‘llegada_tarde’,‘salida_temprana’,‘cita_medica’,‘cambio_turno’].indexOf(t)>=0 ? ‘block’ : ‘none’;
 }
-document.getElementById('n-tipo').addEventListener('change', updateNovFields);
+document.getElementById(‘n-tipo’).addEventListener(‘change’, updateNovFields);
 
 function saveNov(){
-  var empId=document.getElementById('n-emp').value;
-  var fi=document.getElementById('n-fi').value;
-  var desc=document.getElementById('n-desc').value.trim();
-  if(!empId||!fi||!desc){ toast('Completa los campos obligatorios','err'); return; }
-  var hi=document.getElementById('n-hi').value, hf=document.getElementById('n-hf').value;
-  if(hi&&hi<'08:00'){ toast('Hora inicio no puede ser antes de las 8:00 AM','err'); return; }
-  if(hf&&hf>'20:00'){ toast('Hora fin no puede ser después de las 8:00 PM','err'); return; }
-  var fd=new Date(fi), dn=fd.getUTCDay()||7; fd.setUTCDate(fd.getUTCDate()+4-dn);
-  var ys=new Date(Date.UTC(fd.getUTCFullYear(),0,1));
-  var wn=Math.ceil((((fd-ys)/86400000)+1)/7);
-  var semKey=new Date(fi).getFullYear()+'-S'+String(wn).padStart(2,'0');
-  var id=document.getElementById('ni').value;
-  var obj={
-    id:id||uid(), empId:empId,
-    tipo:document.getElementById('n-tipo').value,
-    fi:fi, ff:document.getElementById('n-ff').value||fi,
-    hi:hi, hf:hf, desc:desc,
-    soporte:document.getElementById('n-soporte').value,
-    estado:document.getElementById('n-estado').value,
-    semKey:semKey, semRef:document.getElementById('n-semref').value,
-  };
-  if(id){ var i=S.novedades.findIndex(function(n){ return n.id===id; }); S.novedades[i]=obj; toast('Novedad actualizada ✓'); }
-  else { S.novedades.push(obj); toast('Novedad registrada ✓'); }
-  saveState(); closeModal('m-nov'); renderNovs(); renderDash();
+var empId=document.getElementById(‘n-emp’).value;
+var fi=document.getElementById(‘n-fi’).value;
+var desc=document.getElementById(‘n-desc’).value.trim();
+if(!empId||!fi||!desc){ toast(‘Completa los campos obligatorios’,‘err’); return; }
+var hi=document.getElementById(‘n-hi’).value, hf=document.getElementById(‘n-hf’).value;
+if(hi&&hi<‘08:00’){ toast(‘Hora inicio no puede ser antes de las 8:00 AM’,‘err’); return; }
+if(hf&&hf>‘20:00’){ toast(‘Hora fin no puede ser después de las 8:00 PM’,‘err’); return; }
+var fd=new Date(fi), dn=fd.getUTCDay()||7; fd.setUTCDate(fd.getUTCDate()+4-dn);
+var ys=new Date(Date.UTC(fd.getUTCFullYear(),0,1));
+var wn=Math.ceil((((fd-ys)/86400000)+1)/7);
+var semKey=new Date(fi).getFullYear()+’-S’+String(wn).padStart(2,‘0’);
+var id=document.getElementById(‘ni’).value;
+var obj={
+id:id||uid(), empId:empId,
+tipo:document.getElementById(‘n-tipo’).value,
+fi:fi, ff:document.getElementById(‘n-ff’).value||fi,
+hi:hi, hf:hf, desc:desc,
+soporte:document.getElementById(‘n-soporte’).value,
+estado:document.getElementById(‘n-estado’).value,
+semKey:semKey, semRef:document.getElementById(‘n-semref’).value,
+};
+if(id){ var i=S.novedades.findIndex(function(n){ return n.id===id; }); S.novedades[i]=obj; toast(‘Novedad actualizada ✓’); }
+else { S.novedades.push(obj); toast(‘Novedad registrada ✓’); }
+saveState(); closeModal(‘m-nov’); renderNovs(); renderDash();
 }
 
-document.getElementById('nov-list').addEventListener('click', function(ev){
-  var btn=ev.target.closest('[data-action]'); if(!btn) return;
-  var nid=btn.dataset.nid, action=btn.dataset.action;
-  if(action==='edit') openNovModal(nid);
-  if(action==='del'){
-    if(!confirm('¿Eliminar esta novedad?')) return;
-    S.novedades=S.novedades.filter(function(n){ return n.id!==nid; });
-    saveState(); toast('Novedad eliminada'); renderNovs(); renderDash();
-  }
+document.getElementById(‘nov-list’).addEventListener(‘click’, function(ev){
+var btn=ev.target.closest(’[data-action]’); if(!btn) return;
+var nid=btn.dataset.nid, action=btn.dataset.action;
+if(action===‘edit’) openNovModal(nid);
+if(action===‘del’){
+if(!confirm(’¿Eliminar esta novedad?’)) return;
+S.novedades=S.novedades.filter(function(n){ return n.id!==nid; });
+saveState(); toast(‘Novedad eliminada’); renderNovs(); renderDash();
+}
 });
-['f-semana','f-tipo','f-emp','f-estado'].forEach(function(id){
-  document.getElementById(id).addEventListener('change', renderNovs);
+[‘f-semana’,‘f-tipo’,‘f-emp’,‘f-estado’].forEach(function(id){
+document.getElementById(id).addEventListener(‘change’, renderNovs);
 });
-document.getElementById('btn-nueva-nov').addEventListener('click', function(){ openNovModal(null); });
-document.getElementById('btn-save-nov').addEventListener('click', saveNov);
+document.getElementById(‘btn-nueva-nov’).addEventListener(‘click’, function(){ openNovModal(null); });
+document.getElementById(‘btn-save-nov’).addEventListener(‘click’, saveNov);
 
 // ══════ ROLES ══════
 function renderRoles(){
-  document.getElementById('rol-list').innerHTML = S.roles.map(function(r){
-    return '<div class="rol-item">'
-      +'<div style="display:flex;align-items:center;gap:10px">'
-      +'<div style="width:14px;height:14px;border-radius:50%;background:'+r.color+';flex-shrink:0"></div>'
-      +'<div><div style="font-weight:600">'+r.nombre+'</div><div class="small">'+(r.desc||'')+'</div></div>'
-      +'</div>'
-      +'<div style="display:flex;gap:6px">'
-      +'<button class="btn btn-sm btn-outline" data-rid="'+r.id+'" data-action="edit">✏️</button>'
-      +'<button class="btn btn-sm btn-danger" data-rid="'+r.id+'" data-action="del">🗑️</button>'
-      +'</div></div>';
-  }).join('');
+document.getElementById(‘rol-list’).innerHTML = S.roles.map(function(r){
+return ‘<div class="rol-item">’
++’<div style="display:flex;align-items:center;gap:10px">’
++’<div style="width:14px;height:14px;border-radius:50%;background:'+r.color+';flex-shrink:0"></div>’
++’<div><div style="font-weight:600">’+r.nombre+’</div><div class="small">’+(r.desc||’’)+’</div></div>’
++’</div>’
++’<div style="display:flex;gap:6px">’
++’<button class="btn btn-sm btn-outline" data-rid="'+r.id+'" data-action="edit">✏️</button>’
++’<button class="btn btn-sm btn-danger" data-rid="'+r.id+'" data-action="del">🗑️</button>’
++’</div></div>’;
+}).join(’’);
 }
 
 function openRolModal(id){
-  document.getElementById('m-rol-title').textContent = id ? '✏️ Editar Cargo' : '🏷️ Nuevo Cargo';
-  document.getElementById('ri').value = id||'';
-  var r = id ? S.roles.find(function(x){ return x.id===id; }) : null;
-  document.getElementById('r-nombre').value = r ? r.nombre : '';
-  document.getElementById('r-desc').value   = r ? (r.desc||'') : '';
-  document.getElementById('r-color').value  = r ? r.color : '#4A2C17';
-  openModal('m-rol');
+document.getElementById(‘m-rol-title’).textContent = id ? ‘✏️ Editar Cargo’ : ‘🏷️ Nuevo Cargo’;
+document.getElementById(‘ri’).value = id||’’;
+var r = id ? S.roles.find(function(x){ return x.id===id; }) : null;
+document.getElementById(‘r-nombre’).value = r ? r.nombre : ‘’;
+document.getElementById(‘r-desc’).value   = r ? (r.desc||’’) : ‘’;
+document.getElementById(‘r-color’).value  = r ? r.color : ‘#4A2C17’;
+openModal(‘m-rol’);
 }
 
 function saveRol(){
-  var nombre=document.getElementById('r-nombre').value.trim();
-  if(!nombre){ toast('Nombre del cargo requerido','err'); return; }
-  var id=document.getElementById('ri').value;
-  var obj={id:id||uid(),nombre:nombre,desc:document.getElementById('r-desc').value.trim(),color:document.getElementById('r-color').value};
-  if(id){ var i=S.roles.findIndex(function(r){ return r.id===id; }); S.roles[i]=obj; toast('Cargo actualizado ✓'); }
-  else { S.roles.push(obj); toast('Cargo creado ✓'); }
-  saveState(); closeModal('m-rol'); renderRoles();
+var nombre=document.getElementById(‘r-nombre’).value.trim();
+if(!nombre){ toast(‘Nombre del cargo requerido’,‘err’); return; }
+var id=document.getElementById(‘ri’).value;
+var obj={id:id||uid(),nombre:nombre,desc:document.getElementById(‘r-desc’).value.trim(),color:document.getElementById(‘r-color’).value};
+if(id){ var i=S.roles.findIndex(function(r){ return r.id===id; }); S.roles[i]=obj; toast(‘Cargo actualizado ✓’); }
+else { S.roles.push(obj); toast(‘Cargo creado ✓’); }
+saveState(); closeModal(‘m-rol’); renderRoles();
 }
 
-document.getElementById('rol-list').addEventListener('click', function(ev){
-  var btn=ev.target.closest('[data-action]'); if(!btn) return;
-  var rid=btn.dataset.rid, action=btn.dataset.action;
-  if(action==='edit') openRolModal(rid);
-  if(action==='del'){
-    if(S.empleadas.some(function(e){ return e.roles&&e.roles.indexOf(rid)>=0; })){ toast('Este cargo está asignado a empleadas activas','err'); return; }
-    if(!confirm('¿Eliminar este cargo?')) return;
-    S.roles=S.roles.filter(function(r){ return r.id!==rid; });
-    saveState(); toast('Cargo eliminado'); renderRoles();
-  }
+document.getElementById(‘rol-list’).addEventListener(‘click’, function(ev){
+var btn=ev.target.closest(’[data-action]’); if(!btn) return;
+var rid=btn.dataset.rid, action=btn.dataset.action;
+if(action===‘edit’) openRolModal(rid);
+if(action===‘del’){
+if(S.empleadas.some(function(e){ return e.roles&&e.roles.indexOf(rid)>=0; })){ toast(‘Este cargo está asignado a empleadas activas’,‘err’); return; }
+if(!confirm(’¿Eliminar este cargo?’)) return;
+S.roles=S.roles.filter(function(r){ return r.id!==rid; });
+saveState(); toast(‘Cargo eliminado’); renderRoles();
+}
 });
-document.getElementById('btn-nuevo-rol').addEventListener('click', function(){ openRolModal(null); });
-document.getElementById('btn-save-rol').addEventListener('click', saveRol);
+document.getElementById(‘btn-nuevo-rol’).addEventListener(‘click’, function(){ openRolModal(null); });
+document.getElementById(‘btn-save-rol’).addEventListener(‘click’, saveRol);
 
 // ══════ CIERRE MODALES ══════
-document.querySelectorAll('.overlay').forEach(function(o){
-  o.addEventListener('click', function(e){ if(e.target===o) o.classList.remove('open'); });
+document.querySelectorAll(’.overlay’).forEach(function(o){
+o.addEventListener(‘click’, function(e){ if(e.target===o) o.classList.remove(‘open’); });
 });
-document.addEventListener('keydown', function(e){
-  if(e.key==='Escape') document.querySelectorAll('.overlay.open').forEach(function(m){ m.classList.remove('open'); });
+document.addEventListener(‘keydown’, function(e){
+if(e.key===‘Escape’) document.querySelectorAll(’.overlay.open’).forEach(function(m){ m.classList.remove(‘open’); });
 });
 
 // ══════ INIT ══════
-// Firebase carga el estado — ver bloque al final del script
-// Mostrar estado de persistencia
+loadState();
+renderDash();
+
+// Mostrar estado de persistencia al usuario
 (function(){
-  var st = document.getElementById('storage-status');
-  var ind = document.getElementById('save-ind');
-  if(_storageOk){
-    var saved = localStorage.getItem(STORE_KEY);
-    if(saved){
-      if(st) st.textContent = '✅ localStorage activo';
-    } else {
-      if(st) st.textContent = '✅ localStorage listo';
-    }
-  } else {
-    if(st) st.textContent = '⚠️ Sin persistencia';
-    if(ind){
-      ind.textContent = '⚠️ Datos no se guardan — usa Backup';
-      ind.classList.add('show');
-      ind.style.color = '#E8B96A';
-    }
-    // Mostrar alerta solo una vez
-    setTimeout(function(){
-      alert('⚠️ ATENCIÓN: Los datos NO se guardarán automáticamente en este navegador/contexto.\n\n✅ SOLUCIÓN: Usa los botones "Backup" para descargar tus datos, e "Importar" para recuperarlos.\n\nSi abres el archivo con doble clic (file://), localStorage puede estar bloqueado. Para activarlo abre el archivo desde un servidor local o usa Chrome con --allow-file-access-from-files.');
-    }, 800);
-  }
+var st = document.getElementById(‘storage-status’);
+var ind = document.getElementById(‘save-ind’);
+if(_storageOk){
+var saved = localStorage.getItem(STORE_KEY);
+if(saved){
+if(st) st.textContent = ‘✅ localStorage activo’;
+} else {
+if(st) st.textContent = ‘✅ localStorage listo’;
+}
+} else {
+if(st) st.textContent = ‘⚠️ Sin persistencia’;
+if(ind){
+ind.textContent = ‘⚠️ Datos no se guardan — usa Backup’;
+ind.classList.add(‘show’);
+ind.style.color = ‘#E8B96A’;
+}
+// Mostrar alerta solo una vez
+setTimeout(function(){
+alert(‘⚠️ ATENCIÓN: Los datos NO se guardarán automáticamente en este navegador/contexto.\n\n✅ SOLUCIÓN: Usa los botones “Backup” para descargar tus datos, e “Importar” para recuperarlos.\n\nSi abres el archivo con doble clic (file://), localStorage puede estar bloqueado. Para activarlo abre el archivo desde un servidor local o usa Chrome con –allow-file-access-from-files.’);
+}, 800);
+}
 })();
 </script>
-<script>
 // ══════════════════════════════════════════════════════════════════════════
-// FIREBASE LISTENER — sincronización en tiempo real
-// Escucha cambios en Firestore y actualiza la UI en todos los dispositivos
+// FUNCIONES AUXILIARES GLOBALES
 // ══════════════════════════════════════════════════════════════════════════
-function iniciarSyncFirebase(){
-  _unsubscribe = _docRef.onSnapshot(function(doc){
-    if(!doc.exists) return; // primera vez sin datos
-    var data = doc.data();
-    if(!data) return;
-    // Evitar re-procesar cambios que nosotros mismos acabamos de guardar
-    if(Date.now() - _lastSaveTs < 1500) return;
-    // Actualizar el estado local con los datos de Firestore
-    S = data;
-    // Inicializar campos que puedan faltar
-    if(!S.weekOff) S.weekOff = 0;
-    if(!S.horarios) S.horarios = {};
-    if(!S.novedades) S.novedades = [];
-    if(!S.empOrden || !S.empOrden.length) S.empOrden = S.empleadas.map(function(e){ return e.id; });
-    // Guardar en localStorage como caché offline
-    try{ localStorage.setItem(STORE_KEY, JSON.stringify(S)); } catch(e){}
-    // Refrescar la UI
-    renderDash(); renderEmps(); renderHor(); renderNovs(); renderRoles();
-    var ind = document.getElementById('save-ind');
-    if(ind){ ind.textContent='🔄 Actualizado'; ind.classList.add('show'); setTimeout(function(){ ind.classList.remove('show'); },2000); }
-  }, function(err){
-    console.warn('Firestore listener error:', err);
-    _fbOnline = false;
-  });
+function renderAll(){
+renderDash(); renderEmps(); renderHor(); renderNovs(); renderRoles();
 }
 
-// Cargar desde Firestore al iniciar — si no hay datos usar localStorage
+function aplicarEstado(data){
+S = data;
+if(typeof S.weekOff !== ‘number’) S.weekOff = 0;
+if(!S.horarios)  S.horarios  = {};
+if(!S.novedades) S.novedades = [];
+if(!S.roles || !S.roles.length) S.roles = JSON.parse(JSON.stringify(DEFAULTS.roles));
+if(!S.empleadas || !S.empleadas.length){
+S.empleadas = JSON.parse(JSON.stringify(DEFAULTS.empleadas));
+} else {
+DEFAULTS.empleadas.forEach(function(def){
+if(!S.empleadas.some(function(e){ return e.id===def.id; }))
+S.empleadas.push(JSON.parse(JSON.stringify(def)));
+});
+}
+if(!S.empOrden || !S.empOrden.length)
+S.empOrden = S.empleadas.map(function(e){ return e.id; });
+try{ localStorage.setItem(STORE_KEY, JSON.stringify(S)); } catch(e){}
+}
+
+function restaurarDesdeDefaults(){
+if(!confirm(’¿Restaurar empleadas base?\nAgrega las que falten sin borrar nada.’)) return;
+DEFAULTS.empleadas.forEach(function(def){
+if(!S.empleadas.some(function(e){ return e.id===def.id; })){
+S.empleadas.push(JSON.parse(JSON.stringify(def)));
+}
+});
+if(!S.empOrden || !S.empOrden.length)
+S.empOrden = S.empleadas.map(function(e){ return e.id; });
+saveState(); renderAll();
+toast(‘✅ Empleadas base restauradas’,‘ok’);
+}
+
+// ══════════════════════════════════════════════════════════════════════════
+// FIREBASE — sincronización en tiempo real
+// ══════════════════════════════════════════════════════════════════════════
+var _fbConfig = {
+apiKey: “AIzaSyCny4LH_Jn98S7_Fu414HBqiTqZl5wYWIc”,
+authDomain: “horarios-sessanio-v7.firebaseapp.com”,
+projectId: “horarios-sessanio-v7”,
+storageBucket: “horarios-sessanio-v7.firebasestorage.app”,
+messagingSenderId: “784759066547”,
+appId: “1:784759066547:web:472931d61c076a03e9c5c6”
+};
+var _fbApp  = firebase.initializeApp(_fbConfig);
+var _db     = firebase.firestore(_fbApp);
+var _docRef = _db.collection(‘sessanio’).doc(‘estado’);
+var _fbOnline   = true;
+var _unsubscribe = null;
+var _lastSaveTs  = 0;
+
+function iniciarSyncFirebase(){
+_unsubscribe = _docRef.onSnapshot(function(doc){
+if(!doc.exists) return;
+var data = doc.data();
+if(!data) return;
+if(Date.now() - _lastSaveTs < 6000) return;
+var fbEmps  = (data.empleadas||[]).length;
+var locEmps = (S.empleadas||[]).length;
+if(fbEmps < locEmps){ return; }
+aplicarEstado(data);
+renderAll();
+var ind = document.getElementById(‘save-ind’);
+if(ind){ ind.textContent=‘🔄 Actualizado’; ind.classList.add(‘show’); setTimeout(function(){ ind.classList.remove(‘show’); },2000); }
+}, function(err){ console.warn(‘Firestore listener error:’, err); });
+}
+
+// INICIALIZACIÓN: primero local, luego Firebase encima
+loadState();
+renderAll();
+
 _docRef.get().then(function(doc){
-  if(doc.exists && doc.data() && doc.data().empleadas){
-    S = doc.data();
-    if(!S.weekOff) S.weekOff = 0;
-    if(!S.horarios) S.horarios = {};
-    if(!S.novedades) S.novedades = [];
-    if(!S.empOrden || !S.empOrden.length) S.empOrden = (S.empleadas||[]).map(function(e){ return e.id; });
-    try{ localStorage.setItem(STORE_KEY, JSON.stringify(S)); } catch(e){}
-  } else {
-    // Primera vez: cargar localStorage y subir a Firestore
-    loadState();
-    _docRef.set(S).catch(function(e){ console.warn('Error subiendo estado inicial:', e); });
-  }
-  renderDash(); renderEmps(); renderHor(); renderNovs(); renderRoles();
-  // Iniciar listener en tiempo real
-  iniciarSyncFirebase();
+var fbData = doc.exists ? doc.data() : null;
+var fbTieneEmpleadas = fbData && fbData.empleadas && fbData.empleadas.length > 0;
+if(fbTieneEmpleadas){
+aplicarEstado(fbData);
+renderAll();
+} else {
+_docRef.set(S).catch(function(e){ console.warn(‘Error subiendo estado:’, e); });
+}
+iniciarSyncFirebase();
 }).catch(function(err){
-  // Sin red: usar localStorage
-  console.warn('Sin conexión a Firestore, usando localStorage:', err);
-  loadState();
-  renderDash(); renderEmps(); renderHor(); renderNovs(); renderRoles();
+console.warn(‘Sin conexión a Firestore:’, err);
+iniciarSyncFirebase();
 });
 
+// ══════════════════════════════════════════════════════════════════════════
+// INTÉRPRETE DE DISPONIBILIDAD — lenguaje natural
+// ══════════════════════════════════════════════════════════════════════════
+function interpretarDisponibilidad(texto){
+var txt = texto.toLowerCase()
+.replace(/á/g,‘a’).replace(/é/g,‘e’).replace(/í/g,‘i’)
+.replace(/ó/g,‘o’).replace(/ú/g,‘u’).replace(/ñ/g,‘n’);
+
+var DIAS_MAP = {
+lunes:0,lun:0,martes:1,mar:1,miercoles:2,mie:2,
+jueves:3,jue:3,viernes:4,vie:4,sabado:5,sab:5,domingo:6,dom:6
+};
+var RANGOS = {
+‘lunes a viernes’:[0,1,2,3,4],‘lun a vie’:[0,1,2,3,4],
+‘lunes a sabado’:[0,1,2,3,4,5],‘toda la semana’:[0,1,2,3,4,5,6],
+‘entre semana’:[0,1,2,3,4],‘fines de semana’:[5,6],‘fin de semana’:[5,6]
+};
+
+// Detectar empleada
+var activas = S.empleadas.filter(function(e){ return e.estado===‘activo’; });
+var empEncontrada = null;
+activas.forEach(function(e){
+e.nombre.toLowerCase()
+.replace(/á/g,‘a’).replace(/é/g,‘e’).replace(/í/g,‘i’)
+.replace(/ó/g,‘o’).replace(/ú/g,‘u’).replace(/ñ/g,‘n’)
+.split(’ ’).forEach(function(p){
+if(p.length>3 && txt.indexOf(p)>=0 && !empEncontrada) empEncontrada=e;
+});
+});
+
+if(!empEncontrada){
+var noms = activas.map(function(e){ return e.nombre.split(’ ‘).slice(0,2).join(’ ‘); }).join(’, ’);
+return {cambios:[],resumen:’No encontré ninguna empleada. Disponibles: ’+noms};
+}
+
+// Detectar horas
+function parsearHora(s){
+s = s.replace(/\s/g,’’);
+var m = s.match(/^(\d{1,2})(?::(\d{2}))?(?:(am|pm))?$/);
+if(!m) return null;
+var h=parseInt(m[1]),mn=parseInt(m[2]||‘0’);
+if(m[3]===‘pm’&&h<12) h+=12;
+if(m[3]===‘am’&&h===12) h=0;
+if(h<7||h>21) return null;
+return (h<10?‘0’:’’)+h+’:’+(mn<10?‘0’:’’)+mn;
+}
+
+var desde=null, hasta=null;
+var mH = txt.match(/de\s+(\d{1,2}(?::\d{2})?(?:\s*(?:am|pm))?)\s+a\s+(?:las?\s+)?(\d{1,2}(?::\d{2})?(?:\s*(?:am|pm))?)/);
+if(!mH) mH = txt.match(/(\d{1,2}(?::\d{2})?(?:\s*(?:am|pm))?)\s*[-–]\s*(\d{1,2}(?::\d{2})?(?:\s*(?:am|pm))?)/);
+if(mH){ desde=parsearHora(mH[1].trim()); hasta=parsearHora(mH[2].trim()); }
+
+if(!desde){
+if(/manana|mañana/.test(txt)&&!/tarde/.test(txt)){ desde=‘08:00’; hasta=‘14:00’; }
+else if(/tarde/.test(txt)&&!/manana|mañana/.test(txt)){ desde=‘14:00’; hasta=‘20:00’; }
+else if(/dia completo|todo el dia|jornada completa/.test(txt)){ desde=‘08:00’; hasta=‘20:00’; }
+else{ desde=‘08:00’; hasta=‘20:00’; }
+}
+
+// Detectar días libres
+var libres=[];
+var mLib = txt.match(/(?:no puede|libre|descansa|no trabaja|no viene)(?:\s+el|\s+los)?\s+([\w\s,y]+?)(?:\s+esta semana|\s+esta|$|.|,)/);
+if(mLib){
+Object.keys(DIAS_MAP).forEach(function(d){
+if(mLib[1].indexOf(d)>=0) libres.push(DIAS_MAP[d]);
+});
+}
+
+// Detectar días con turno
+var diasTurno=[];
+var hayRango=false;
+Object.keys(RANGOS).forEach(function(r){
+if(txt.indexOf(r)>=0){ diasTurno=RANGOS[r]; hayRango=true; }
+});
+if(!hayRango){
+var txtSL = txt.replace(/(?:no puede|libre|descansa)[\w\s,]+/g,’’);
+Object.keys(DIAS_MAP).forEach(function(d){
+if(txtSL.indexOf(d)>=0 && libres.indexOf(DIAS_MAP[d])<0)
+diasTurno.push(DIAS_MAP[d]);
+});
+if(!diasTurno.length && !libres.length) diasTurno=[0,1,2,3,4,5,6];
+}
+
+// Construir cambios
+var diasObj={};
+diasTurno.forEach(function(d){ if(libres.indexOf(d)<0) diasObj[String(d)]={desde:desde,hasta:hasta}; });
+libres.forEach(function(d){ diasObj[String(d)]={libre:true}; });
+
+if(!Object.keys(diasObj).length)
+return {cambios:[],resumen:‘No pude identificar días. Ejemplo: “Alexandra lunes a viernes de 9 a 3”’};
+
+var DLBL=[‘Lun’,‘Mar’,‘Mié’,‘Jue’,‘Vie’,‘Sáb’,‘Dom’];
+var parts=[];
+diasTurno.forEach(function(d){ if(libres.indexOf(d)<0) parts.push(DLBL[d]+’ ‘+desde+’–’+hasta); });
+libres.forEach(function(d){ parts.push(DLBL[d]+’ libre’); });
+var nombre=empEncontrada.nombre.split(’ ‘).slice(0,2).join(’ ’);
+
+return {
+cambios:[{empId:empEncontrada.id,nombre:nombre,dias:diasObj}],
+resumen:nombre+’: ‘+parts.join(’, ’)
+};
+}
+
+// ══════════════════════════════════════════════════════════════════════════
+// PANEL ASISTENTE — listeners
+// ══════════════════════════════════════════════════════════════════════════
+document.getElementById(‘btn-asistente’).addEventListener(‘click’, function(){
+document.getElementById(‘panel-asistente’).classList.add(‘open’);
+document.getElementById(‘asist-overlay’).classList.add(‘open’);
+document.getElementById(‘asist-input’).focus();
+});
+function cerrarAsistente(){
+document.getElementById(‘panel-asistente’).classList.remove(‘open’);
+document.getElementById(‘asist-overlay’).classList.remove(‘open’);
+}
+document.getElementById(‘asist-close’).addEventListener(‘click’, cerrarAsistente);
+document.getElementById(‘asist-overlay’).addEventListener(‘click’, cerrarAsistente);
+document.getElementById(‘asist-input’).addEventListener(‘keydown’, function(ev){
+if(ev.key===‘Enter’&&!ev.shiftKey){ ev.preventDefault(); enviarAsistente(); }
+});
+document.getElementById(‘asist-send’).addEventListener(‘click’, enviarAsistente);
+document.getElementById(‘asist-input’).addEventListener(‘input’, function(){
+this.style.height=‘auto’;
+this.style.height=Math.min(this.scrollHeight,100)+‘px’;
+});
+
+function escHtml(t){ return t.replace(/&/g,’&’).replace(/</g,’<’).replace(/>/g,’>’); }
+
+function agregarMensaje(txt, tipo){
+var msgs=document.getElementById(‘asist-messages’);
+var div=document.createElement(‘div’);
+div.className=tipo===‘user’?‘asist-msg-user’:‘asist-msg-bot’;
+div.innerHTML=tipo===‘bot’?txt:escHtml(txt);
+msgs.appendChild(div);
+msgs.scrollTop=msgs.scrollHeight;
+return div;
+}
+
+function enviarAsistente(){
+var input=document.getElementById(‘asist-input’);
+var texto=input.value.trim();
+if(!texto) return;
+input.value=’’; input.style.height=‘auto’;
+agregarMensaje(texto,‘user’);
+var thinking=agregarMensaje(‘⏳ Procesando…’,‘bot’);
+setTimeout(function(){
+thinking.remove();
+var parsed=interpretarDisponibilidad(texto);
+if(!parsed.cambios||!parsed.cambios.length){
+agregarMensaje(‘ℹ️ ‘+escHtml(parsed.resumen||‘Sin cambios.’),‘bot’); return;
+}
+var aplicados=[];
+parsed.cambios.forEach(function(cambio){
+var emp=S.empleadas.find(function(e){ return e.id===cambio.empId; });
+if(!emp) return;
+if(!emp.dispSemanal) emp.dispSemanal={};
+Object.keys(cambio.dias).forEach(function(d){ emp.dispSemanal[d]=cambio.dias[d]; });
+aplicados.push(emp.nombre.split(’ ‘).slice(0,2).join(’ ‘));
+});
+saveState(); renderHor();
+var DLBL=[‘Lun’,‘Mar’,‘Mié’,‘Jue’,‘Vie’,‘Sáb’,‘Dom’];
+var html=‘✅ <b>Cambios aplicados</b><br><br>’+escHtml(parsed.resumen)+’<br><br>’;
+parsed.cambios.forEach(function(cambio){
+html+=’<b>’+escHtml(cambio.nombre)+’:</b><br>’;
+Object.keys(cambio.dias).sort().forEach(function(d){
+var v=cambio.dias[d],dl=DLBL[parseInt(d)]||d;
+html+=’  • ‘+dl+(v&&v.libre?’: 🚫 Libre’:’: 🕐 ‘+(v.desde||’’)+’–’+(v.hasta||’’))+’<br>’;
+});
+});
+html+=’<br><span style="font-size:11px;color:#888">💡 Usa ⚡ para regenerar el horario.</span>’;
+agregarMensaje(html,‘bot’);
+toast(’✅ Disponibilidad actualizada — ‘+aplicados.join(’, ’),‘ok’);
+}, 500);
+}
+
+<script>
 // ── Registro del Service Worker (PWA offline) ──────────────────────────────
 if('serviceWorker' in navigator){
   window.addEventListener('load', function(){
@@ -2696,5 +2944,6 @@ if('serviceWorker' in navigator){
   });
 }
 </script>
+
 </body>
 </html>

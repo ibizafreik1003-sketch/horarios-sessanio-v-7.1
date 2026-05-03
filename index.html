@@ -10,7 +10,7 @@
 <meta name="theme-color" content="#4A2C17">
 <link rel="manifest" href="./manifest.json">
 <link rel="apple-touch-icon" href="./icon-192.png">
-<title>Sessanio — Gestión de Personal</title>
+<title>Sessanio â GestiÃ³n de Personal</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
 :root{
@@ -22,7 +22,7 @@
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'DM Sans',sans-serif;background:var(--crem);color:var(--cafe);min-height:100vh;}
 
-/* ── HEADER ── */
+/* ââ HEADER ââ */
 header{background:var(--cafe);color:var(--crem);padding:0 24px;display:flex;align-items:center;
   justify-content:space-between;height:60px;box-shadow:0 2px 12px rgba(0,0,0,.25);
   position:sticky;top:0;z-index:100;}
@@ -33,7 +33,7 @@ header{background:var(--cafe);color:var(--crem);padding:0 24px;display:flex;alig
 .save-indicator{font-size:11px;color:var(--dorado2);opacity:0;transition:opacity .4s;max-width:200px;text-align:right;}
 .save-indicator.show{opacity:1;}
 
-/* ── NAV ── */
+/* ââ NAV ââ */
 nav{background:var(--cafe2);display:flex;overflow-x:auto;padding:0 12px;gap:2px;}
 nav button{background:none;border:none;color:rgba(245,239,224,.6);font-family:'DM Sans',sans-serif;
   font-size:13px;font-weight:500;padding:11px 16px;cursor:pointer;white-space:nowrap;
@@ -41,18 +41,18 @@ nav button{background:none;border:none;color:rgba(245,239,224,.6);font-family:'D
 nav button:hover{color:var(--dorado2);}
 nav button.active{color:var(--dorado2);border-bottom-color:var(--dorado);background:rgba(201,148,58,.1);}
 
-/* ── LAYOUT ── */
+/* ââ LAYOUT ââ */
 main{padding:20px;max-width:1200px;margin:0 auto;}
 .page{display:none;}.page.active{display:block;}
 .g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
 .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
 @media(max-width:700px){.g2,.g3{grid-template-columns:1fr;}}
 
-/* ── CARD ── */
+/* ââ CARD ââ */
 .card{background:var(--blanco);border-radius:12px;box-shadow:var(--sombra);padding:22px;margin-bottom:18px;}
 .card-title{font-family:'Playfair Display',serif;font-size:17px;margin-bottom:14px;}
 
-/* ── FORM ── */
+/* ââ FORM ââ */
 .fg{margin-bottom:13px;}
 label{display:block;font-size:11px;font-weight:700;color:var(--gris);
   text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px;}
@@ -62,7 +62,7 @@ input,select,textarea{width:100%;padding:9px 13px;border:1.5px solid var(--crem2
 input:focus,select:focus,textarea:focus{border-color:var(--dorado);}
 textarea{resize:vertical;min-height:70px;}
 
-/* ── BOTONES ── */
+/* ââ BOTONES ââ */
 .btn{display:inline-flex;align-items:center;gap:6px;padding:9px 18px;border-radius:8px;
   border:none;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;
   cursor:pointer;transition:all .2s;}
@@ -76,7 +76,7 @@ textarea{resize:vertical;min-height:70px;}
 .btn-outline:hover{background:var(--cafe);color:var(--crem);}
 .btn-sm{padding:6px 11px;font-size:12px;}
 
-/* ── TOGGLES ── */
+/* ââ TOGGLES ââ */
 .dias-wrap,.roles-wrap,.disp-wrap{display:flex;gap:7px;flex-wrap:wrap;margin-top:6px;}
 .dia-btn,.rol-btn,.disp-btn{
   padding:7px 13px;border-radius:20px;border:1.5px solid var(--crem2);
@@ -91,7 +91,7 @@ textarea{resize:vertical;min-height:70px;}
 .disp-btn.t.on{background:var(--azul)!important;color:#fff!important;border-color:var(--azul)!important;}
 .disp-btn.l.on{background:var(--verde)!important;color:#fff!important;border-color:var(--verde)!important;}
 
-/* ── EMPLEADA CARD ── */
+/* ââ EMPLEADA CARD ââ */
 .emp-card{background:var(--blanco);border-radius:12px;box-shadow:var(--sombra);padding:18px;
   border-left:4px solid var(--dorado);transition:transform .2s,box-shadow .2s;}
 .emp-card:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(74,44,23,.18);}
@@ -99,14 +99,14 @@ textarea{resize:vertical;min-height:70px;}
   align-items:center;justify-content:center;font-family:'Playfair Display',serif;
   font-size:18px;color:var(--cafe2);border:2px solid var(--dorado);flex-shrink:0;}
 
-/* ── TAGS ── */
+/* ââ TAGS ââ */
 .tag{display:inline-block;padding:3px 9px;border-radius:20px;font-size:11px;font-weight:600;margin:2px;}
 .t-activo{background:#d4edda;color:#155724;}.t-inactivo{background:#f8d7da;color:#721c24;}
 .t-nov{background:#fff3cd;color:#856404;}.t-vac{background:#d1ecf1;color:#0c5460;}
 .t-inc{background:#f8d7da;color:#721c24;}.t-perm{background:#e2d9f3;color:#432874;}
 .t-cita{background:#d4edda;color:#155724;}.t-gris{background:var(--crem2);color:var(--cafe2);}
 
-/* ── HORARIO ── */
+/* ââ HORARIO ââ */
 .hor-table{width:100%;border-collapse:collapse;font-size:12px;}
 .hor-table th{background:var(--cafe);color:var(--crem);padding:9px 7px;text-align:center;
   font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;}
@@ -122,21 +122,21 @@ textarea{resize:vertical;min-height:70px;}
 .chip-btn{border:none;cursor:pointer;font-family:'DM Sans',sans-serif;}
 .chip-btn:hover{opacity:.8;}
 
-/* ── STATS ── */
+/* ââ STATS ââ */
 .stat{background:var(--cafe);color:var(--crem);border-radius:10px;padding:16px;text-align:center;}
 .stat-n{font-family:'Playfair Display',serif;font-size:30px;color:var(--dorado2);}
 .stat-l{font-size:12px;opacity:.8;margin-top:3px;}
 
-/* ── NOVEDAD ITEM ── */
+/* ââ NOVEDAD ITEM ââ */
 .nov-item{background:var(--blanco);border-radius:10px;padding:14px;margin-bottom:10px;
   border-left:4px solid var(--dorado);display:flex;justify-content:space-between;
   align-items:flex-start;gap:14px;box-shadow:0 2px 8px rgba(74,44,23,.07);}
 
-/* ── ROL ITEM ── */
+/* ââ ROL ITEM ââ */
 .rol-item{display:flex;align-items:center;justify-content:space-between;
   padding:10px 14px;background:var(--crem);border-radius:8px;margin-bottom:8px;}
 
-/* ── MODAL ── */
+/* ââ MODAL ââ */
 .overlay{display:none;position:fixed;inset:0;background:rgba(74,44,23,.55);
   z-index:200;align-items:center;justify-content:center;padding:16px;}
 .overlay.open{display:flex;}
@@ -148,8 +148,8 @@ textarea{resize:vertical;min-height:70px;}
 .modal-footer{display:flex;gap:10px;justify-content:flex-end;margin-top:18px;
   padding-top:14px;border-top:1px solid var(--crem2);}
 
-/* ── DISPONIBILIDAD SEMANAL ── */
-/* ── DISPONIBILIDAD SEMANAL — horas exactas ── */
+/* ââ DISPONIBILIDAD SEMANAL ââ */
+/* ââ DISPONIBILIDAD SEMANAL â horas exactas ââ */
 .disp-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-top:8px;}
 .disp-col{text-align:center;}
 .disp-lbl{font-size:10px;font-weight:700;color:var(--gris);text-transform:uppercase;
@@ -171,7 +171,7 @@ textarea{resize:vertical;min-height:70px;}
 .disp-libre-btn:hover{background:#F8D7DA;border-color:#8B2020;color:#8B2020;}
 .disp-libre-btn.activo{background:#F8D7DA;border-color:#8B2020;color:#8B2020;font-weight:700;}
 
-/* ── UTILS ── */
+/* ââ UTILS ââ */
 .flex-between{display:flex;justify-content:space-between;align-items:center;}
 .mb16{margin-bottom:16px;}
 .small{font-size:12px;color:var(--gris);}
@@ -181,7 +181,7 @@ textarea{resize:vertical;min-height:70px;}
 .semana-nav{display:flex;align-items:center;gap:10px;}
 .semana-lbl{font-family:'Playfair Display',serif;font-size:15px;min-width:210px;text-align:center;}
 
-/* ── TOAST ── */
+/* ââ TOAST ââ */
 #toast{position:fixed;bottom:22px;right:22px;background:var(--cafe);color:var(--crem);
   padding:11px 18px;border-radius:10px;font-size:14px;opacity:0;transform:translateY(8px);
   transition:all .3s;z-index:999;max-width:280px;pointer-events:none;}
@@ -189,7 +189,7 @@ textarea{resize:vertical;min-height:70px;}
 #toast.ok{border-left:4px solid #28a745;}
 #toast.err{border-left:4px solid var(--rojo);}
 
-/* ── Drag & drop filas horario ── */
+/* ââ Drag & drop filas horario ââ */
 .drag-handle{cursor:grab;font-size:15px;color:#bbb;padding:0 7px 0 0;
   user-select:none;display:inline-block;vertical-align:middle;transition:color .15s;}
 .drag-handle:hover{color:var(--dorado);}
@@ -204,25 +204,25 @@ textarea{resize:vertical;min-height:70px;}
 
 <header>
   <div style="display:flex;align-items:center">
-    <div class="logo"><em>Sessanio</em> Brunch e Caffé</div>
-    <span class="badge">v7.1</span>
+    <div class="logo"><em>Sessanio</em> Brunch e CaffÃ©</div>
+    <span class="badge">v7.2</span>
   </div>
   <div style="display:flex;align-items:center;gap:8px">
-    <span class="save-indicator" id="save-ind">💾 Guardado</span>
-    <button onclick="exportarDatos()" style="background:rgba(201,148,58,.25);border:1px solid var(--dorado2);color:var(--dorado2);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;cursor:pointer">⬇️ Backup</button>
-    <button onclick="importarDatos()" style="background:rgba(201,148,58,.25);border:1px solid var(--dorado2);color:var(--dorado2);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;cursor:pointer">⬆️ Importar</button>
-    <button onclick="mostrarDebug()" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:rgba(245,239,224,.6);font-family:'DM Sans',sans-serif;font-size:11px;padding:4px 8px;border-radius:6px;cursor:pointer" title="Ver estado de localStorage">🔍</button>
-    <button onclick="restablecerPerfiles()" style="background:rgba(139,94,60,.3);border:1px solid #c9943a;color:#f5efd0;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;cursor:pointer" title="Restablecer roles y horarios de empleadas desde los datos base">🔄 Perfiles</button>
+    <span class="save-indicator" id="save-ind">ð¾ Guardado</span>
+    <button onclick="exportarDatos()" style="background:rgba(201,148,58,.25);border:1px solid var(--dorado2);color:var(--dorado2);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;cursor:pointer">â¬ï¸ Backup</button>
+    <button onclick="importarDatos()" style="background:rgba(201,148,58,.25);border:1px solid var(--dorado2);color:var(--dorado2);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;cursor:pointer">â¬ï¸ Importar</button>
+    <button onclick="mostrarDebug()" style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:rgba(245,239,224,.6);font-family:'DM Sans',sans-serif;font-size:11px;padding:4px 8px;border-radius:6px;cursor:pointer" title="Ver estado de localStorage">ð</button>
+    <button onclick="restablecerPerfiles()" style="background:rgba(139,94,60,.3);border:1px solid #c9943a;color:#f5efd0;font-family:'DM Sans',sans-serif;font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;cursor:pointer" title="Restablecer roles y horarios de empleadas desde los datos base">ð Perfiles</button>
     <div id="storage-status" style="font-size:10px;color:rgba(245,239,224,.4)"></div>
   </div>
 </header>
 
 <nav>
-  <button class="active" onclick="goPage('dashboard',this)">📊 Dashboard</button>
-  <button onclick="goPage('empleadas',this)">👥 Empleadas</button>
-  <button onclick="goPage('horarios',this)">🗓️ Horarios</button>
-  <button onclick="goPage('novedades',this)">📋 Novedades</button>
-  <button onclick="goPage('roles',this)">🏷️ Cargos</button>
+  <button class="active" onclick="goPage('dashboard',this)">ð Dashboard</button>
+  <button onclick="goPage('empleadas',this)">ð¥ Empleadas</button>
+  <button onclick="goPage('horarios',this)">ðï¸ Horarios</button>
+  <button onclick="goPage('novedades',this)">ð Novedades</button>
+  <button onclick="goPage('roles',this)">ð·ï¸ Cargos</button>
 </nav>
 
 <main>
@@ -231,8 +231,8 @@ textarea{resize:vertical;min-height:70px;}
 <div id="pg-dashboard" class="page active">
   <div class="g3 mb16" id="stats"></div>
   <div class="g2">
-    <div class="card"><div class="card-title">📅 Novedades esta semana</div><div id="dash-novs"></div></div>
-    <div class="card"><div class="card-title">👥 Disponibles hoy</div><div id="dash-disp"></div></div>
+    <div class="card"><div class="card-title">ð Novedades esta semana</div><div id="dash-novs"></div></div>
+    <div class="card"><div class="card-title">ð¥ Disponibles hoy</div><div id="dash-disp"></div></div>
   </div>
 </div>
 
@@ -240,7 +240,7 @@ textarea{resize:vertical;min-height:70px;}
 <div id="pg-empleadas" class="page">
   <div class="flex-between mb16">
     <h2 style="font-family:'Playfair Display',serif;font-size:21px">Perfiles de Empleadas</h2>
-    <button class="btn btn-primary" id="btn-nueva-emp">➕ Nueva empleada</button>
+    <button class="btn btn-primary" id="btn-nueva-emp">â Nueva empleada</button>
   </div>
   <div class="g3" id="emp-list"></div>
 </div>
@@ -249,38 +249,38 @@ textarea{resize:vertical;min-height:70px;}
 <div id="pg-horarios" class="page">
   <div class="flex-between mb16">
     <div class="semana-nav">
-      <button class="btn btn-outline btn-sm" id="btn-sem-prev">◀ Anterior</button>
+      <button class="btn btn-outline btn-sm" id="btn-sem-prev">â Anterior</button>
       <span class="semana-lbl" id="week-label"></span>
-      <button class="btn btn-outline btn-sm" id="btn-sem-next">Siguiente ▶</button>
+      <button class="btn btn-outline btn-sm" id="btn-sem-next">Siguiente â¶</button>
     </div>
     <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
-      <button class="btn btn-gold" id="btn-auto">⚡ Generar automático</button>
-      <button class="btn btn-outline btn-sm" id="btn-undo" style="display:none;border-color:#8B2020;color:#8B2020" title="Volver al horario manual antes de generar automático">↩ Deshacer auto</button>
-      <button class="btn btn-outline btn-sm" id="btn-pdf" style="border-color:#8B5E3C;color:#8B5E3C">🖨️ Imprimir PDF</button>
+      <button class="btn btn-gold" id="btn-auto">â¡ Generar automÃ¡tico</button>
+      <button class="btn btn-outline btn-sm" id="btn-undo" style="display:none;border-color:#8B2020;color:#8B2020" title="Volver al horario manual antes de generar automÃ¡tico">â© Deshacer auto</button>
+      <button class="btn btn-outline btn-sm" id="btn-pdf" style="border-color:#8B5E3C;color:#8B5E3C">ð¨ï¸ Imprimir PDF</button>
     </div>
   </div>
   <div class="card" style="overflow-x:auto">
     <table class="hor-table">
       <thead><tr>
         <th style="min-width:130px">Empleada</th>
-        <th>Lunes</th><th>Martes</th><th>Miércoles</th>
-        <th>Jueves</th><th>Viernes</th><th>Sábado</th><th>Domingo</th>
+        <th>Lunes</th><th>Martes</th><th>MiÃ©rcoles</th>
+        <th>Jueves</th><th>Viernes</th><th>SÃ¡bado</th><th>Domingo</th>
       </tr></thead>
       <tbody id="hor-body"></tbody>
     </table>
   </div>
   <div id="alert-personal" class="card" style="display:none;background:#fff5f5;border:1.5px solid #e53935;padding:14px 18px;margin-bottom:10px"></div>
   <div class="card">
-    <div class="card-title" style="margin-bottom:10px">ℹ️ Leyenda — Horario operativo 8:00 AM – 8:00 PM</div>
+    <div class="card-title" style="margin-bottom:10px">â¹ï¸ Leyenda â Horario operativo 8:00 AM â 8:00 PM</div>
     <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px">
-      <span class="chip c-m">☀️ Mañana 8:00–15:00</span>
-      <span class="chip c-t">🌙 Tarde 13:00–20:00</span>
-      <span class="chip c-p">🔆 Partido (horas propias)</span>
-      <span class="chip c-w">⚠️ Rango corto</span>
-      <span class="chip c-l">✅ Libre</span>
-      <span class="chip c-n">⚠️ Novedad</span>
+      <span class="chip c-m">âï¸ MaÃ±ana 8:00â15:00</span>
+      <span class="chip c-t">ð Tarde 13:00â20:00</span>
+      <span class="chip c-p">ð Partido (horas propias)</span>
+      <span class="chip c-w">â ï¸ Rango corto</span>
+      <span class="chip c-l">â Libre</span>
+      <span class="chip c-n">â ï¸ Novedad</span>
     </div>
-    <div class="small">Turno estándar <strong>8 horas</strong>. Las horas que excedan 8h/día se contabilizan como <strong>horas extra</strong>.</div>
+    <div class="small">Turno estÃ¡ndar <strong>8 horas</strong>. Las horas que excedan 8h/dÃ­a se contabilizan como <strong>horas extra</strong>.</div>
   </div>
 </div>
 
@@ -288,7 +288,7 @@ textarea{resize:vertical;min-height:70px;}
 <div id="pg-novedades" class="page">
   <div class="flex-between mb16">
     <h2 style="font-family:'Playfair Display',serif;font-size:21px">Novedades Semanales</h2>
-    <button class="btn btn-primary" id="btn-nueva-nov">➕ Registrar novedad</button>
+    <button class="btn btn-primary" id="btn-nueva-nov">â Registrar novedad</button>
   </div>
   <div class="card mb16">
     <div class="flex-between mb16" style="flex-wrap:wrap;gap:10px">
@@ -297,11 +297,11 @@ textarea{resize:vertical;min-height:70px;}
         <select id="f-semana" style="width:auto"><option value="">Todas las semanas</option></select>
         <select id="f-tipo" style="width:auto">
           <option value="">Todos los tipos</option>
-          <option value="cita_medica">Cita médica</option>
+          <option value="cita_medica">Cita mÃ©dica</option>
           <option value="permiso">Permiso</option>
           <option value="incapacidad">Incapacidad</option>
           <option value="vacaciones">Vacaciones</option>
-          <option value="calamidad">Calamidad doméstica</option>
+          <option value="calamidad">Calamidad domÃ©stica</option>
           <option value="llegada_tarde">Llegada tarde</option>
           <option value="salida_temprana">Salida temprana</option>
           <option value="cambio_turno">Cambio de turno</option>
@@ -311,10 +311,10 @@ textarea{resize:vertical;min-height:70px;}
         <select id="f-emp" style="width:auto"><option value="">Todas las empleadas</option></select>
         <select id="f-estado" style="width:auto">
           <option value="">Todos los estados</option>
-          <option value="pendiente">⏳ Pendiente</option>
-          <option value="aprobada">✅ Aprobada</option>
-          <option value="rechazada">❌ Rechazada</option>
-          <option value="en_proceso">🔄 En proceso</option>
+          <option value="pendiente">â³ Pendiente</option>
+          <option value="aprobada">â Aprobada</option>
+          <option value="rechazada">â Rechazada</option>
+          <option value="en_proceso">ð En proceso</option>
         </select>
       </div>
     </div>
@@ -325,23 +325,23 @@ textarea{resize:vertical;min-height:70px;}
 <!-- ROLES -->
 <div id="pg-roles" class="page">
   <div class="flex-between mb16">
-    <h2 style="font-family:'Playfair Display',serif;font-size:21px">Gestión de Cargos</h2>
-    <button class="btn btn-primary" id="btn-nuevo-rol">➕ Nuevo cargo</button>
+    <h2 style="font-family:'Playfair Display',serif;font-size:21px">GestiÃ³n de Cargos</h2>
+    <button class="btn btn-primary" id="btn-nuevo-rol">â Nuevo cargo</button>
   </div>
   <div class="g2">
     <div class="card"><div class="card-title">Cargos actuales</div><div id="rol-list"></div></div>
     <div class="card">
-      <div class="card-title">⏰ Turnos</div>
+      <div class="card-title">â° Turnos</div>
       <div style="background:var(--crem);border-radius:8px;padding:13px;margin-bottom:10px;border-left:4px solid var(--dorado)">
-        <div style="font-weight:600;margin-bottom:3px">☀️ Turno Mañana</div>
-        <div class="small">8:00 AM – 4:00 PM · 8 horas</div>
+        <div style="font-weight:600;margin-bottom:3px">âï¸ Turno MaÃ±ana</div>
+        <div class="small">8:00 AM â 4:00 PM Â· 8 horas</div>
       </div>
       <div style="background:var(--crem);border-radius:8px;padding:13px;border-left:4px solid var(--azul)">
-        <div style="font-weight:600;margin-bottom:3px">🌙 Turno Tarde</div>
-        <div class="small">12:00 PM – 8:00 PM · 8 horas</div>
+        <div style="font-weight:600;margin-bottom:3px">ð Turno Tarde</div>
+        <div class="small">12:00 PM â 8:00 PM Â· 8 horas</div>
       </div>
       <div style="margin-top:12px;background:#fff3cd;border-radius:8px;padding:11px;font-size:12px;color:#856404">
-        ⚠️ Nadie antes de las 8:00 AM ni después de las 8:00 PM.
+        â ï¸ Nadie antes de las 8:00 AM ni despuÃ©s de las 8:00 PM.
       </div>
     </div>
   </div>
@@ -349,107 +349,107 @@ textarea{resize:vertical;min-height:70px;}
 
 </main>
 
-<!-- ═══ MODAL EMPLEADA ═══ -->
+<!-- âââ MODAL EMPLEADA âââ -->
 <div class="overlay" id="m-emp">
   <div class="modal">
-    <div class="modal-title" id="m-emp-title">➕ Nueva Empleada</div>
+    <div class="modal-title" id="m-emp-title">â Nueva Empleada</div>
     <input type="hidden" id="ei">
     <div class="g2">
       <div class="fg"><label>Nombre completo *</label><input type="text" id="e-nombre" placeholder="Nombre y apellidos"></div>
-      <div class="fg"><label>Documento</label><input type="text" id="e-doc" placeholder="Cédula o pasaporte"></div>
+      <div class="fg"><label>Documento</label><input type="text" id="e-doc" placeholder="CÃ©dula o pasaporte"></div>
     </div>
     <div class="fg">
-      <label>Cargos * <span style="font-weight:400;text-transform:none;font-size:11px;color:#4A2C17">— haz clic para activar/desactivar, puedes seleccionar varios ✓</span></label>
+      <label>Cargos * <span style="font-weight:400;text-transform:none;font-size:11px;color:#4A2C17">â haz clic para activar/desactivar, puedes seleccionar varios â</span></label>
       <div class="roles-wrap" id="e-roles-wrap"></div>
     </div>
     <div class="g2">
       <div class="fg">
         <label>Tipo de contrato</label>
         <select id="e-contrato">
-          <option value="indefinido">Término indefinido</option>
-          <option value="fijo">Término fijo</option>
+          <option value="indefinido">TÃ©rmino indefinido</option>
+          <option value="fijo">TÃ©rmino fijo</option>
           <option value="obra_labor">Obra o labor</option>
           <option value="aprendizaje">Aprendizaje</option>
-          <option value="prestacion">Prestación de servicios</option>
+          <option value="prestacion">PrestaciÃ³n de servicios</option>
         </select>
       </div>
       <div class="fg"><label>Fecha de ingreso</label><input type="date" id="e-ingreso"></div>
     </div>
     <div class="g2">
-      <div class="fg"><label>Teléfono</label><input type="tel" id="e-tel" placeholder="+57 300 000 0000"></div>
-      <div class="fg"><label>Correo electrónico</label><input type="email" id="e-email" placeholder="correo@ejemplo.com"></div>
+      <div class="fg"><label>TelÃ©fono</label><input type="tel" id="e-tel" placeholder="+57 300 000 0000"></div>
+      <div class="fg"><label>Correo electrÃ³nico</label><input type="email" id="e-email" placeholder="correo@ejemplo.com"></div>
     </div>
     <div class="fg">
       <label>Turno preferido general</label>
       <select id="e-turno">
-        <option value="rotativo">🔄 Rotativo</option>
-        <option value="manana">☀️ Mañana (8:00–15:00)</option>
-        <option value="tarde">🌙 Tarde (13:00–20:00)</option>
+        <option value="rotativo">ð Rotativo</option>
+        <option value="manana">âï¸ MaÃ±ana (8:00â15:00)</option>
+        <option value="tarde">ð Tarde (13:00â20:00)</option>
       </select>
     </div>
     <div class="fg">
-      <label>Días de descanso preferidos <span style="font-weight:400;text-transform:none;font-size:11px">(toca para activar)</span></label>
+      <label>DÃ­as de descanso preferidos <span style="font-weight:400;text-transform:none;font-size:11px">(toca para activar)</span></label>
       <div class="dias-wrap" id="e-dias-wrap">
         <div class="dia-btn" data-d="0">Lun</div>
         <div class="dia-btn" data-d="1">Mar</div>
-        <div class="dia-btn" data-d="2">Mié</div>
+        <div class="dia-btn" data-d="2">MiÃ©</div>
         <div class="dia-btn" data-d="3">Jue</div>
         <div class="dia-btn" data-d="4">Vie</div>
-        <div class="dia-btn" data-d="5">Sáb</div>
+        <div class="dia-btn" data-d="5">SÃ¡b</div>
         <div class="dia-btn" data-d="6">Dom</div>
       </div>
     </div>
     <div class="fg">
-      <label>Disponibilidad semanal <span style="font-weight:400;text-transform:none;font-size:11px">— define el horario exacto disponible cada día</span></label>
+      <label>Disponibilidad semanal <span style="font-weight:400;text-transform:none;font-size:11px">â define el horario exacto disponible cada dÃ­a</span></label>
       <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px;font-size:11px">
-        <span style="background:#E8F5E9;border:1px solid #2D4A2D;color:#2D4A2D;padding:2px 8px;border-radius:10px;font-weight:600">🕐 Horas = puede trabajar en ese rango</span>
-        <span style="background:#F8D7DA;border:1px solid #8B2020;color:#8B2020;padding:2px 8px;border-radius:10px;font-weight:600">🚫 No trabaja ese día</span>
-        <span style="background:var(--crem);border:1px solid var(--crem2);color:var(--gris);padding:2px 8px;border-radius:10px;font-weight:600">— Sin definir</span>
+        <span style="background:#E8F5E9;border:1px solid #2D4A2D;color:#2D4A2D;padding:2px 8px;border-radius:10px;font-weight:600">ð Horas = puede trabajar en ese rango</span>
+        <span style="background:#F8D7DA;border:1px solid #8B2020;color:#8B2020;padding:2px 8px;border-radius:10px;font-weight:600">ð« No trabaja ese dÃ­a</span>
+        <span style="background:var(--crem);border:1px solid var(--crem2);color:var(--gris);padding:2px 8px;border-radius:10px;font-weight:600">â Sin definir</span>
       </div>
       <div class="disp-grid" id="e-disp-grid"></div>
     </div>
     <div class="fg"><label>Observaciones del perfil</label><textarea id="e-obs" placeholder="Alergias, restricciones, habilidades, condiciones especiales..."></textarea></div>
     <div class="fg">
       <label>Estado</label>
-      <select id="e-estado"><option value="activo">✅ Activa</option><option value="inactivo">❌ Inactiva</option></select>
+      <select id="e-estado"><option value="activo">â Activa</option><option value="inactivo">â Inactiva</option></select>
     </div>
     <div class="modal-footer">
       <button class="btn btn-outline" onclick="closeModal('m-emp')">Cancelar</button>
-      <button class="btn btn-primary" id="btn-save-emp">💾 Guardar</button>
+      <button class="btn btn-primary" id="btn-save-emp">ð¾ Guardar</button>
     </div>
   </div>
 </div>
 
-<!-- ═══ MODAL VER EMPLEADA ═══ -->
+<!-- âââ MODAL VER EMPLEADA âââ -->
 <div class="overlay" id="m-ver">
   <div class="modal">
     <div id="ver-body"></div>
     <div class="modal-footer">
       <button class="btn btn-outline" onclick="closeModal('m-ver')">Cerrar</button>
-      <button class="btn btn-gold" id="btn-edit-from-ver">✏️ Editar</button>
+      <button class="btn btn-gold" id="btn-edit-from-ver">âï¸ Editar</button>
     </div>
   </div>
 </div>
 
-<!-- ═══ MODAL NOVEDAD ═══ -->
+<!-- âââ MODAL NOVEDAD âââ -->
 <div class="overlay" id="m-nov">
   <div class="modal">
-    <div class="modal-title" id="m-nov-title">📋 Registrar Novedad</div>
+    <div class="modal-title" id="m-nov-title">ð Registrar Novedad</div>
     <input type="hidden" id="ni">
     <div class="fg"><label>Empleada *</label><select id="n-emp"></select></div>
     <div class="fg">
       <label>Tipo *</label>
       <select id="n-tipo">
-        <option value="cita_medica">🏥 Cita médica</option>
-        <option value="permiso">📝 Permiso</option>
-        <option value="incapacidad">🩺 Incapacidad médica</option>
-        <option value="vacaciones">🌴 Vacaciones</option>
-        <option value="calamidad">❗ Calamidad doméstica</option>
-        <option value="llegada_tarde">🕐 Llegada tarde</option>
-        <option value="salida_temprana">🕔 Salida temprana</option>
-        <option value="cambio_turno">🔄 Cambio de turno</option>
-        <option value="ausencia">🚫 Ausencia injustificada</option>
-        <option value="otro">📌 Otro</option>
+        <option value="cita_medica">ð¥ Cita mÃ©dica</option>
+        <option value="permiso">ð Permiso</option>
+        <option value="incapacidad">ð©º Incapacidad mÃ©dica</option>
+        <option value="vacaciones">ð´ Vacaciones</option>
+        <option value="calamidad">â Calamidad domÃ©stica</option>
+        <option value="llegada_tarde">ð Llegada tarde</option>
+        <option value="salida_temprana">ð Salida temprana</option>
+        <option value="cambio_turno">ð Cambio de turno</option>
+        <option value="ausencia">ð« Ausencia injustificada</option>
+        <option value="otro">ð Otro</option>
       </select>
     </div>
     <div class="g2">
@@ -457,63 +457,63 @@ textarea{resize:vertical;min-height:70px;}
       <div class="fg"><label>Fecha fin</label><input type="date" id="n-ff"></div>
     </div>
     <div class="fg" id="n-horas-wrap">
-      <label>Horas afectadas (8:00–20:00)</label>
+      <label>Horas afectadas (8:00â20:00)</label>
       <div class="g2">
         <input type="time" id="n-hi" min="08:00" max="20:00">
         <input type="time" id="n-hf" min="08:00" max="20:00">
       </div>
     </div>
-    <div class="fg"><label>Descripción *</label><textarea id="n-desc" placeholder="Motivo, acuerdo, compensación..."></textarea></div>
+    <div class="fg"><label>DescripciÃ³n *</label><textarea id="n-desc" placeholder="Motivo, acuerdo, compensaciÃ³n..."></textarea></div>
     <div class="g2">
       <div class="fg">
-        <label>¿Presenta soporte?</label>
+        <label>Â¿Presenta soporte?</label>
         <select id="n-soporte">
-          <option value="pendiente">⏳ Pendiente</option>
-          <option value="si">✅ Sí presentó</option>
-          <option value="no">❌ No presenta</option>
-          <option value="no_aplica">— No aplica</option>
+          <option value="pendiente">â³ Pendiente</option>
+          <option value="si">â SÃ­ presentÃ³</option>
+          <option value="no">â No presenta</option>
+          <option value="no_aplica">â No aplica</option>
         </select>
       </div>
       <div class="fg">
         <label>Estado</label>
         <select id="n-estado">
-          <option value="pendiente">⏳ Pendiente</option>
-          <option value="aprobada">✅ Aprobada</option>
-          <option value="rechazada">❌ Rechazada</option>
-          <option value="en_proceso">🔄 En proceso</option>
+          <option value="pendiente">â³ Pendiente</option>
+          <option value="aprobada">â Aprobada</option>
+          <option value="rechazada">â Rechazada</option>
+          <option value="en_proceso">ð En proceso</option>
         </select>
       </div>
     </div>
     <div class="fg"><label>Semana de referencia</label><input type="text" id="n-semref" readonly style="background:var(--crem);color:var(--gris)"></div>
     <div class="modal-footer">
       <button class="btn btn-outline" onclick="closeModal('m-nov')">Cancelar</button>
-      <button class="btn btn-primary" id="btn-save-nov">💾 Registrar</button>
+      <button class="btn btn-primary" id="btn-save-nov">ð¾ Registrar</button>
     </div>
   </div>
 </div>
 
-<!-- ═══ MODAL CARGO ═══ -->
+<!-- âââ MODAL CARGO âââ -->
 <div class="overlay" id="m-rol">
   <div class="modal">
-    <div class="modal-title" id="m-rol-title">🏷️ Nuevo Cargo</div>
+    <div class="modal-title" id="m-rol-title">ð·ï¸ Nuevo Cargo</div>
     <input type="hidden" id="ri">
     <div class="fg"><label>Nombre del cargo *</label><input type="text" id="r-nombre" placeholder="Ej: Barista, Mesera, Pastelera, Cajera..."></div>
-    <div class="fg"><label>Descripción</label><textarea id="r-desc" placeholder="Responsabilidades principales..."></textarea></div>
+    <div class="fg"><label>DescripciÃ³n</label><textarea id="r-desc" placeholder="Responsabilidades principales..."></textarea></div>
     <div class="fg">
       <label>Color identificador</label>
       <input type="color" id="r-color" value="#4A2C17" style="width:60px;height:36px;padding:2px;cursor:pointer;border-radius:6px">
     </div>
     <div class="modal-footer">
       <button class="btn btn-outline" onclick="closeModal('m-rol')">Cancelar</button>
-      <button class="btn btn-primary" id="btn-save-rol">💾 Guardar</button>
+      <button class="btn btn-primary" id="btn-save-rol">ð¾ Guardar</button>
     </div>
   </div>
 </div>
 
-<!-- ═══ MODAL EDITAR HORAS DE TURNO ═══ -->
+<!-- âââ MODAL EDITAR HORAS DE TURNO âââ -->
 <div class="overlay" id="m-edit-horas">
   <div class="modal" style="max-width:340px">
-    <div class="modal-title">✏️ Editar horas del turno</div>
+    <div class="modal-title">âï¸ Editar horas del turno</div>
     <input type="hidden" id="eh-eid">
     <input type="hidden" id="eh-di">
     <input type="hidden" id="eh-rol">
@@ -523,7 +523,7 @@ textarea{resize:vertical;min-height:70px;}
         <label>Entrada</label>
         <input type="time" id="eh-desde" step="900" style="width:100%;font-size:15px;padding:8px">
       </div>
-      <div style="font-size:20px;padding-top:22px;color:var(--gris)">–</div>
+      <div style="font-size:20px;padding-top:22px;color:var(--gris)">â</div>
       <div class="fg" style="flex:1;margin:0">
         <label>Salida</label>
         <input type="time" id="eh-hasta" step="900" style="width:100%;font-size:15px;padding:8px">
@@ -532,17 +532,19 @@ textarea{resize:vertical;min-height:70px;}
     <div id="eh-aviso" style="font-size:11px;color:#8B2020;margin-bottom:8px;min-height:16px"></div>
     <div class="modal-footer">
       <button class="btn btn-outline" onclick="closeModal('m-edit-horas')">Cancelar</button>
-      <button class="btn btn-primary" id="btn-save-horas">💾 Guardar horas</button>
+      <button class="btn btn-primary" id="btn-save-horas">ð¾ Guardar horas</button>
     </div>
   </div>
 </div>
 
+<div id="m-confirm" class="modal-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:9999;align-items:center;justify-content:center;"><div style="background:#fff;border-radius:14px;padding:24px;max-width:320px;width:90%;box-shadow:0 8px 32px rgba(0,0,0,.3)"><div id="m-confirm-title" style="font-size:17px;font-weight:700;margin-bottom:10px;color:#333"></div><div id="m-confirm-msg" style="font-size:14px;color:#666;margin-bottom:20px;line-height:1.5"></div><div style="display:flex;gap:10px;justify-content:flex-end"><button id="m-confirm-cancel" style="padding:9px 18px;border:1.5px solid #ddd;background:#fff;border-radius:8px;font-size:14px;cursor:pointer;color:#666">Cancelar</button><button id="m-confirm-ok" style="padding:9px 18px;border:none;background:#8B2020;color:#fff;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer">Eliminar</button></div></div></div>
+
 <div id="toast"></div>
 
 <script>
-// ══════════════════════════════════════════════════
-//  PERSISTENCIA — localStorage con detección robusta
-// ══════════════════════════════════════════════════
+// ââââââââââââââââââââââââââââââââââââââââââââââââââ
+//  PERSISTENCIA â localStorage con detecciÃ³n robusta
+// ââââââââââââââââââââââââââââââââââââââââââââââââââ
 var STORE_KEY = 'sessanio_v63';
 var _storageOk = false;
 
@@ -560,13 +562,13 @@ var _storageOk = false;
 
 var DEFAULTS = {
   empleadas:[
-    // dispSemanal: 0=Lun 1=Mar 2=Mié 3=Jue 4=Vie 5=Sáb 6=Dom | libre:true = día libre
+    // dispSemanal: 0=Lun 1=Mar 2=MiÃ© 3=Jue 4=Vie 5=SÃ¡b 6=Dom | libre:true = dÃ­a libre
     {id:'e1',nombre:'Liliana Suspes Matta',            doc:'',roles:['r2','r3'],contrato:'indefinido',ingreso:'',tel:'',email:'lilianasuspes2@gmail.com',
       turno:'rotativo',descansos:[6],
       dispSemanal:{'0':{desde:'08:00',hasta:'14:00'},'1':{desde:'08:00',hasta:'14:00'},'2':{desde:'08:00',hasta:'14:00'},'3':{desde:'08:00',hasta:'14:00'},'4':{desde:'08:00',hasta:'14:00'},'5':{desde:'08:00',hasta:'14:00'},'6':{libre:true}},
-      obs:'Solo mañanas lun-sáb',estado:'activo'},
+      obs:'Solo maÃ±anas lun-sÃ¡b',estado:'activo'},
 
-    {id:'e2',nombre:'Karen Daniela Moreno Ramírez',    doc:'',roles:['r2','r3'],contrato:'indefinido',ingreso:'',tel:'',email:'pglocomoseria420@gmail.com',
+    {id:'e2',nombre:'Karen Daniela Moreno RamÃ­rez',    doc:'',roles:['r2','r3'],contrato:'indefinido',ingreso:'',tel:'',email:'pglocomoseria420@gmail.com',
       turno:'rotativo',descansos:[0],
       dispSemanal:{'0':{libre:true},'1':{desde:'08:00',hasta:'14:00'},'2':{desde:'08:00',hasta:'20:00'},'3':{desde:'08:00',hasta:'20:00'},'4':{desde:'08:00',hasta:'20:00'},'5':{desde:'08:00',hasta:'20:00'},'6':{desde:'08:00',hasta:'20:00'}},
       obs:'Lunes libre; martes media jornada',estado:'activo'},
@@ -576,15 +578,15 @@ var DEFAULTS = {
       dispSemanal:{'0':{desde:'08:00',hasta:'20:00'},'1':{desde:'08:00',hasta:'20:00'},'2':{desde:'08:00',hasta:'20:00'},'3':{desde:'08:00',hasta:'20:00'},'4':{libre:true},'5':{desde:'08:00',hasta:'20:00'},'6':{desde:'08:00',hasta:'20:00'}},
       obs:'Viernes libre',estado:'activo'},
 
-    {id:'e4',nombre:'Martha Inés Abril Toro',          doc:'',roles:['r1','r6'],contrato:'indefinido',ingreso:'',tel:'',email:'marthaabril204@gmail.com',
+    {id:'e4',nombre:'Martha InÃ©s Abril Toro',          doc:'',roles:['r1','r6'],contrato:'indefinido',ingreso:'',tel:'',email:'marthaabril204@gmail.com',
       turno:'rotativo',descansos:[5,6],
       dispSemanal:{'0':{desde:'08:00',hasta:'20:00'},'1':{desde:'08:00',hasta:'20:00'},'2':{desde:'08:00',hasta:'20:00'},'3':{desde:'08:00',hasta:'20:00'},'4':{desde:'08:00',hasta:'20:00'},'5':{libre:true},'6':{libre:true}},
-      obs:'Sábado y domingo descanso fijo',estado:'activo'},
+      obs:'SÃ¡bado y domingo descanso fijo',estado:'activo'},
 
-    {id:'e5',nombre:'Liseth Martínez Sandoval',        doc:'',roles:['r2','r3'],contrato:'indefinido',ingreso:'',tel:'',email:'lisethmartinez162103@gmail.com',
+    {id:'e5',nombre:'Liseth MartÃ­nez Sandoval',        doc:'',roles:['r2','r3'],contrato:'indefinido',ingreso:'',tel:'',email:'lisethmartinez162103@gmail.com',
       turno:'rotativo',descansos:[0,1,5,6],
       dispSemanal:{'0':{libre:true},'1':{libre:true},'2':{desde:'15:00',hasta:'20:00'},'3':{desde:'15:00',hasta:'20:00'},'4':{desde:'15:00',hasta:'20:00'},'5':{libre:true},'6':{libre:true}},
-      obs:'Solo miércoles a viernes tarde',estado:'activo'},
+      obs:'Solo miÃ©rcoles a viernes tarde',estado:'activo'},
 
     {id:'e6',nombre:'Yorgelys del Carmen Cova Perdomo',doc:'',roles:['r1'],contrato:'indefinido',ingreso:'',tel:'',email:'yorgelis_1808@hotmail.com',
       turno:'rotativo',descansos:[6],
@@ -594,20 +596,21 @@ var DEFAULTS = {
     {id:'e7',nombre:'Juanita Parra Arenas',            doc:'',roles:['r2','r3'],contrato:'indefinido',ingreso:'',tel:'',email:'Juanisparra24@gmail.com',
       turno:'rotativo',descansos:[],
       dispSemanal:{'0':{desde:'08:00',hasta:'20:00'},'1':{desde:'09:00',hasta:'18:00'},'2':{desde:'11:00',hasta:'16:00'},'3':{desde:'09:00',hasta:'16:00'},'4':{desde:'09:00',hasta:'18:00'},'5':{desde:'08:00',hasta:'20:00'},'6':{desde:'08:00',hasta:'20:00'}},
-      obs:'Horario variable según día',estado:'activo'},
+      obs:'Horario variable segÃºn dÃ­a',estado:'activo'},
   ],
   roles:[
-    {id:'r1',nombre:'Cocina',     desc:'Preparación de alimentos',            color:'#8B2020'},
-    {id:'r2',nombre:'Mesera',     desc:'Atención de mesas y servicio',        color:'#1E3A5F'},
-    {id:'r3',nombre:'Barista',    desc:'Preparación de bebidas y barra',      color:'#4A2C17'},
+    {id:'r1',nombre:'Cocina',     desc:'PreparaciÃ³n de alimentos',            color:'#8B2020'},
+    {id:'r2',nombre:'Mesera',     desc:'AtenciÃ³n de mesas y servicio',        color:'#1E3A5F'},
+    {id:'r3',nombre:'Barista',    desc:'PreparaciÃ³n de bebidas y barra',      color:'#4A2C17'},
     {id:'r4',nombre:'Apoyo',      desc:'Apoyo general en servicio',           color:'#2D4A2D'},
     {id:'r5',nombre:'Cajera',     desc:'Manejo de caja y pagos',              color:'#6B3F22'},
-    {id:'r6',nombre:'Pastelera',  desc:'Preparación de postres y repostería', color:'#8B5E3C'},
+    {id:'r6',nombre:'Pastelera',  desc:'PreparaciÃ³n de postres y reposterÃ­a', color:'#8B5E3C'},
   ],
   novedades:[],
   horarios:{},
   weekOff:0,
   empOrden:[],
+  empEliminados:[],  // IDs de empleadas borradas manualmente
 };
 
 var S;
@@ -622,7 +625,7 @@ function loadState(){
     if(raw){
       S = JSON.parse(raw);
 
-      // ── Campos obligatorios ──────────────────────────────────────────
+      // ââ Campos obligatorios ââââââââââââââââââââââââââââââââââââââââââ
       if(typeof S.weekOff !== 'number') S.weekOff = 0;
       if(!S.empOrden || !Array.isArray(S.empOrden) || S.empOrden.length===0)
         S.empOrden = S.empleadas.map(function(e){ return e.id; });
@@ -631,7 +634,7 @@ function loadState(){
       if(!S.roles)     S.roles     = JSON.parse(JSON.stringify(DEFAULTS.roles));
       if(!S.empleadas) S.empleadas = [];
 
-      // ── Migrar campos faltantes en cada empleado guardado ───────────
+      // ââ Migrar campos faltantes en cada empleado guardado âââââââââââ
       S.empleadas.forEach(function(e){
         if(!e.dispSemanal) e.dispSemanal = {};
         if(!e.descansos)   e.descansos   = [];
@@ -640,12 +643,12 @@ function loadState(){
         if(!e.turno)       e.turno       = 'rotativo';
         var def = DEFAULTS.empleadas.filter(function(d){ return d.id === e.id; })[0];
         if(def){
-          // Si roles solo tiene r4 y el default tiene algo distinto → restaurar
+          // Si roles solo tiene r4 y el default tiene algo distinto â restaurar
           var soloR4 = e.roles.length===1 && e.roles[0]==='r4';
           var defDiferente = !(def.roles.length===1 && def.roles[0]==='r4');
           if(soloR4 && defDiferente)
             e.roles = JSON.parse(JSON.stringify(def.roles));
-          // Parche específico: Liliana siempre debe tener r2+r3
+          // Parche especÃ­fico: Liliana siempre debe tener r2+r3
           if(e.id==='e1'){
             if(e.roles.indexOf('r2')<0 || e.roles.indexOf('r3')<0)
               e.roles = ['r2','r3'];
@@ -657,9 +660,9 @@ function loadState(){
         }
       });
 
-      // ── FUSIÓN: agregar empleados del DEFAULTS que no estén en localStorage ──
+      // ââ FUSIÃN: agregar empleados del DEFAULTS que no estÃ©n en localStorage ââ
       // Esto garantiza que actualizaciones de la app NUNCA borren empleados guardados.
-      // Solo AGREGA los que faltan — nunca borra ni sobreescribe los existentes.
+      // Solo AGREGA los que faltan â nunca borra ni sobreescribe los existentes.
       DEFAULTS.empleadas.forEach(function(def){
         var existe = S.empleadas.some(function(e){ return e.id === def.id; });
         if(!existe){
@@ -681,7 +684,7 @@ function loadState(){
 function saveState(){
   var ind = document.getElementById('save-ind');
   if(!_storageOk){
-    if(ind){ ind.textContent = '⚠️ Sin persistencia'; ind.classList.add('show'); }
+    if(ind){ ind.textContent = 'â ï¸ Sin persistencia'; ind.classList.add('show'); }
     return;
   }
   try{
@@ -689,30 +692,30 @@ function saveState(){
     localStorage.setItem(STORE_KEY, json);
     var verify = localStorage.getItem(STORE_KEY);
     if(verify){
-      if(ind){ ind.textContent='💾 Guardado'; ind.classList.add('show'); setTimeout(function(){ ind.classList.remove('show'); }, 2500); }
+      if(ind){ ind.textContent='ð¾ Guardado'; ind.classList.add('show'); setTimeout(function(){ ind.classList.remove('show'); }, 2500); }
     } else {
-      if(ind){ ind.textContent='⚠️ No se pudo guardar'; ind.classList.add('show'); }
+      if(ind){ ind.textContent='â ï¸ No se pudo guardar'; ind.classList.add('show'); }
     }
   } catch(err){
-    if(ind){ ind.textContent='⚠️ '+err.message; ind.classList.add('show'); }
+    if(ind){ ind.textContent='â ï¸ '+err.message; ind.classList.add('show'); }
   }
 }
 
-// ── DEBUG: muestra estado real en pantalla ──
+// ââ DEBUG: muestra estado real en pantalla ââ
 function mostrarDebug(){
   var info = '';
-  info += '🔑 STORE_KEY: ' + STORE_KEY + '\n';
-  info += '✅ _storageOk: ' + _storageOk + '\n\n';
+  info += 'ð STORE_KEY: ' + STORE_KEY + '\n';
+  info += 'â _storageOk: ' + _storageOk + '\n\n';
   // Todas las claves en localStorage
-  info += '📦 localStorage keys (' + localStorage.length + '):\n';
+  info += 'ð¦ localStorage keys (' + localStorage.length + '):\n';
   for(var i=0;i<localStorage.length;i++){
     var k=localStorage.key(i);
     var v=localStorage.getItem(k);
-    info += '  "'+k+'" → '+v.length+' chars\n';
+    info += '  "'+k+'" â '+v.length+' chars\n';
   }
   info += '\n';
   // Estado actual en memoria
-  info += '💾 Estado en memoria:\n';
+  info += 'ð¾ Estado en memoria:\n';
   info += '  empleadas: '+S.empleadas.length+'\n';
   info += '  roles: '+S.roles.length+'\n';
   info += '  novedades: '+S.novedades.length+'\n';
@@ -726,12 +729,12 @@ function mostrarDebug(){
       info += '    '+(e?e.nombre.split(' ')[0]:empId)+': '+JSON.stringify(S.horarios[wk][empId])+'\n';
     });
   } else {
-    info += '  horario semana actual: VACÍO\n';
+    info += '  horario semana actual: VACÃO\n';
   }
   alert(info);
 }
 
-// ── Exportar datos como JSON ──
+// ââ Exportar datos como JSON ââ
 function exportarDatos(){
   var json = JSON.stringify(S, null, 2);
   var blob = new Blob([json], {type:'application/json'});
@@ -739,17 +742,17 @@ function exportarDatos(){
   var a    = document.createElement('a');
   a.href = url; a.download = 'sessanio_backup_'+new Date().toISOString().slice(0,10)+'.json';
   a.click(); URL.revokeObjectURL(url);
-  toast('Backup descargado ✓');
+  toast('Backup descargado â');
 }
 
-// ── Restablecer perfiles desde DEFAULTS ──
+// ââ Restablecer perfiles desde DEFAULTS ââ
 function restablecerPerfiles(){
   if(!confirm(
-    '¿Restablecer roles, horarios y descansos de las 7 empleadas base?\n\n' +
-    '✅ Los empleados agregados manualmente (Carlos, Alexandra, etc.) NO se tocan.\n' +
-    '✅ Los horarios semanales y novedades NO se borran.'
+    'Â¿Restablecer roles, horarios y descansos de las 7 empleadas base?\n\n' +
+    'â Los empleados agregados manualmente (Carlos, Alexandra, etc.) NO se tocan.\n' +
+    'â Los horarios semanales y novedades NO se borran.'
   )) return;
-  // Solo actualiza las empleadas que están en DEFAULTS — no toca las demás
+  // Solo actualiza las empleadas que estÃ¡n en DEFAULTS â no toca las demÃ¡s
   DEFAULTS.empleadas.forEach(function(def){
     var emp = S.empleadas.filter(function(e){ return e.id === def.id; })[0];
     if(emp){
@@ -758,16 +761,16 @@ function restablecerPerfiles(){
       emp.descansos   = JSON.parse(JSON.stringify(def.descansos));
       if(def.obs) emp.obs = def.obs;
     } else {
-      // Si por alguna razón no existe, la agrega
+      // Si por alguna razÃ³n no existe, la agrega
       S.empleadas.push(JSON.parse(JSON.stringify(def)));
     }
   });
   saveState();
   renderEmp();
-  toast('✅ Perfiles base restablecidos — empleados adicionales intactos');
+  toast('â Perfiles base restablecidos â empleados adicionales intactos');
 }
 
-// ── Importar datos desde JSON ──
+// ââ Importar datos desde JSON ââ
 function importarDatos(){
   var input = document.createElement('input');
   input.type = 'file'; input.accept = '.json';
@@ -777,7 +780,7 @@ function importarDatos(){
     reader.onload = function(e){
       try{
         var parsed = JSON.parse(e.target.result);
-        if(!parsed.empleadas || !parsed.roles){ toast('Archivo inválido','err'); return; }
+        if(!parsed.empleadas || !parsed.roles){ toast('Archivo invÃ¡lido','err'); return; }
         parsed.empleadas.forEach(function(emp){
           if(!emp.dispSemanal) emp.dispSemanal = {};
           if(!emp.descansos)   emp.descansos   = [];
@@ -789,7 +792,7 @@ function importarDatos(){
         S = parsed;
         saveState();
         renderDash(); renderEmps(); renderHor(); renderNovs(); renderRoles();
-        toast('Datos importados correctamente ✓');
+        toast('Datos importados correctamente â');
       } catch(err){ toast('Error leyendo archivo: '+err.message,'err'); }
     };
     reader.readAsText(file);
@@ -797,9 +800,9 @@ function importarDatos(){
   input.click();
 }
 
-// ══════ UTILS ══════
+// ââââââ UTILS ââââââ
 function uid(){ return 'x' + Math.random().toString(36).slice(2,9); }
-function getRol(id){ return S.roles.find(function(r){ return r.id===id; }) || {nombre:'—',color:'#888',desc:''}; }
+function getRol(id){ return S.roles.find(function(r){ return r.id===id; }) || {nombre:'â',color:'#888',desc:''}; }
 function getEmp(id){ return S.empleadas.find(function(e){ return e.id===id; }); }
 
 function getLunes(off){
@@ -838,19 +841,19 @@ function goPage(name,btn){
   if(name==='roles')     renderRoles();
 }
 
-var TIPOS={cita_medica:'🏥 Cita médica',permiso:'📝 Permiso',incapacidad:'🩺 Incapacidad',
-  vacaciones:'🌴 Vacaciones',calamidad:'❗ Calamidad',llegada_tarde:'🕐 Llegada tarde',
-  salida_temprana:'🕔 Salida temprana',cambio_turno:'🔄 Cambio turno',
-  ausencia:'🚫 Ausencia injustificada',otro:'📌 Otro'};
+var TIPOS={cita_medica:'ð¥ Cita mÃ©dica',permiso:'ð Permiso',incapacidad:'ð©º Incapacidad',
+  vacaciones:'ð´ Vacaciones',calamidad:'â Calamidad',llegada_tarde:'ð Llegada tarde',
+  salida_temprana:'ð Salida temprana',cambio_turno:'ð Cambio turno',
+  ausencia:'ð« Ausencia injustificada',otro:'ð Otro'};
 var TIPO_TAG={cita_medica:'t-cita',permiso:'t-perm',incapacidad:'t-inc',vacaciones:'t-vac',
   calamidad:'t-inc',llegada_tarde:'t-nov',salida_temprana:'t-nov',cambio_turno:'t-nov',
   ausencia:'t-inc',otro:'t-nov'};
-var EST_LBL={pendiente:'⏳ Pendiente',aprobada:'✅ Aprobada',rechazada:'❌ Rechazada',en_proceso:'🔄 En proceso'};
+var EST_LBL={pendiente:'â³ Pendiente',aprobada:'â Aprobada',rechazada:'â Rechazada',en_proceso:'ð En proceso'};
 var EST_TAG={pendiente:'t-nov',aprobada:'t-activo',rechazada:'t-inc',en_proceso:'t-perm'};
-var DIAS=['Lun','Mar','Mié','Jue','Vie','Sáb','Dom'];
-var DIAS_L=['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado','Domingo'];
+var DIAS=['Lun','Mar','MiÃ©','Jue','Vie','SÃ¡b','Dom'];
+var DIAS_L=['Lunes','Martes','MiÃ©rcoles','Jueves','Viernes','SÃ¡bado','Domingo'];
 
-// ══════ DASHBOARD ══════
+// ââââââ DASHBOARD ââââââ
 function renderDash(){
   var act=S.empleadas.filter(function(e){ return e.estado==='activo'; }).length;
   var wk=weekKey(0);
@@ -862,13 +865,13 @@ function renderDash(){
     '<div class="stat"><div class="stat-n">'+pend+'</div><div class="stat-l">Novedades pendientes</div></div>';
 
   document.getElementById('dash-novs').innerHTML = nw.length===0
-    ? '<div class="empty"><div class="empty-ico">✅</div>Sin novedades esta semana</div>'
+    ? '<div class="empty"><div class="empty-ico">â</div>Sin novedades esta semana</div>'
     : nw.slice(0,6).map(function(n){
         var e=getEmp(n.empId);
         return '<div style="display:flex;justify-content:space-between;align-items:flex-start;padding:9px 0;border-bottom:1px solid var(--crem2)">'
-          +'<div><div style="font-weight:600;font-size:14px">'+(e?e.nombre.split(' ').slice(0,2).join(' '):'—')+'</div>'
+          +'<div><div style="font-weight:600;font-size:14px">'+(e?e.nombre.split(' ').slice(0,2).join(' '):'â')+'</div>'
           +'<span class="tag '+(TIPO_TAG[n.tipo]||'t-nov')+'">'+(TIPOS[n.tipo]||n.tipo)+'</span>'
-          +'<div class="small" style="margin-top:3px">'+n.fi+(n.ff&&n.ff!==n.fi?' → '+n.ff:'')+'</div></div>'
+          +'<div class="small" style="margin-top:3px">'+n.fi+(n.ff&&n.ff!==n.fi?' â '+n.ff:'')+'</div></div>'
           +'<span class="tag '+(EST_TAG[n.estado]||'t-gris')+'">'+(EST_LBL[n.estado]||n.estado)+'</span></div>';
       }).join('');
 
@@ -894,11 +897,11 @@ function renderDash(){
     }).join(''));
 }
 
-// ══════ EMPLEADAS ══════
+// ââââââ EMPLEADAS ââââââ
 function renderEmps(){
   var c=document.getElementById('emp-list');
   if(!S.empleadas.length){
-    c.innerHTML='<div class="empty" style="grid-column:1/-1"><div class="empty-ico">👥</div>No hay empleadas registradas</div>';
+    c.innerHTML='<div class="empty" style="grid-column:1/-1"><div class="empty-ico">ð¥</div>No hay empleadas registradas</div>';
     return;
   }
   c.innerHTML=S.empleadas.map(function(e){
@@ -913,32 +916,32 @@ function renderEmps(){
       +'<div style="font-family:\'Playfair Display\',serif;font-size:15px;font-weight:700;line-height:1.3">'+e.nombre+'</div>'
       +'<div style="display:flex;flex-wrap:wrap;gap:3px;margin:5px 0">'+rs.map(function(r){ return '<span class="tag" style="background:'+r.color+'22;color:'+r.color+';border:1px solid '+r.color+'44">'+r.nombre+'</span>'; }).join('')+'</div>'
       +'<span class="tag '+(e.estado==='activo'?'t-activo':'t-inactivo')+'">'+(e.estado==='activo'?'Activa':'Inactiva')+'</span>'
-      +'<div class="small" style="margin-top:7px">🗓️ Descanso: '+desc+'</div>'
-      +'<div class="small">⏰ Turno: '+(e.turno==='manana'?'Mañana':e.turno==='tarde'?'Tarde':'Rotativo')+'</div>'
-      +(e.ingreso?'<div class="small">📅 '+e.ingreso+'</div>':'')
-      +(e.email?'<div class="small" style="word-break:break-all">✉️ '+e.email+'</div>':'')
+      +'<div class="small" style="margin-top:7px">ðï¸ Descanso: '+desc+'</div>'
+      +'<div class="small">â° Turno: '+(e.turno==='manana'?'MaÃ±ana':e.turno==='tarde'?'Tarde':'Rotativo')+'</div>'
+      +(e.ingreso?'<div class="small">ð '+e.ingreso+'</div>':'')
+      +(e.email?'<div class="small" style="word-break:break-all">âï¸ '+e.email+'</div>':'')
       +'</div></div>'
       +'<div style="display:flex;gap:7px;margin-top:12px">'
-      +'<button class="btn btn-sm btn-outline" data-id="'+e.id+'" data-action="ver">👁️ Ver</button>'
-      +'<button class="btn btn-sm btn-primary" data-id="'+e.id+'" data-action="edit">✏️ Editar</button>'
-      +'<button class="btn btn-sm btn-danger" data-id="'+e.id+'" data-action="del">🗑️</button>'
+      +'<button class="btn btn-sm btn-outline" data-id="'+e.id+'" data-action="ver">ðï¸ Ver</button>'
+      +'<button class="btn btn-sm btn-primary" data-id="'+e.id+'" data-action="edit">âï¸ Editar</button>'
+      +'<button class="btn btn-sm btn-danger" data-id="'+e.id+'" data-action="del">ðï¸</button>'
       +'</div></div>';
   }).join('');
 }
 
-// ══════════════════════════════════════════════════
-//  DISPONIBILIDAD SEMANAL — horas exactas por día
+// ââââââââââââââââââââââââââââââââââââââââââââââââââ
+//  DISPONIBILIDAD SEMANAL â horas exactas por dÃ­a
 //  dispSemanal[dia] = { desde:"09:00", hasta:"18:00" }
-//                   | { libre: true }   → no trabaja ese día
-//                   | undefined         → sin definir
-// ══════════════════════════════════════════════════
+//                   | { libre: true }   â no trabaja ese dÃ­a
+//                   | undefined         â sin definir
+// ââââââââââââââââââââââââââââââââââââââââââââââââââ
 
 function buildDispGrid(dispSemanal){
   var grid = document.getElementById('e-disp-grid');
   if(!grid) return;
   var ds = dispSemanal || {};
 
-  // Opciones de hora cada 30 min, 6:00 AM – 10:00 PM
+  // Opciones de hora cada 30 min, 6:00 AM â 10:00 PM
   var horas = [];
   for(var h=6; h<=22; h++){
     var ampm = h<12?'AM':(h===12?'PM':'PM');
@@ -966,18 +969,18 @@ function buildDispGrid(dispSemanal){
       +'<div class="disp-lbl">'+dia+'</div>'
       +'<div class="disp-card '+cardCls+'" data-di="'+i+'">'
       +(esLibre
-        ? '<div style="font-size:18px;margin:6px 0">🚫</div><div style="font-size:9px;color:#8B2020;font-weight:700">No trabaja</div>'
+        ? '<div style="font-size:18px;margin:6px 0">ð«</div><div style="font-size:9px;color:#8B2020;font-weight:700">No trabaja</div>'
         : makeSelect('disp-desde', i, desde, 'Entrada')
-          +'<span class="disp-sep">→</span>'
+          +'<span class="disp-sep">â</span>'
           +makeSelect('disp-hasta', i, hasta, 'Salida')
        )
-      +'<button class="disp-libre-btn'+(esLibre?' activo':'')+'" data-di="'+i+'">🚫</button>'
+      +'<button class="disp-libre-btn'+(esLibre?' activo':'')+'" data-di="'+i+'">ð«</button>'
       +'</div>'
       +'</div>';
   }).join('');
 }
 
-// Toggle 🚫 día libre
+// Toggle ð« dÃ­a libre
 document.addEventListener('click', function(ev){
   var btn = ev.target.closest('.disp-libre-btn');
   if(!btn || !btn.closest('#e-disp-grid')) return;
@@ -1018,41 +1021,41 @@ function readDispGrid(){
   return result;
 }
 
-// ══════════════════════════════════════════════════
-//  rangoATurno — convierte disponibilidad horaria a turno
+// ââââââââââââââââââââââââââââââââââââââââââââââââââ
+//  rangoATurno â convierte disponibilidad horaria a turno
 //
 //  Retorna:
-//    'manana'  → cubre 08:00–15:00 (7h apertura)
-//    'tarde'   → cubre 13:00–20:00 (7h cierre)
-//    'partido' → rango válido ≥4h pero no cubre turno completo
-//    'advertencia' → rango <4h, inválido, o 0 horas
-//    null      → sin datos
-// ══════════════════════════════════════════════════
+//    'manana'  â cubre 08:00â15:00 (7h apertura)
+//    'tarde'   â cubre 13:00â20:00 (7h cierre)
+//    'partido' â rango vÃ¡lido â¥4h pero no cubre turno completo
+//    'advertencia' â rango <4h, invÃ¡lido, o 0 horas
+//    null      â sin datos
+// ââââââââââââââââââââââââââââââââââââââââââââââââââ
 function rangoATurno(desde, hasta){
   function toMin(t){ if(!t) return null; var p=t.split(':'); return parseInt(p[0])*60+parseInt(p[1]); }
   var d = toMin(desde), h = toMin(hasta);
   if(d === null && h === null) return null;
 
-  // Rango inválido: mismo valor o invertido
+  // Rango invÃ¡lido: mismo valor o invertido
   if(d !== null && h !== null && h <= d) return 'advertencia';
 
   var duracion = (d !== null && h !== null) ? (h - d) : null;
 
-  // Menos de 4 horas → advertencia
+  // Menos de 4 horas â advertencia
   if(duracion !== null && duracion < 4*60) return 'advertencia';
 
   var mD=8*60, mH=15*60, tD=13*60, tH=20*60;
 
-  // Cubre turno mañana completo (entra ≤08:00 y sale ≥15:00)
+  // Cubre turno maÃ±ana completo (entra â¤08:00 y sale â¥15:00)
   var okM = (d===null || d <= mD) && (h===null || h >= mH);
-  // Cubre turno tarde completo (entra ≤13:00 y sale ≥20:00)
+  // Cubre turno tarde completo (entra â¤13:00 y sale â¥20:00)
   var okT  = (d===null || d <= tD) && (h===null || h >= tH);
 
   if(okM && okT) return 'ambos';
   if(okM) return 'manana';
   if(okT) return 'tarde';
 
-  // No cubre ningún turno completo pero tiene ≥4h → partido
+  // No cubre ningÃºn turno completo pero tiene â¥4h â partido
   return 'partido';
 }
 
@@ -1092,7 +1095,7 @@ function buildRolesWrap(selIds){
     label.appendChild(dot);
     label.appendChild(txt);
 
-    // Al cambiar el checkbox → actualizar estilos del label
+    // Al cambiar el checkbox â actualizar estilos del label
     cb.addEventListener('change', function(){
       var activo = cb.checked;
       label.style.borderColor = activo ? r.color : '#ccc';
@@ -1112,17 +1115,17 @@ function buildDiasWrap(selDias){
   });
 }
 
-// Click en días de descanso
+// Click en dÃ­as de descanso
 document.getElementById('e-dias-wrap').addEventListener('click', function(ev){
   var btn = ev.target.closest('.dia-btn');
   if(btn) btn.classList.toggle('on');
 });
 
-// ── Abrir modal empleada
+// ââ Abrir modal empleada
 var _empVerActual = null;
 
 function openEmpModal(id){
-  document.getElementById('m-emp-title').textContent = id ? '✏️ Editar Empleada' : '➕ Nueva Empleada';
+  document.getElementById('m-emp-title').textContent = id ? 'âï¸ Editar Empleada' : 'â Nueva Empleada';
   document.getElementById('ei').value = id||'';
   var e = id ? getEmp(id) : null;
   buildRolesWrap(e ? e.roles : []);
@@ -1165,16 +1168,16 @@ function saveEmp(){
   if(id){
     var idx = S.empleadas.findIndex(function(e){ return e.id===id; });
     S.empleadas[idx] = obj;
-    toast('Empleada actualizada ✓');
+    toast('Empleada actualizada â');
   } else {
     S.empleadas.push(obj);
-    toast('Empleada registrada ✓');
+    toast('Empleada registrada â');
   }
   saveState(); closeModal('m-emp'); renderEmps(); renderDash();
 }
 
 function delEmp(id){
-  if(!confirm('¿Eliminar esta empleada?')) return;
+  if(!confirm('Â¿Eliminar esta empleada?')) return;
   S.empleadas = S.empleadas.filter(function(e){ return e.id!==id; });
   saveState(); toast('Empleada eliminada'); renderEmps(); renderDash();
 }
@@ -1194,10 +1197,10 @@ function verEmp(id){
     +DIAS.map(function(d,i){
       var v = ds[String(i)];
       var lbl, bg, color;
-      if(!v)                  { lbl='—';                          bg='var(--crem2)'; color='var(--gris)'; }
-      else if(v.libre)        { lbl='🚫 No trabaja';             bg='#F8D7DA';      color='#8B2020'; }
-      else if(v.desde||v.hasta){ lbl='🕐 '+(v.desde||'?')+'\n–'+(v.hasta||'?'); bg='#E8F5E9'; color='#2D4A2D'; }
-      else                    { lbl='—';                          bg='var(--crem2)'; color='var(--gris)'; }
+      if(!v)                  { lbl='â';                          bg='var(--crem2)'; color='var(--gris)'; }
+      else if(v.libre)        { lbl='ð« No trabaja';             bg='#F8D7DA';      color='#8B2020'; }
+      else if(v.desde||v.hasta){ lbl='ð '+(v.desde||'?')+'\nâ'+(v.hasta||'?'); bg='#E8F5E9'; color='#2D4A2D'; }
+      else                    { lbl='â';                          bg='var(--crem2)'; color='var(--gris)'; }
       return '<div style="text-align:center;min-width:50px">'
         +'<div class="small" style="margin-bottom:3px">'+d+'</div>'
         +'<div style="background:'+bg+';border-radius:7px;padding:5px 4px;font-size:10px;font-weight:700;color:'+color+';line-height:1.3;white-space:pre">'+lbl+'</div>'
@@ -1216,23 +1219,23 @@ function verEmp(id){
     +'</div>'
     +'<hr class="divider">'
     +'<div class="g2" style="margin-bottom:14px">'
-    +'<div><div class="small">Documento</div><div style="font-weight:500">'+(e.doc||'—')+'</div></div>'
+    +'<div><div class="small">Documento</div><div style="font-weight:500">'+(e.doc||'â')+'</div></div>'
     +'<div><div class="small">Contrato</div><div style="font-weight:500">'+e.contrato+'</div></div>'
-    +'<div><div class="small">Teléfono</div><div style="font-weight:500">'+(e.tel||'—')+'</div></div>'
-    +'<div><div class="small">Correo</div><div style="font-weight:500;font-size:13px;word-break:break-all">'+(e.email||'—')+'</div></div>'
-    +'<div><div class="small">Fecha ingreso</div><div style="font-weight:500">'+(e.ingreso||'—')+'</div></div>'
-    +'<div><div class="small">Turno preferido</div><div style="font-weight:500">'+(e.turno==='manana'?'Mañana':e.turno==='tarde'?'Tarde':'Rotativo')+'</div></div>'
-    +'<div style="grid-column:1/-1"><div class="small">Días de descanso preferidos</div><div style="font-weight:500">'+desc+'</div></div>'
+    +'<div><div class="small">TelÃ©fono</div><div style="font-weight:500">'+(e.tel||'â')+'</div></div>'
+    +'<div><div class="small">Correo</div><div style="font-weight:500;font-size:13px;word-break:break-all">'+(e.email||'â')+'</div></div>'
+    +'<div><div class="small">Fecha ingreso</div><div style="font-weight:500">'+(e.ingreso||'â')+'</div></div>'
+    +'<div><div class="small">Turno preferido</div><div style="font-weight:500">'+(e.turno==='manana'?'MaÃ±ana':e.turno==='tarde'?'Tarde':'Rotativo')+'</div></div>'
+    +'<div style="grid-column:1/-1"><div class="small">DÃ­as de descanso preferidos</div><div style="font-weight:500">'+desc+'</div></div>'
     +'</div>'
     + dispHtml
     +(e.obs?'<div style="background:var(--crem);border-radius:8px;padding:11px;margin-top:12px"><div class="small" style="margin-bottom:4px">Observaciones</div><div style="font-size:14px">'+e.obs+'</div></div>':'')
     +'<hr class="divider">'
-    +'<div class="card-title" style="margin-bottom:10px">📋 Novedades ('+novs.length+')</div>'
+    +'<div class="card-title" style="margin-bottom:10px">ð Novedades ('+novs.length+')</div>'
     +(novs.length===0?'<div class="small">Sin novedades registradas</div>':
       novs.slice().reverse().slice(0,6).map(function(n){
         return '<div style="padding:8px 0;border-bottom:1px solid var(--crem2)">'
           +'<span class="tag '+(TIPO_TAG[n.tipo]||'t-nov')+'">'+(TIPOS[n.tipo]||n.tipo)+'</span>'
-          +'<span class="small" style="margin-left:5px">'+n.fi+(n.ff&&n.ff!==n.fi?' → '+n.ff:'')+'</span>'
+          +'<span class="small" style="margin-left:5px">'+n.fi+(n.ff&&n.ff!==n.fi?' â '+n.ff:'')+'</span>'
           +'<div style="font-size:13px;margin-top:3px">'+n.desc+'</div>'
           +'</div>';
       }).join(''));
@@ -1253,15 +1256,15 @@ document.getElementById('btn-nueva-emp').addEventListener('click', function(){ o
 document.getElementById('btn-save-emp').addEventListener('click', saveEmp);
 document.getElementById('btn-edit-from-ver').addEventListener('click', function(){ closeModal('m-ver'); openEmpModal(_empVerActual); });
 
-// ══════ HORARIOS ══════
+// ââââââ HORARIOS ââââââ
 function renderHor(){
   var lunes = getLunes();
   var fechas = [];
   for(var i=0;i<7;i++){ var d=new Date(lunes); d.setDate(lunes.getDate()+i); fechas.push(d); }
-  document.getElementById('week-label').textContent = fmtDate(fechas[0]) + ' — ' + fmtDate(fechas[6]) + ' ' + fechas[0].getFullYear();
+  document.getElementById('week-label').textContent = fmtDate(fechas[0]) + ' â ' + fmtDate(fechas[6]) + ' ' + fechas[0].getFullYear();
   var wk = weekKey(); var hs = S.horarios[wk]||{};
   var body = document.getElementById('hor-body');
-  // Ordenar empleadas activas según empOrden guardado
+  // Ordenar empleadas activas segÃºn empOrden guardado
   var activas = S.empleadas.filter(function(e){ return e.estado==='activo'; });
   // Sincronizar empOrden con activas (agregar nuevas al final, quitar inactivas)
   var idsActivas = activas.map(function(e){ return e.id; });
@@ -1296,65 +1299,65 @@ function renderHor(){
       });
       var t = (hs[e.id]||{})[String(di)];
       var esDes = e.descansos && e.descansos.indexOf(di)>=0;
-      var dispDia = dispS[String(di)]; // disponibilidad registrada para este día
+      var dispDia = dispS[String(di)]; // disponibilidad registrada para este dÃ­a
       if(!t){
         if(esDes){
-          // Descanso fijo — mostrar aviso pero permitir asignación manual excepcional
+          // Descanso fijo â mostrar aviso pero permitir asignaciÃ³n manual excepcional
           return '<td>'
-            +'<div class="small" style="color:#8B2020;margin-bottom:3px">🚫 día libre — puedes asignar igual:</div>'
-            +'<button class="chip c-m chip-open-horas" data-eid="'+e.id+'" data-di="'+di+'" data-desde="08:00" data-hasta="15:00">☀️ Mañana</button>'
-            +'<button class="chip c-t chip-open-horas" data-eid="'+e.id+'" data-di="'+di+'" data-desde="13:00" data-hasta="20:00">🌙 Tarde</button>'
-            +'<button class="chip c-p chip-open-horas" data-eid="'+e.id+'" data-di="'+di+'" data-desde="" data-hasta="">🔆 Personalizado</button>'
-            +'<button class="chip c-l chip-btn" data-eid="'+e.id+'" data-di="'+di+'" data-t="libre">✅ Libre</button>'
+            +'<div class="small" style="color:#8B2020;margin-bottom:3px">ð« dÃ­a libre â puedes asignar igual:</div>'
+            +'<button class="chip c-m chip-open-horas" data-eid="'+e.id+'" data-di="'+di+'" data-desde="08:00" data-hasta="15:00">âï¸ MaÃ±ana</button>'
+            +'<button class="chip c-t chip-open-horas" data-eid="'+e.id+'" data-di="'+di+'" data-desde="13:00" data-hasta="20:00">ð Tarde</button>'
+            +'<button class="chip c-p chip-open-horas" data-eid="'+e.id+'" data-di="'+di+'" data-desde="" data-hasta="">ð Personalizado</button>'
+            +'<button class="chip c-l chip-btn" data-eid="'+e.id+'" data-di="'+di+'" data-t="libre">â Libre</button>'
             +'</td>';
         }
         var sugerencia = '';
         if(dispDia){
           if(dispDia.libre){
-            // Mostrar aviso pero NO bloquear — permite asignar manualmente si el operador lo decide
-            sugerencia='<div class="small" style="color:#8B2020;margin-bottom:3px">🚫 día libre registrado — puedes asignar igual:</div>';
+            // Mostrar aviso pero NO bloquear â permite asignar manualmente si el operador lo decide
+            sugerencia='<div class="small" style="color:#8B2020;margin-bottom:3px">ð« dÃ­a libre registrado â puedes asignar igual:</div>';
           } else if(dispDia.desde||dispDia.hasta){
-            sugerencia='<div class="small" style="color:#2D4A2D;margin-bottom:2px">🕐 '+(dispDia.desde||'?')+' – '+(dispDia.hasta||'?')+'</div>';
+            sugerencia='<div class="small" style="color:#2D4A2D;margin-bottom:2px">ð '+(dispDia.desde||'?')+' â '+(dispDia.hasta||'?')+'</div>';
           }
         }
         return '<td>'
-          +(novMin?'<span class="chip c-n" style="font-size:9px;display:block;margin-bottom:2px">⚠️ Nov.</span>':'')
+          +(novMin?'<span class="chip c-n" style="font-size:9px;display:block;margin-bottom:2px">â ï¸ Nov.</span>':'')
           +sugerencia
-          +'<button class="chip c-m chip-open-horas" data-eid="'+e.id+'" data-di="'+di+'" data-desde="08:00" data-hasta="15:00">☀️ Mañana</button>'
-          +'<button class="chip c-t chip-open-horas" data-eid="'+e.id+'" data-di="'+di+'" data-desde="13:00" data-hasta="20:00">🌙 Tarde</button>'
-          +'<button class="chip c-p chip-open-horas" data-eid="'+e.id+'" data-di="'+di+'" data-desde="" data-hasta="">🔆 Personalizado</button>'
-          +'<button class="chip c-l chip-btn" data-eid="'+e.id+'" data-di="'+di+'" data-t="libre">✅ Libre</button>'
+          +'<button class="chip c-m chip-open-horas" data-eid="'+e.id+'" data-di="'+di+'" data-desde="08:00" data-hasta="15:00">âï¸ MaÃ±ana</button>'
+          +'<button class="chip c-t chip-open-horas" data-eid="'+e.id+'" data-di="'+di+'" data-desde="13:00" data-hasta="20:00">ð Tarde</button>'
+          +'<button class="chip c-p chip-open-horas" data-eid="'+e.id+'" data-di="'+di+'" data-desde="" data-hasta="">ð Personalizado</button>'
+          +'<button class="chip c-l chip-btn" data-eid="'+e.id+'" data-di="'+di+'" data-t="libre">â Libre</button>'
           +'</td>';
       }
-      // Extraer turno y roles (formato: "partido:HH:MM-HH:MM|r2,r3" — múltiples roles posibles)
+      // Extraer turno y roles (formato: "partido:HH:MM-HH:MM|r2,r3" â mÃºltiples roles posibles)
       var tVal=t, tRoles=[];
       if(t && t.indexOf('|')>=0){
         var tp=t.split('|'); tVal=tp[0];
         tRoles = tp[1] ? tp[1].split(',').filter(Boolean) : [];
       }
-      var tRol = tRoles.length===1 ? tRoles[0] : null; // compatibilidad con código antiguo
+      var tRol = tRoles.length===1 ? tRoles[0] : null; // compatibilidad con cÃ³digo antiguo
       var cm={manana:'c-m',tarde:'c-t',libre:'c-l'};
-      var lm={manana:'☀️ 8:00–15:00',tarde:'🌙 13:00–20:00',libre:'✅ Libre'};
+      var lm={manana:'âï¸ 8:00â15:00',tarde:'ð 13:00â20:00',libre:'â Libre'};
       var chipCls, chipLbl;
       if(tVal==='manana'||tVal==='tarde'||tVal==='libre'){
         chipCls = cm[tVal]; chipLbl = lm[tVal];
       } else if(tVal && tVal.indexOf('partido:')===0){
         var mChip=tVal.replace('partido:','').match(/(\d{2}:\d{2})-(\d{2}:\d{2})/);
-        var horas = tVal.replace('partido:','').replace('-',' – ');
+        var horas = tVal.replace('partido:','').replace('-',' â ');
         chipCls = 'c-p';
         if(mChip){
           function toMC(t){var p=t.split(':');return parseInt(p[0])*60+parseInt(p[1]);}
           var durC = toMC(mChip[2]) - toMC(mChip[1]);
           var extC = Math.max(0, durC - 480);
-          chipLbl = '🔆 '+horas+(extC>0?' <span style="font-size:8px;background:#C9943A;color:#fff;border-radius:4px;padding:0 3px;margin-left:2px">+'+Math.floor(extC/60)+'h extra</span>':'');
-        } else { chipLbl = '🔆 '+horas; }
+          chipLbl = 'ð '+horas+(extC>0?' <span style="font-size:8px;background:#C9943A;color:#fff;border-radius:4px;padding:0 3px;margin-left:2px">+'+Math.floor(extC/60)+'h extra</span>':'');
+        } else { chipLbl = 'ð '+horas; }
       } else if(tVal && tVal.indexOf('adv:')===0){
-        var horasAdv = tVal.replace('adv:','').replace('-',' – ');
-        chipCls = 'c-w'; chipLbl = '⚠️ '+horasAdv;
+        var horasAdv = tVal.replace('adv:','').replace('-',' â ');
+        chipCls = 'c-w'; chipLbl = 'â ï¸ '+horasAdv;
       } else {
         chipCls = 'c-l'; chipLbl = tVal||'?';
       }
-      // Badge de roles activos (puede ser más de uno)
+      // Badge de roles activos (puede ser mÃ¡s de uno)
       var rolBadge = '';
       if(tRoles.length > 0){
         rolBadge = '<div style="margin-top:3px;display:flex;flex-wrap:wrap;gap:2px">'
@@ -1364,8 +1367,8 @@ function renderHor(){
           }).join('')
           +'</div>';
       }
-      // Selector de roles como TOGGLE — click activa/desactiva cada rol independientemente
-      // Solo aparece si el empleado tiene más de 1 rol Y tiene turno asignado
+      // Selector de roles como TOGGLE â click activa/desactiva cada rol independientemente
+      // Solo aparece si el empleado tiene mÃ¡s de 1 rol Y tiene turno asignado
       var rolSelector = '';
       if(tVal!=='libre' && tVal.indexOf('adv:')<0 && e.roles.length > 1){
         rolSelector = '<div style="margin-top:5px;display:flex;flex-wrap:wrap;gap:2px">'
@@ -1381,16 +1384,16 @@ function renderHor(){
               +'style="font-size:9px;padding:2px 7px;border-radius:12px;cursor:pointer;'
               +'background:'+bg+';color:'+clr+';border:1.5px solid '+brd+';font-weight:'+fw+';transition:all .12s" '
               +'data-eid="'+e.id+'" data-di="'+di+'" data-tval="'+tVal+'" data-rid="'+rid+'" data-activo="'+(activo?'1':'0')+'">'
-              +(activo ? '✓ ' : '')+ro.nombre
+              +(activo ? 'â ' : '')+ro.nombre
               +'</button>';
           }).join('')
           +'</div>';
       }
-      // Botón editar horas para cualquier turno asignado (no libre)
+      // BotÃ³n editar horas para cualquier turno asignado (no libre)
       var editHorasBtn = '';
       if(tVal && tVal!=='libre'){
         var ehRoles = tRoles.join(',');  // pasar todos los roles activos
-        // Precargar horas según tipo de turno
+        // Precargar horas segÃºn tipo de turno
         var ehDesde='08:00', ehHasta='15:00';
         if(tVal==='tarde'){ ehDesde='13:00'; ehHasta='20:00'; }
         else if(tVal.indexOf('partido:')===0){
@@ -1398,15 +1401,15 @@ function renderHor(){
           if(mEH){ ehDesde=mEH[1]; ehHasta=mEH[2]; }
         }
         editHorasBtn = '<button class="chip chip-edit-horas" style="background:#1E3A5F18;color:#1E3A5F;border:1px solid #1E3A5F40;font-size:9px;margin-top:2px;padding:1px 6px;border-radius:6px;cursor:pointer" '
-          +'data-eid="'+e.id+'" data-di="'+di+'" data-rol="'+ehRoles+'" data-desde="'+ehDesde+'" data-hasta="'+ehHasta+'">✏️ Editar horas</button>';
+          +'data-eid="'+e.id+'" data-di="'+di+'" data-rol="'+ehRoles+'" data-desde="'+ehDesde+'" data-hasta="'+ehHasta+'">âï¸ Editar horas</button>';
       }
-      // Si está en 'libre' → mostrar botones para asignar turno (cambio directo sin quitar primero)
+      // Si estÃ¡ en 'libre' â mostrar botones para asignar turno (cambio directo sin quitar primero)
       var botonesReasignar = '';
       if(tVal==='libre'){
         botonesReasignar = '<div style="margin-top:4px">'
-          +'<button class="chip c-m chip-open-horas" style="font-size:9px" data-eid="'+e.id+'" data-di="'+di+'" data-desde="08:00" data-hasta="15:00">☀️ Mañana</button>'
-          +'<button class="chip c-t chip-open-horas" style="font-size:9px" data-eid="'+e.id+'" data-di="'+di+'" data-desde="13:00" data-hasta="20:00">🌙 Tarde</button>'
-          +'<button class="chip c-p chip-open-horas" style="font-size:9px" data-eid="'+e.id+'" data-di="'+di+'" data-desde="" data-hasta="">🔆 Personalizado</button>'
+          +'<button class="chip c-m chip-open-horas" style="font-size:9px" data-eid="'+e.id+'" data-di="'+di+'" data-desde="08:00" data-hasta="15:00">âï¸ MaÃ±ana</button>'
+          +'<button class="chip c-t chip-open-horas" style="font-size:9px" data-eid="'+e.id+'" data-di="'+di+'" data-desde="13:00" data-hasta="20:00">ð Tarde</button>'
+          +'<button class="chip c-p chip-open-horas" style="font-size:9px" data-eid="'+e.id+'" data-di="'+di+'" data-desde="" data-hasta="">ð Personalizado</button>'
           +'</div>';
       }
       return '<td>'
@@ -1414,27 +1417,27 @@ function renderHor(){
         +rolBadge
         +rolSelector
         +botonesReasignar
-        +(novMin?'<br><span class="chip c-n" style="font-size:9px">⚠️ Nov.</span>':'')
+        +(novMin?'<br><span class="chip c-n" style="font-size:9px">â ï¸ Nov.</span>':'')
         +'<br>'+editHorasBtn
-        +'<button class="chip chip-btn" style="background:var(--crem2);font-size:9px;margin-top:2px" data-eid="'+e.id+'" data-di="'+di+'" data-t="null">✖ Quitar</button>'
+        +'<button class="chip chip-btn" style="background:var(--crem2);font-size:9px;margin-top:2px" data-eid="'+e.id+'" data-di="'+di+'" data-t="null">â Quitar</button>'
         +'</td>';
     }).join('');
     return '<tr draggable="false" data-eid="'+e.id+'">'
       +'<td style="padding:8px 10px">'
-      +'<span class="drag-handle" title="Arrastrar para reordenar">⠿</span>'
+      +'<span class="drag-handle" title="Arrastrar para reordenar">â ¿</span>'
       +'<div style="font-weight:600;font-size:13px;display:inline-block;vertical-align:middle">'+e.nombre.split(' ').slice(0,2).join(' ')+'</div>'
-      +'<div style="margin-top:2px;padding-left:22px">'+rs.map(function(r){ return '<span style="font-size:9px;color:'+r.color+';font-weight:700">'+r.nombre+'</span>'; }).join('<span style="color:var(--gris);font-size:9px"> · </span>')+'</div>'
+      +'<div style="margin-top:2px;padding-left:22px">'+rs.map(function(r){ return '<span style="font-size:9px;color:'+r.color+';font-weight:700">'+r.nombre+'</span>'; }).join('<span style="color:var(--gris);font-size:9px"> Â· </span>')+'</div>'
       +'</td>'+celdas+'</tr>';
   }).join('');
 
   renderAlertas();
 }
 
-// ── Alertas de cobertura — se llama desde renderHor y tras cada cambio manual ──
+// ââ Alertas de cobertura â se llama desde renderHor y tras cada cambio manual ââ
 function renderAlertas(){
   var wk2 = weekKey();
   var hs2 = S.horarios[wk2]||{};
-  var DIAS_N = ['Lun','Mar','Mié','Jue','Vie','Sáb','Dom'];
+  var DIAS_N = ['Lun','Mar','MiÃ©','Jue','Vie','SÃ¡b','Dom'];
   var alertas = [];
   function toMin2(t){if(!t)return null;var p=t.split(':');return parseInt(p[0])*60+parseInt(p[1]);}
   for(var ai=0; ai<7; ai++){
@@ -1454,9 +1457,9 @@ function renderAlertas(){
         desde=toMin2(mHP[1]); hasta=toMin2(mHP[2]);
       } else return;
       if(desde===null||hasta===null)return;
-      var enM=(desde<=480)&&(hasta>=720);  // entra ≤08:00, sale ≥12:00
-      var enT=(desde<=900)&&(hasta>=1200); // entra ≤15:00, sale ≥20:00
-      // vRol puede ser 'r2,r3' — separar por coma para chequear cada uno
+      var enM=(desde<=480)&&(hasta>=720);  // entra â¤08:00, sale â¥12:00
+      var enT=(desde<=900)&&(hasta>=1200); // entra â¤15:00, sale â¥20:00
+      // vRol puede ser 'r2,r3' â separar por coma para chequear cada uno
       var rolesEfectivos = vRol ? vRol.split(',').filter(Boolean) : e.roles;
       if(enM){ if(rolesEfectivos.indexOf('r1')>=0)cocM=true; if(rolesEfectivos.indexOf('r2')>=0)mesM=true; if(rolesEfectivos.indexOf('r3')>=0)baM=true; }
       if(enT){ if(rolesEfectivos.indexOf('r1')>=0)cocT=true; if(rolesEfectivos.indexOf('r2')>=0)mesT=true; if(rolesEfectivos.indexOf('r3')>=0)baT=true; }
@@ -1464,15 +1467,15 @@ function renderAlertas(){
     var faltaM=[],faltaT=[];
     if(!cocM)faltaM.push('Cocina');if(!mesM)faltaM.push('Mesera');if(!baM)faltaM.push('Barista');
     if(!cocT)faltaT.push('Cocina');if(!mesT)faltaT.push('Mesera');if(!baT)faltaT.push('Barista');
-    if(faltaM.length) alertas.push('<span style="font-weight:700">'+DIAS_N[ai]+'</span> ☀️ Mañana: falta <span style="color:#8B2020">'+faltaM.join(', ')+'</span>');
-    if(faltaT.length) alertas.push('<span style="font-weight:700">'+DIAS_N[ai]+'</span> 🌙 Tarde: falta <span style="color:#8B2020">'+faltaT.join(', ')+'</span>');
+    if(faltaM.length) alertas.push('<span style="font-weight:700">'+DIAS_N[ai]+'</span> âï¸ MaÃ±ana: falta <span style="color:#8B2020">'+faltaM.join(', ')+'</span>');
+    if(faltaT.length) alertas.push('<span style="font-weight:700">'+DIAS_N[ai]+'</span> ð Tarde: falta <span style="color:#8B2020">'+faltaT.join(', ')+'</span>');
   }
   var alertBox = document.getElementById('alert-personal');
   if(alertBox){
     if(alertas.length){
       alertBox.style.display='block';
-      alertBox.innerHTML='<div style="font-weight:700;margin-bottom:6px;font-size:13px">⚠️ Turnos con falta de personal esta semana:</div>'
-        +alertas.map(function(a){return '<div style="margin-bottom:3px;font-size:12px">• '+a+'</div>';}).join('');
+      alertBox.innerHTML='<div style="font-weight:700;margin-bottom:6px;font-size:13px">â ï¸ Turnos con falta de personal esta semana:</div>'
+        +alertas.map(function(a){return '<div style="margin-bottom:3px;font-size:12px">â¢ '+a+'</div>';}).join('');
     } else {
       alertBox.style.display='none';
       alertBox.innerHTML='';
@@ -1484,10 +1487,10 @@ function renderAlertas(){
 document.getElementById('hor-body').addEventListener('click', function(ev){
   var wk=weekKey();
   if(!S.horarios[wk]) S.horarios[wk]={};
-  var DIAS_LBL = ['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado','Domingo'];
-  var DIAS_C   = ['Lun','Mar','Mié','Jue','Vie','Sáb','Dom'];
+  var DIAS_LBL = ['Lunes','Martes','MiÃ©rcoles','Jueves','Viernes','SÃ¡bado','Domingo'];
+  var DIAS_C   = ['Lun','Mar','MiÃ©','Jue','Vie','SÃ¡b','Dom'];
 
-  // ── Abrir modal de horas (desde celda vacía o desde ✏️ editar) ──────────
+  // ââ Abrir modal de horas (desde celda vacÃ­a o desde âï¸ editar) ââââââââââ
   var openHorasBtn = ev.target.closest('.chip-open-horas[data-eid], .chip-edit-horas[data-eid]');
   if(openHorasBtn){
     var eid  = openHorasBtn.dataset.eid;
@@ -1506,7 +1509,7 @@ document.getElementById('hor-body').addEventListener('click', function(ev){
     document.getElementById('eh-eid').value   = eid;
     document.getElementById('eh-di').value    = di;
     document.getElementById('eh-rol').value   = rol;
-    document.getElementById('eh-label').textContent = (emp ? emp.nombre.split(' ').slice(0,2).join(' ') : '') + ' — ' + DIAS_LBL[parseInt(di)];
+    document.getElementById('eh-label').textContent = (emp ? emp.nombre.split(' ').slice(0,2).join(' ') : '') + ' â ' + DIAS_LBL[parseInt(di)];
     document.getElementById('eh-desde').value = desde;
     document.getElementById('eh-hasta').value = hasta;
     document.getElementById('eh-aviso').textContent = '';
@@ -1515,7 +1518,7 @@ document.getElementById('hor-body').addEventListener('click', function(ev){
     return;
   }
 
-  // ── Cambio de rol inline ─────────────────────────────────────────────────
+  // ââ Cambio de rol inline âââââââââââââââââââââââââââââââââââââââââââââââââ
   var rolBtn = ev.target.closest('.chip-rol-btn[data-eid]');
   if(rolBtn){
     var eid   = rolBtn.dataset.eid;
@@ -1535,19 +1538,19 @@ document.getElementById('hor-body').addEventListener('click', function(ev){
     } else {
       if(rolesActuales.indexOf(rid) < 0) rolesActuales.push(rid);
     }
-    // Guardar: si no quedan roles → guardar sin sufijo de rol
+    // Guardar: si no quedan roles â guardar sin sufijo de rol
     S.horarios[wk][eid][di] = rolesActuales.length > 0
       ? tval + '|' + rolesActuales.join(',')
       : tval;
     saveState();
     var eRol = S.empleadas.find(function(x){ return x.id===eid; });
     var roNm = getRol(rid);
-    var accion = estabActivo ? '✗ quitado' : '✓ activado';
-    toast((eRol?eRol.nombre.split(' ')[0]:'')+' — '+( roNm?roNm.nombre:'')+' '+accion,'ok');
+    var accion = estabActivo ? 'â quitado' : 'â activado';
+    toast((eRol?eRol.nombre.split(' ')[0]:'')+' â '+( roNm?roNm.nombre:'')+' '+accion,'ok');
     renderHor(); return;
   }
 
-  // ── Botón libre o quitar ─────────────────────────────────────────────────
+  // ââ BotÃ³n libre o quitar âââââââââââââââââââââââââââââââââââââââââââââââââ
   var btn = ev.target.closest('.chip-btn[data-eid]');
   if(!btn) return;
   var eid=btn.dataset.eid, di=String(btn.dataset.di), t=btn.dataset.t;
@@ -1555,22 +1558,22 @@ document.getElementById('hor-body').addEventListener('click', function(ev){
   if(t==='null'){
     delete S.horarios[wk][eid][di];
     var eQ=S.empleadas.find(function(x){return x.id===eid;});
-    toast('🗑️ Turno quitado — '+(eQ?eQ.nombre.split(' ')[0]:'')+' '+DIAS_C[parseInt(di)],'warn');
+    toast('ðï¸ Turno quitado â '+(eQ?eQ.nombre.split(' ')[0]:'')+' '+DIAS_C[parseInt(di)],'warn');
   } else if(t==='libre'){
     S.horarios[wk][eid][di]='libre';
     var eL=S.empleadas.find(function(x){return x.id===eid;});
-    toast('✅ '+(eL?eL.nombre.split(' ')[0]:'')+' '+DIAS_C[parseInt(di)]+' → Libre','ok');
+    toast('â '+(eL?eL.nombre.split(' ')[0]:'')+' '+DIAS_C[parseInt(di)]+' â Libre','ok');
   }
   saveState(); renderHor();
 });
 
 
-// ══════════════════════════════════════════════════════════════════════════
-// DESHACER GENERACIÓN AUTOMÁTICA
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// DESHACER GENERACIÃN AUTOMÃTICA
 // _snapshotAuto guarda una copia del horario de la semana justo antes
-// de que el generador automático lo sobreescriba.
-// El botón ↩ aparece solo después de generar — desaparece al cambiar semana.
-// ══════════════════════════════════════════════════════════════════════════
+// de que el generador automÃ¡tico lo sobreescriba.
+// El botÃ³n â© aparece solo despuÃ©s de generar â desaparece al cambiar semana.
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 var _snapshotAuto = null; // {wk: string, horarios: object}
 
 document.getElementById('btn-undo').addEventListener('click', function(){
@@ -1578,14 +1581,14 @@ document.getElementById('btn-undo').addEventListener('click', function(){
     toast('No hay nada que deshacer','err');
     return;
   }
-  if(!confirm('¿Volver al horario que tenías antes de generar automáticamente?\nEsta acción no se puede deshacer.')) return;
+  if(!confirm('Â¿Volver al horario que tenÃ­as antes de generar automÃ¡ticamente?\nEsta acciÃ³n no se puede deshacer.')) return;
   // Restaurar el horario completo de esa semana
   S.horarios[_snapshotAuto.wk] = JSON.parse(JSON.stringify(_snapshotAuto.horarios));
   _snapshotAuto = null;
   document.getElementById('btn-undo').style.display = 'none';
   saveState();
   renderHor();
-  toast('↩ Horario restaurado correctamente','ok');
+  toast('â© Horario restaurado correctamente','ok');
 });
 
 document.getElementById('btn-sem-prev').addEventListener('click', function(){
@@ -1596,11 +1599,11 @@ document.getElementById('btn-sem-next').addEventListener('click', function(){
   S.weekOff++; saveState(); renderHor();
   _snapshotAuto=null; document.getElementById('btn-undo').style.display='none';
 });
-// ══════════════════════════════════════════════════════════════════════════
-// DRAG & DROP — reordenar filas de la tabla de horarios
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// DRAG & DROP â reordenar filas de la tabla de horarios
 // Funciona con HTML5 nativo: mousedown en .drag-handle activa draggable en el <tr>
-// ══════════════════════════════════════════════════════════════════════════
-var _dragEid   = null;  // id del empleado que se está arrastrando
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+var _dragEid   = null;  // id del empleado que se estÃ¡ arrastrando
 var _dragTr    = null;  // <tr> origen
 var _overTr    = null;  // <tr> destino actual
 
@@ -1640,7 +1643,7 @@ horBody.addEventListener('dragover', function(ev){
     _overTr.classList.remove('drag-over-top','drag-over-bot');
   }
   _overTr = tr;
-  // Determinar si el cursor está en la mitad superior o inferior
+  // Determinar si el cursor estÃ¡ en la mitad superior o inferior
   var rect = tr.getBoundingClientRect();
   var mid  = rect.top + rect.height/2;
   if(ev.clientY < mid){
@@ -1688,7 +1691,7 @@ horBody.addEventListener('drop', function(ev){
   _dragEid=null; _dragTr=null; _overTr=null;
   renderHor();
   var emp = S.empleadas.find(function(e){ return e.id===orden[S.empOrden.indexOf(S.empOrden[toIdx])]; });
-  toast('↕️ Orden actualizado','ok');
+  toast('âï¸ Orden actualizado','ok');
 });
 
 horBody.addEventListener('dragend', function(ev){
@@ -1699,8 +1702,8 @@ horBody.addEventListener('dragend', function(ev){
 });
 
 
-// ── Guardar horas editadas ──
-// ── Aviso en tiempo real de horas extra al cambiar los campos de hora ──────
+// ââ Guardar horas editadas ââ
+// ââ Aviso en tiempo real de horas extra al cambiar los campos de hora ââââââ
 function actualizarAvisoHoras(){
   var desde = document.getElementById('eh-desde').value;
   var hasta  = document.getElementById('eh-hasta').value;
@@ -1708,19 +1711,19 @@ function actualizarAvisoHoras(){
   if(!desde || !hasta){ aviso.textContent=''; return; }
   function toM2(t){var p=t.split(':');return parseInt(p[0])*60+parseInt(p[1]);}
   var a=toM2(desde), b=toM2(hasta);
-  if(b<=a){ aviso.style.color='#8B2020'; aviso.textContent='⚠️ La salida debe ser después de la entrada.'; return; }
+  if(b<=a){ aviso.style.color='#8B2020'; aviso.textContent='â ï¸ La salida debe ser despuÃ©s de la entrada.'; return; }
   var dur=b-a;
   var ext=Math.max(0,dur-480);
-  if(dur<120){ aviso.style.color='#8B2020'; aviso.textContent='⚠️ Mínimo 2 horas.'; return; }
+  if(dur<120){ aviso.style.color='#8B2020'; aviso.textContent='â ï¸ MÃ­nimo 2 horas.'; return; }
   if(ext>0){
     aviso.style.color='#C9943A';
     var hE=Math.floor(ext/60), mE=ext%60;
-    aviso.textContent='⏱️ '+Math.floor(dur/60)+'h'+(dur%60?(dur%60+'min '):'')
-      +' — '+Math.floor(Math.min(dur,480)/60)+'h normales + '
+    aviso.textContent='â±ï¸ '+Math.floor(dur/60)+'h'+(dur%60?(dur%60+'min '):'')
+      +' â '+Math.floor(Math.min(dur,480)/60)+'h normales + '
       +hE+'h'+(mE?mE+'min':'')+' extra';
   } else {
     aviso.style.color='#2D4A2D';
-    aviso.textContent='✅ '+Math.floor(dur/60)+'h'+(dur%60?(dur%60)+'min':'');
+    aviso.textContent='â '+Math.floor(dur/60)+'h'+(dur%60?(dur%60)+'min':'');
   }
 }
 document.getElementById('eh-desde').addEventListener('change', actualizarAvisoHoras);
@@ -1734,20 +1737,20 @@ document.getElementById('btn-save-horas').addEventListener('click', function(){
   var hasta  = document.getElementById('eh-hasta').value;
   var aviso  = document.getElementById('eh-aviso');
 
-  if(!desde || !hasta){ aviso.textContent = '⚠️ Debes ingresar entrada y salida.'; return; }
+  if(!desde || !hasta){ aviso.textContent = 'â ï¸ Debes ingresar entrada y salida.'; return; }
 
   function toM(t){ var p=t.split(':'); return parseInt(p[0])*60+parseInt(p[1]); }
   var a=toM(desde), b=toM(hasta);
-  if(b <= a){ aviso.textContent = '⚠️ La salida debe ser después de la entrada.'; return; }
+  if(b <= a){ aviso.textContent = 'â ï¸ La salida debe ser despuÃ©s de la entrada.'; return; }
   var dur = b - a;
-  if(dur < 120){ aviso.textContent = '⚠️ El turno debe ser de al menos 2 horas.'; return; }
-  // Mostrar info de horas extra si supera 8h (480 min) — no bloquea, solo informa
+  if(dur < 120){ aviso.textContent = 'â ï¸ El turno debe ser de al menos 2 horas.'; return; }
+  // Mostrar info de horas extra si supera 8h (480 min) â no bloquea, solo informa
   var horasNormales = Math.min(dur, 480);
   var horasExtra    = Math.max(0, dur - 480);
   if(horasExtra > 0){
     aviso.style.color = '#C9943A';
-    aviso.textContent = '⏱️ '+Math.floor(dur/60)+'h '+((dur%60)?((dur%60)+'min '):'')
-      +'— '+Math.floor(horasNormales/60)+'h normales + '
+    aviso.textContent = 'â±ï¸ '+Math.floor(dur/60)+'h '+((dur%60)?((dur%60)+'min '):'')
+      +'â '+Math.floor(horasNormales/60)+'h normales + '
       +Math.floor(horasExtra/60)+'h'+(horasExtra%60?(horasExtra%60+'min'):'')+' extra';
   } else {
     aviso.style.color = '';
@@ -1758,12 +1761,12 @@ document.getElementById('btn-save-horas').addEventListener('click', function(){
   if(!S.horarios[wk]) S.horarios[wk] = {};
   if(!S.horarios[wk][eid]) S.horarios[wk][eid] = {};
 
-  // Si no hay roles explícitos, usar el primer rol del empleado como default
+  // Si no hay roles explÃ­citos, usar el primer rol del empleado como default
   if(!rol){
     var empSH = S.empleadas.find(function(x){return x.id===eid;});
     if(empSH && empSH.roles && empSH.roles.length) rol = empSH.roles[0];
   }
-  // rol puede ser 'r2,r3' (múltiples) o 'r2' (uno solo) — ambos válidos
+  // rol puede ser 'r2,r3' (mÃºltiples) o 'r2' (uno solo) â ambos vÃ¡lidos
   var nuevoVal = 'partido:'+desde+'-'+hasta + (rol ? '|'+rol : '');
   S.horarios[wk][eid][di] = nuevoVal;
 
@@ -1771,41 +1774,41 @@ document.getElementById('btn-save-horas').addEventListener('click', function(){
   closeModal('m-edit-horas');
   renderHor();
   var emp = S.empleadas.find(function(x){return x.id===eid;});
-  var dias = ['Lun','Mar','Mié','Jue','Vie','Sáb','Dom'];
-  toast('✅ Horas actualizadas — '+(emp?emp.nombre.split(' ')[0]:'')+' '+dias[parseInt(di)]+': '+desde+'–'+hasta,'ok');
+  var dias = ['Lun','Mar','MiÃ©','Jue','Vie','SÃ¡b','Dom'];
+  toast('â Horas actualizadas â '+(emp?emp.nombre.split(' ')[0]:'')+' '+dias[parseInt(di)]+': '+desde+'â'+hasta,'ok');
 
-  // ── Complemento automático cocineras ─────────────────────────────────
-  // Si la empleada tiene rol cocina (r1) o pastelería (r6), buscar compañera
+  // ââ Complemento automÃ¡tico cocineras âââââââââââââââââââââââââââââââââ
+  // Si la empleada tiene rol cocina (r1) o pastelerÃ­a (r6), buscar compaÃ±era
   // del mismo grupo con disponibilidad en la franja complementaria
   if(!emp) return;
   var esCocinera = emp.roles.indexOf('r1')>=0 || emp.roles.indexOf('r6')>=0;
   if(!esCocinera) return;
 
-  // Determinar qué franja acaba de asignar
+  // Determinar quÃ© franja acaba de asignar
   function toMX(t){var p=t.split(':');return+p[0]*60+ +p[1];}
   var aX=toMX(desde), bX=toMX(hasta);
-  var esMañana = aX<=480 && bX<=900;   // termina antes de las 15:00
-  var esTarde  = aX>=720;               // empieza a las 12:00 o después
-  if(!esMañana && !esTarde) return;     // turno partido completo, no aplica
+  var esMaÃ±ana = aX<=480 && bX<=900;   // termina antes de las 15:00
+  var esTarde  = aX>=720;               // empieza a las 12:00 o despuÃ©s
+  if(!esMaÃ±ana && !esTarde) return;     // turno partido completo, no aplica
 
-  // Buscar compañeras del mismo grupo (r1 o r6) que no tengan turno ese día
+  // Buscar compaÃ±eras del mismo grupo (r1 o r6) que no tengan turno ese dÃ­a
   var compas = S.empleadas.filter(function(c){
     if(c.id===eid) return false;
     if(c.estado!=='activo') return false;
     if(c.roles.indexOf('r1')<0 && c.roles.indexOf('r6')<0) return false;
     var tComp = ((S.horarios[wk]||{})[c.id]||{})[di];
-    return !tComp; // solo las que no tienen turno asignado ese día
+    return !tComp; // solo las que no tienen turno asignado ese dÃ­a
   });
   if(compas.length===0) return;
 
   // Franja complementaria
-  var franjaComp = esMañana ? 'Tarde (13:00–20:00)' : 'Mañana (08:00–15:00)';
-  var desdeComp  = esMañana ? '13:00' : '08:00';
-  var hastaComp  = esMañana ? '20:00' : '15:00';
+  var franjaComp = esMaÃ±ana ? 'Tarde (13:00â20:00)' : 'MaÃ±ana (08:00â15:00)';
+  var desdeComp  = esMaÃ±ana ? '13:00' : '08:00';
+  var hastaComp  = esMaÃ±ana ? '20:00' : '15:00';
 
   var nombres = compas.map(function(c){ return c.nombre.split(' ')[0]; }).join(', ');
-  if(confirm('💡 '+nombres+(compas.length>1?' no tienen':' no tiene')+' turno el '
-    +dias[parseInt(di)]+'.\n¿Asignar automáticamente '+franjaComp+' a '
+  if(confirm('ð¡ '+nombres+(compas.length>1?' no tienen':' no tiene')+' turno el '
+    +dias[parseInt(di)]+'.\nÂ¿Asignar automÃ¡ticamente '+franjaComp+' a '
     +(compas.length>1?'cada una':'ella')+'?')){
     compas.forEach(function(c){
       if(!S.horarios[wk]) S.horarios[wk]={};
@@ -1815,7 +1818,7 @@ document.getElementById('btn-save-horas').addEventListener('click', function(){
     });
     saveState();
     renderHor();
-    toast('✅ Turno complementario asignado a '+nombres,'ok');
+    toast('â Turno complementario asignado a '+nombres,'ok');
   }
 });
 
@@ -1824,7 +1827,7 @@ document.getElementById('btn-pdf').addEventListener('click', function(){
   var lunes = getLunes();
   var fechas = [];
   for(var i=0;i<7;i++){ var dd=new Date(lunes); dd.setDate(lunes.getDate()+i); fechas.push(dd); }
-  var DIAS_S = ['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado','Domingo'];
+  var DIAS_S = ['Lunes','Martes','MiÃ©rcoles','Jueves','Viernes','SÃ¡bado','Domingo'];
   var hs = S.horarios[wk]||{};
   var activas = S.empleadas.filter(function(e){ return e.estado==='activo'; });
 
@@ -1838,11 +1841,11 @@ document.getElementById('btn-pdf').addEventListener('click', function(){
       var vTurno=v, vRol=null;
       if(v.indexOf('|')>=0){ var vp=v.split('|'); vTurno=vp[0]; vRol=vp[1]; }
       var horas='';
-      if(vTurno.indexOf('partido:')===0) horas=vTurno.replace('partido:','').replace('-',' – ');
-      else if(vTurno==='manana') horas='08:00 – 15:00';
-      else if(vTurno==='tarde')  horas='13:00 – 20:00';
+      if(vTurno.indexOf('partido:')===0) horas=vTurno.replace('partido:','').replace('-',' â ');
+      else if(vTurno==='manana') horas='08:00 â 15:00';
+      else if(vTurno==='tarde')  horas='13:00 â 20:00';
       else horas=vTurno;
-      // vRol puede ser 'r2,r3' — mostrar todos los roles en el PDF
+      // vRol puede ser 'r2,r3' â mostrar todos los roles en el PDF
       var vRoles = vRol ? vRol.split(',').filter(Boolean) : [];
       var rolHtml = vRoles.length > 0
         ? '<div style="font-size:9px;font-weight:700;margin-top:2px">'
@@ -1868,7 +1871,7 @@ document.getElementById('btn-pdf').addEventListener('click', function(){
         +rolHtml
         +'</td>';
     }).join('');
-    var rolesStr = e.roles.map(function(rid){ var r=getRol(rid); return r?r.nombre:''; }).join(' · ');
+    var rolesStr = e.roles.map(function(rid){ var r=getRol(rid); return r?r.nombre:''; }).join(' Â· ');
     return '<tr>'
       +'<td style="padding:6px 8px;border-right:1px solid #ddd;min-width:120px">'
       +'<div style="font-weight:700;font-size:12px">'+e.nombre.split(' ').slice(0,2).join(' ')+'</div>'
@@ -1889,9 +1892,9 @@ document.getElementById('btn-pdf').addEventListener('click', function(){
 
   // Alertas de falta de personal
   var alertasHtml = '';
-  var DIAS_C=['Lun','Mar','Mié','Jue','Vie','Sáb','Dom'];
+  var DIAS_C=['Lun','Mar','MiÃ©','Jue','Vie','SÃ¡b','Dom'];
   var alertasArr = [];
-  // tm3 fuera del loop para evitar redeclaración problemática en JS estricto
+  // tm3 fuera del loop para evitar redeclaraciÃ³n problemÃ¡tica en JS estricto
   function tm3(t){ if(!t)return 0; var p=t.split(':'); return parseInt(p[0])*60+parseInt(p[1]); }
   for(var ai=0;ai<7;ai++){
     var dk3=String(ai);
@@ -1901,7 +1904,7 @@ document.getElementById('btn-pdf').addEventListener('click', function(){
       if(!v||v==='libre') return;
       var vT=v, vR=null;
       if(v.indexOf('|')>=0){ var vp=v.split('|'); vT=vp[0]; vR=vp[1]; }
-      // Detectar horas según formato
+      // Detectar horas segÃºn formato
       var desde=0, hasta=0;
       if(vT==='manana'){ desde=480; hasta=900; }
       else if(vT==='tarde'){ desde=780; hasta=1200; }
@@ -1911,7 +1914,7 @@ document.getElementById('btn-pdf').addEventListener('click', function(){
         desde=tm3(mHP2[1]); hasta=tm3(mHP2[2]);
       } else return;
       if(!desde||!hasta) return;
-      // Roles: vR puede ser 'r2,r3' — separar por coma
+      // Roles: vR puede ser 'r2,r3' â separar por coma
       var roles = vR ? vR.split(',').filter(Boolean) : e.roles;
       if(desde<=480&&hasta>=720){ if(roles.indexOf('r1')>=0)cocM=true; if(roles.indexOf('r2')>=0)mesM=true; if(roles.indexOf('r3')>=0)baM=true; }
       if(desde<=900&&hasta>=1200){ if(roles.indexOf('r1')>=0)cocT=true; if(roles.indexOf('r2')>=0)mesT=true; if(roles.indexOf('r3')>=0)baT=true; }
@@ -1919,18 +1922,18 @@ document.getElementById('btn-pdf').addEventListener('click', function(){
     var fM=[],fT=[];
     if(!cocM)fM.push('Cocina'); if(!mesM)fM.push('Mesera'); if(!baM)fM.push('Barista');
     if(!cocT)fT.push('Cocina'); if(!mesT)fT.push('Mesera'); if(!baT)fT.push('Barista');
-    if(fM.length) alertasArr.push(DIAS_C[ai]+' ☀️ Mañana: sin '+fM.join(', '));
-    if(fT.length) alertasArr.push(DIAS_C[ai]+' 🌙 Tarde: sin '+fT.join(', '));
+    if(fM.length) alertasArr.push(DIAS_C[ai]+' âï¸ MaÃ±ana: sin '+fM.join(', '));
+    if(fT.length) alertasArr.push(DIAS_C[ai]+' ð Tarde: sin '+fT.join(', '));
   }
   if(alertasArr.length){
     alertasHtml = '<div style="margin-top:16px;padding:10px 14px;background:#fff5f5;border:1px solid #e53935;border-radius:6px">'
-      +'<div style="font-weight:700;font-size:11px;margin-bottom:6px;color:#c62828">⚠️ Turnos con falta de personal:</div>'
-      +alertasArr.map(function(a){return '<div style="font-size:10px;color:#c62828;margin-bottom:2px">• '+a+'</div>';}).join('')
+      +'<div style="font-weight:700;font-size:11px;margin-bottom:6px;color:#c62828">â ï¸ Turnos con falta de personal:</div>'
+      +alertasArr.map(function(a){return '<div style="font-size:10px;color:#c62828;margin-bottom:2px">â¢ '+a+'</div>';}).join('')
       +'</div>';
   }
 
   var html_pdf = '<!DOCTYPE html><html><head><meta charset="UTF-8">'
-    +'<title>Horario Sessanio — '+wk+'</title>'
+    +'<title>Horario Sessanio â '+wk+'</title>'
     +'<style>'
     +'body{font-family:Arial,sans-serif;margin:20px;color:#333}'
     +'table{border-collapse:collapse;width:100%}'
@@ -1944,13 +1947,13 @@ document.getElementById('btn-pdf').addEventListener('click', function(){
     +'</style></head><body>'
     +'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">'
     +'<div>'
-    +'<div style="font-size:18px;font-weight:700;color:#8B2020">☕ Sessanio Brunch e Caffé</div>'
-    +'<div style="font-size:13px;color:#666;margin-top:2px">Horario '+wk+' — '+fmtFecha(fechas[0])+' al '+fmtFecha(fechas[6])+'</div>'
+    +'<div style="font-size:18px;font-weight:700;color:#8B2020">â Sessanio Brunch e CaffÃ©</div>'
+    +'<div style="font-size:13px;color:#666;margin-top:2px">Horario '+wk+' â '+fmtFecha(fechas[0])+' al '+fmtFecha(fechas[6])+'</div>'
     +'</div>'
-    +'<button class="no-print" onclick="window.print()" style="padding:8px 18px;background:#8B2020;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px">🖨️ Imprimir</button>'
+    +'<button class="no-print" onclick="window.print()" style="padding:8px 18px;background:#8B2020;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px">ð¨ï¸ Imprimir</button>'
     +'</div>';
 
-  // ── Novedades reales de la semana (excluye las auto-generadas) ────────
+  // ââ Novedades reales de la semana (excluye las auto-generadas) ââââââââ
   var novsHtml = '';
   var fi0 = fechas[0].toISOString().slice(0,10);
   var fi6 = fechas[6].toISOString().slice(0,10);
@@ -1960,37 +1963,37 @@ document.getElementById('btn-pdf').addEventListener('click', function(){
     return nFi <= fi6 && nFf >= fi0;
   });
   var TIPOS_PDF = {
-    incapacidad:'🤒 Incapacidad', vacaciones:'🏖️ Vacaciones',
-    calamidad:'🚨 Calamidad', ausencia:'🚫 Ausencia',
-    cita_medica:'🏥 Cita médica', permiso:'📝 Permiso',
-    llegada_tarde:'⏰ Llegada tarde', salida_temprana:'🏃 Salida temprana'
+    incapacidad:'ð¤ Incapacidad', vacaciones:'ðï¸ Vacaciones',
+    calamidad:'ð¨ Calamidad', ausencia:'ð« Ausencia',
+    cita_medica:'ð¥ Cita mÃ©dica', permiso:'ð Permiso',
+    llegada_tarde:'â° Llegada tarde', salida_temprana:'ð Salida temprana'
   };
   if(novsDelPeriodo.length > 0){
     novsHtml = '<div style="margin-top:16px">'
-      +'<div style="font-weight:700;font-size:12px;margin-bottom:6px;color:#4A2C17">📋 Novedades de la semana:</div>'
+      +'<div style="font-weight:700;font-size:12px;margin-bottom:6px;color:#4A2C17">ð Novedades de la semana:</div>'
       +'<table style="font-size:10px"><thead><tr style="background:#f5f0e8">'
       +'<th style="padding:4px 8px;text-align:left">Empleada</th>'
       +'<th style="padding:4px 8px">Tipo</th>'
       +'<th style="padding:4px 8px">Fecha inicio</th>'
       +'<th style="padding:4px 8px">Fecha fin</th>'
-      +'<th style="padding:4px 8px;text-align:left">Observación</th>'
+      +'<th style="padding:4px 8px;text-align:left">ObservaciÃ³n</th>'
       +'</tr></thead><tbody>'
       +novsDelPeriodo.map(function(n){
         var emp2 = S.empleadas.find(function(x){ return x.id===n.empId; });
-        var nombre = emp2 ? emp2.nombre.split(' ').slice(0,2).join(' ') : '—';
+        var nombre = emp2 ? emp2.nombre.split(' ').slice(0,2).join(' ') : 'â';
         var tipo = TIPOS_PDF[n.tipo] || n.tipo;
         return '<tr>'
           +'<td style="padding:3px 8px;font-weight:600">'+nombre+'</td>'
           +'<td style="padding:3px 8px;text-align:center">'+tipo+'</td>'
           +'<td style="padding:3px 8px;text-align:center">'+n.fi+'</td>'
           +'<td style="padding:3px 8px;text-align:center">'+(n.ff||n.fi)+'</td>'
-          +'<td style="padding:3px 8px;color:#666">'+(n.obs||'—')+'</td>'
+          +'<td style="padding:3px 8px;color:#666">'+(n.obs||'â')+'</td>'
           +'</tr>';
       }).join('')
       +'</tbody></table></div>';
   }
 
-  // ── Ensamblar HTML completo del PDF ───────────────────────────────────
+  // ââ Ensamblar HTML completo del PDF âââââââââââââââââââââââââââââââââââ
   var html_pdf2 = html_pdf
     +'<table><thead>'+thead+'</thead><tbody>'+filas+'</tbody></table>'
     +alertasHtml
@@ -2001,7 +2004,7 @@ document.getElementById('btn-pdf').addEventListener('click', function(){
   var ventana = window.open('','_blank','width=900,height=650');
   ventana.document.write(html_pdf2);
   ventana.document.close();
-  toast('🖨️ Horario abierto para imprimir','ok');
+  toast('ð¨ï¸ Horario abierto para imprimir','ok');
 });
 
 document.getElementById('btn-auto').addEventListener('click', function(){
@@ -2009,22 +2012,22 @@ document.getElementById('btn-auto').addEventListener('click', function(){
   var lunes = getLunes();
   if(!S.horarios[wk]) S.horarios[wk] = {};
 
-  // ── Guardar snapshot del horario actual ANTES de sobrescribir ──────────
+  // ââ Guardar snapshot del horario actual ANTES de sobrescribir ââââââââââ
   _snapshotAuto = {
     wk: wk,
     horarios: JSON.parse(JSON.stringify(S.horarios[wk]))
   };
-  // Mostrar botón Deshacer
+  // Mostrar botÃ³n Deshacer
   var btnUndo = document.getElementById('btn-undo');
   if(btnUndo) btnUndo.style.display = 'inline-flex';
 
   var ROL_COCINA='r1', ROL_MESERA='r2', ROL_BARISTA='r3', ROL_PASTELERA='r6';
-  var DIAS_N=['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado','Domingo'];
+  var DIAS_N=['Lunes','Martes','MiÃ©rcoles','Jueves','Viernes','SÃ¡bado','Domingo'];
 
   var activas = S.empleadas.filter(function(e){ return e.estado==='activo'; });
   var wkNum   = parseInt(wk.split('-S')[1]) || 0;
 
-  // ── Utilidades ──────────────────────────────────────────────────────────
+  // ââ Utilidades ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   function toMin(t){
     if(!t) return null;
     var p=t.split(':'); return parseInt(p[0])*60+parseInt(p[1]);
@@ -2034,7 +2037,7 @@ document.getElementById('btn-auto').addEventListener('click', function(){
   }
   function getDisp(e,d){ return (e.dispSemanal||{})[String(d)]||null; }
 
-  // Disponibilidad real del empleado ese día (mín 2h). Retorna {desde,hasta} o null.
+  // Disponibilidad real del empleado ese dÃ­a (mÃ­n 2h). Retorna {desde,hasta} o null.
   function dispHoy(e,d){
     if(e.descansos && e.descansos.indexOf(d)>=0) return null;
     var v=getDisp(e,d);
@@ -2044,47 +2047,47 @@ document.getElementById('btn-auto').addEventListener('click', function(){
     return v;
   }
 
-  // Recortar a máx 7h (420 min)
+  // Recortar a mÃ¡x 7h (420 min)
   function recortar7h(desde,hasta){
-    // Sin límite — horas extra son válidas
+    // Sin lÃ­mite â horas extra son vÃ¡lidas
     return {desde:desde, hasta:hasta};
   }
 
-  // ¿Cubre la franja Mañana? (entra ≤08:00, sale ≥12:00)
+  // Â¿Cubre la franja MaÃ±ana? (entra â¤08:00, sale â¥12:00)
   function cubreM(desde,hasta){
     return toMin(desde)<=480 && toMin(hasta)>=720;
   }
-  // ¿Cubre la franja Tarde? (entra ≤15:00, sale ≥20:00)
+  // Â¿Cubre la franja Tarde? (entra â¤15:00, sale â¥20:00)
   function cubreT(desde,hasta){
     return toMin(desde)<=900 && toMin(hasta)>=1200;
   }
 
-  // Ajustar horas a una franja específica y recortar a 7h
-  // franja 'M': fijar entrada al máx(desde, 08:00), salida máx 15:00
-  // franja 'T': fijar entrada al máx(desde, 13:00), salida máx 20:00
+  // Ajustar horas a una franja especÃ­fica y recortar a 7h
+  // franja 'M': fijar entrada al mÃ¡x(desde, 08:00), salida mÃ¡x 15:00
+  // franja 'T': fijar entrada al mÃ¡x(desde, 13:00), salida mÃ¡x 20:00
   function horasFranja(desde,hasta,fr){
     var a=toMin(desde), b=toMin(hasta);
     if(fr==='M'){
-      var entrada = Math.max(a, 480);  // mín 08:00
-      var salida  = Math.min(b, 1200); // máx 20:00 (horas extra permitidas)
+      var entrada = Math.max(a, 480);  // mÃ­n 08:00
+      var salida  = Math.min(b, 1200); // mÃ¡x 20:00 (horas extra permitidas)
       var r=recortar7h(fmtMin(entrada), fmtMin(salida));
       return r;
     } else {
-      var entrada2= Math.max(a, 780);  // mín 13:00
-      var salida2 = Math.min(b, 1320); // máx 22:00 (horas extra permitidas)
+      var entrada2= Math.max(a, 780);  // mÃ­n 13:00
+      var salida2 = Math.min(b, 1320); // mÃ¡x 22:00 (horas extra permitidas)
       var r2=recortar7h(fmtMin(entrada2), fmtMin(salida2));
       return r2;
     }
   }
 
-  // ¿Puede trabajar la franja indicada?
+  // Â¿Puede trabajar la franja indicada?
   function puedeFranja(v, fr){
     if(fr==='M') return cubreM(v.desde, v.hasta);
     if(fr==='T') return cubreT(v.desde, v.hasta);
     return false;
   }
 
-  // ── Clasificar empleados ─────────────────────────────────────────────────
+  // ââ Clasificar empleados âââââââââââââââââââââââââââââââââââââââââââââââââ
   var pasteleras   = activas.filter(function(e){ return e.roles.indexOf(ROL_PASTELERA)>=0; });
   var polivalentes = activas.filter(function(e){
     return e.roles.indexOf(ROL_COCINA)>=0
@@ -2103,15 +2106,15 @@ document.getElementById('btn-auto').addEventListener('click', function(){
   var yaClasif = pasteleras.concat(polivalentes).concat(soloCocineras).concat(front);
   var grupoApoyo   = activas.filter(function(e){ return yaClasif.indexOf(e)<0; });
 
-  // ── Descanso rotativo — solo si NO tiene ya días libres fijos ──────────────
+  // ââ Descanso rotativo â solo si NO tiene ya dÃ­as libres fijos ââââââââââââââ
   // (evita que Martha/Sisley/etc. acumulen un 3er descanso encima de los fijos)
   var descRot={}, rotDias=[1,2,3,4,5];
   activas.forEach(function(e,idx){
-    // Contar días que ya tiene libres por perfil (descansos fijos + dispSemanal.libre)
+    // Contar dÃ­as que ya tiene libres por perfil (descansos fijos + dispSemanal.libre)
     var diasLibresFijos = (e.descansos||[]).length;
     var diasLibresDisp  = Object.values(e.dispSemanal||{}).filter(function(v){ return v && v.libre; }).length;
     var totalLibres = Math.max(diasLibresFijos, diasLibresDisp);
-    // Si ya tiene al menos 1 día libre registrado → no necesita rotativo
+    // Si ya tiene al menos 1 dÃ­a libre registrado â no necesita rotativo
     if(totalLibres >= 1) return;
     var cnt=0; for(var dd=0;dd<7;dd++){ if(dispHoy(e,dd)) cnt++; }
     if(cnt<6) return;
@@ -2128,13 +2131,13 @@ document.getElementById('btn-auto').addEventListener('click', function(){
 
   activas.forEach(function(e){ if(!S.horarios[wk][e.id]) S.horarios[wk][e.id]={}; });
 
-  // ── Novedades auto generadas por falta de cobertura ─────────────────────
+  // ââ Novedades auto generadas por falta de cobertura âââââââââââââââââââââ
   // (se limpian las auto-generadas anteriores de esta semana antes de regenerar)
   S.novedades = S.novedades.filter(function(n){
     return !(n.tipo==='ausencia' && n.semKey===wk && n.auto===true);
   });
 
-  // ── Asignación día a día ─────────────────────────────────────────────────
+  // ââ AsignaciÃ³n dÃ­a a dÃ­a âââââââââââââââââââââââââââââââââââââââââââââââââ
   for(var d=0; d<7; d++){
     var dk=String(d);
     var f=new Date(lunes); f.setDate(lunes.getDate()+d);
@@ -2150,20 +2153,20 @@ document.getElementById('btn-auto').addEventListener('click', function(){
     function descansaHoy(e){ return descRot[e.id]===d||(e.descansos&&e.descansos.indexOf(d)>=0); }
     function puedeHoy(e){ return !bloqueado(e)&&!descansaHoy(e)&&!!dispHoy(e,d); }
 
-    // ── TRACKER de cobertura por franja ─────────────────────────────────
+    // ââ TRACKER de cobertura por franja âââââââââââââââââââââââââââââââââ
     // Cada franja (M y T) necesita: 1 Cocina + 1 Mesera + 1 Barista
     var cub = {
       cocina:    {M:null, T:null},
       mesera:    {M:null, T:null},
       barista:   {M:null, T:null},
-      pastelera: {M:null, T:null}  // rastreo adicional de pastelería
+      pastelera: {M:null, T:null}  // rastreo adicional de pastelerÃ­a
     };
 
     // Guardar turno helper
     function asignar(e, fr, rol){
       var v = dispHoy(e,d);
       var h = horasFranja(v.desde, v.hasta, fr);
-      // Validar que las horas son coherentes (mín 2h)
+      // Validar que las horas son coherentes (mÃ­n 2h)
       if(toMin(h.hasta)-toMin(h.desde) < 120){
         S.horarios[wk][e.id][dk]='libre'; return false;
       }
@@ -2173,39 +2176,39 @@ document.getElementById('btn-auto').addEventListener('click', function(){
       return true;
     }
 
-    // ═══════════════════════════════════════════════════════════════════
-    // PASO 1 — COCINA: garantizar 1 cocinero en M y 1 en T
-    // ═══════════════════════════════════════════════════════════════════
+    // âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+    // PASO 1 â COCINA: garantizar 1 cocinero en M y 1 en T
+    // âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
     //
     // Estrategia:
-    //   a) Cocineras puras: alternar semana a semana quién va a M y quién a T
-    //   b) Si alguna franja queda sin cubrir → polivalentes → pasteleras (si tienen r1)
-    //   c) Si aun así falta → novedad automática
+    //   a) Cocineras puras: alternar semana a semana quiÃ©n va a M y quiÃ©n a T
+    //   b) Si alguna franja queda sin cubrir â polivalentes â pasteleras (si tienen r1)
+    //   c) Si aun asÃ­ falta â novedad automÃ¡tica
 
     // Ordenar cocineras puras alternando cada semana
     var cocList = (wkNum%2===0) ? soloCocineras.slice() : soloCocineras.slice().reverse();
 
     // Intentar cubrir M primero con la primera cocinera disponible, T con la segunda
-    // Pero si la primera solo puede T (no disponible mañana), va a T
+    // Pero si la primera solo puede T (no disponible maÃ±ana), va a T
     cocList.forEach(function(coc){
       if(!puedeHoy(coc)){ S.horarios[wk][coc.id][dk]='libre'; return; }
       var v=dispHoy(coc,d);
-      // Determinar a qué franja asignarla para complementar la otra
-      // Prioridad: cubrir la franja que aún no tiene cocinero
+      // Determinar a quÃ© franja asignarla para complementar la otra
+      // Prioridad: cubrir la franja que aÃºn no tiene cocinero
       if(!cub.cocina.M && puedeFranja(v,'M') && cub.cocina.T){
-        // Tarde ya cubierta, cubrir mañana
+        // Tarde ya cubierta, cubrir maÃ±ana
         asignar(coc,'M',ROL_COCINA);
       } else if(!cub.cocina.T && puedeFranja(v,'T') && cub.cocina.M){
-        // Mañana ya cubierta, cubrir tarde
+        // MaÃ±ana ya cubierta, cubrir tarde
         asignar(coc,'T',ROL_COCINA);
       } else if(!cub.cocina.M && puedeFranja(v,'M')){
-        // Nadie aún, asignar mañana (la siguiente irá a tarde)
+        // Nadie aÃºn, asignar maÃ±ana (la siguiente irÃ¡ a tarde)
         asignar(coc,'M',ROL_COCINA);
       } else if(!cub.cocina.T && puedeFranja(v,'T')){
-        // Mañana ya tomada, asignar tarde
+        // MaÃ±ana ya tomada, asignar tarde
         asignar(coc,'T',ROL_COCINA);
       } else {
-        // Ambas cubiertas o no puede ninguna franja → libre
+        // Ambas cubiertas o no puede ninguna franja â libre
         S.horarios[wk][coc.id][dk]='libre';
       }
     });
@@ -2219,58 +2222,58 @@ document.getElementById('btn-auto').addEventListener('click', function(){
       } else if(!cub.cocina.T && puedeFranja(v,'T')){
         asignar(pol,'T',ROL_COCINA);
       }
-      // Si ya se asignó (cocina), no hace nada más aquí
-      // Si no se asignó aún → se asigna en el paso de servicio abajo
+      // Si ya se asignÃ³ (cocina), no hace nada mÃ¡s aquÃ­
+      // Si no se asignÃ³ aÃºn â se asigna en el paso de servicio abajo
     });
 
-    // Pasteleras con cocina (r1+r6): cubrir si aún falta
+    // Pasteleras con cocina (r1+r6): cubrir si aÃºn falta
     pasteleras.forEach(function(pas){
       if(!puedeHoy(pas)){ S.horarios[wk][pas.id][dk]='libre'; return; }
-      if(pas.roles.indexOf(ROL_COCINA)<0) return; // sin cocina, se maneja después
+      if(pas.roles.indexOf(ROL_COCINA)<0) return; // sin cocina, se maneja despuÃ©s
       var v=dispHoy(pas,d);
       if(!cub.cocina.M && puedeFranja(v,'M')){
         asignar(pas,'M',ROL_COCINA);
       } else if(!cub.cocina.T && puedeFranja(v,'T')){
         asignar(pas,'T',ROL_COCINA);
       }
-      // Si no cubrió cocina, se asigna su turno normal abajo
+      // Si no cubriÃ³ cocina, se asigna su turno normal abajo
     });
 
-    // ═══════════════════════════════════════════════════════════════════
-    // ═══════════════════════════════════════════════════════════════════
-    // PASO 2 — SERVICIO: algoritmo de asignación óptima
-    // ═══════════════════════════════════════════════════════════════════
+    // âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+    // âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+    // PASO 2 â SERVICIO: algoritmo de asignaciÃ³n Ã³ptima
+    // âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
     //
     // PROBLEMA del greedy simple: si Karen (r2,r3) puede M y T, y se le
-    // asigna a Tarde primero, Mañana queda sin mesera aunque Karen podía cubrirla.
+    // asigna a Tarde primero, MaÃ±ana queda sin mesera aunque Karen podÃ­a cubrirla.
     //
-    // SOLUCIÓN: construir la lista de TODOS los slots que hay que cubrir,
-    // luego asignar a las personas MÁS INFLEXIBLES primero (las que solo
-    // pueden UN slot específico), y las polivalentes llenan los huecos.
+    // SOLUCIÃN: construir la lista de TODOS los slots que hay que cubrir,
+    // luego asignar a las personas MÃS INFLEXIBLES primero (las que solo
+    // pueden UN slot especÃ­fico), y las polivalentes llenan los huecos.
     //
     // Slots a cubrir: M-Mesera, M-Barista, T-Mesera, T-Barista
-    // Empleado inflexible = solo puede 1 combinación de franja+rol
+    // Empleado inflexible = solo puede 1 combinaciÃ³n de franja+rol
 
-    // Reunir candidatos de servicio (no asignados aún)
+    // Reunir candidatos de servicio (no asignados aÃºn)
     var polSinAsig = polivalentes.filter(function(p){
       return !S.horarios[wk][p.id] || S.horarios[wk][p.id][dk]===undefined;
     });
-    // ═══════════════════════════════════════════════════════════════════
-    // PASO 1.5 — PASTELERAS en su turno propio (si no fueron a cocina)
-    // Regla: pastelera pura (sin r2/r3) trabaja UNA vez al día en rol pastelería
-    // Preferencia: turno tarde; si no puede, mañana
-    // ═══════════════════════════════════════════════════════════════════
+    // âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+    // PASO 1.5 â PASTELERAS en su turno propio (si no fueron a cocina)
+    // Regla: pastelera pura (sin r2/r3) trabaja UNA vez al dÃ­a en rol pastelerÃ­a
+    // Preferencia: turno tarde; si no puede, maÃ±ana
+    // âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
     pasteleras.forEach(function(pas){
-      // Si ya tiene turno asignado (fue a cocina) → no tocar
+      // Si ya tiene turno asignado (fue a cocina) â no tocar
       if(S.horarios[wk][pas.id][dk]!==undefined) return;
-      // Si no puede trabajar hoy → libre
+      // Si no puede trabajar hoy â libre
       if(!puedeHoy(pas)){ S.horarios[wk][pas.id][dk]='libre'; return; }
       var v = dispHoy(pas, d);
       if(!v){ S.horarios[wk][pas.id][dk]='libre'; return; }
-      // Asignar en el turno disponible — preferir tarde, luego mañana
+      // Asignar en el turno disponible â preferir tarde, luego maÃ±ana
       var soloCocinera = pas.roles.indexOf(ROL_MESERA)<0 && pas.roles.indexOf(ROL_BARISTA)<0;
       if(soloCocinera){
-        // Pastelera pura: asignar en su rol pastelería
+        // Pastelera pura: asignar en su rol pastelerÃ­a
         if(puedeFranja(v,'T')){
           asignar(pas, 'T', ROL_PASTELERA);
         } else if(puedeFranja(v,'M')){
@@ -2279,7 +2282,7 @@ document.getElementById('btn-auto').addEventListener('click', function(){
           S.horarios[wk][pas.id][dk]='libre';
         }
       }
-      // Pastelera con r1 (Martha): ya manejada en Paso 1, no tocar aquí
+      // Pastelera con r1 (Martha): ya manejada en Paso 1, no tocar aquÃ­
     });
 
     var pasSinAsig = pasteleras.filter(function(p){
@@ -2287,7 +2290,7 @@ document.getElementById('btn-auto').addEventListener('click', function(){
     });
     var candidatos = front.concat(polSinAsig).concat(grupoApoyo).concat(pasSinAsig);
 
-    // Para cada candidato calcular en qué slots puede trabajar
+    // Para cada candidato calcular en quÃ© slots puede trabajar
     function slotsDisp(e){
       if(!puedeHoy(e)) return [];
       var v=dispHoy(e,d);
@@ -2304,7 +2307,7 @@ document.getElementById('btn-auto').addEventListener('click', function(){
     }
 
     // Slots objetivo (lo que falta cubrir), ordenados por urgencia
-    // Urgencia: mañana y tarde tienen igual peso, pero cubrimos todos los que podamos
+    // Urgencia: maÃ±ana y tarde tienen igual peso, pero cubrimos todos los que podamos
     var slotsObj = [
       {fr:'M', rol:ROL_MESERA,  key:'mesera.M'},
       {fr:'M', rol:ROL_BARISTA, key:'barista.M'},
@@ -2314,13 +2317,13 @@ document.getElementById('btn-auto').addEventListener('click', function(){
       return !cub[s.rol===ROL_MESERA?'mesera':'barista'][s.fr];
     });
 
-    // Ordenar candidatos: menos opciones primero (más inflexibles → asignar antes)
+    // Ordenar candidatos: menos opciones primero (mÃ¡s inflexibles â asignar antes)
     candidatos.sort(function(a,b){
       return slotsDisp(a).length - slotsDisp(b).length;
     });
 
-    // Para cada candidato elegir el slot que cubra la necesidad MÁS URGENTE
-    // "Más urgente" = el slot donde hay menos candidatos que puedan cubrirlo
+    // Para cada candidato elegir el slot que cubra la necesidad MÃS URGENTE
+    // "MÃ¡s urgente" = el slot donde hay menos candidatos que puedan cubrirlo
     function candidatosPorSlot(slot, restantes){
       return restantes.filter(function(e){
         return slotsDisp(e).some(function(s){ return s.fr===slot.fr && s.rol===slot.rol; });
@@ -2334,19 +2337,19 @@ document.getElementById('btn-auto').addEventListener('click', function(){
       var slots = slotsDisp(e);
       if(!slots.length){ S.horarios[wk][e.id][dk]='libre'; return; }
 
-      // Filtrar solo los slots que aún no están cubiertos
+      // Filtrar solo los slots que aÃºn no estÃ¡n cubiertos
       var pendientes = slots.filter(function(s){
         var k = s.rol===ROL_MESERA?'mesera':s.rol===ROL_BARISTA?'barista':null;
-        if(!k) return true; // apoyo/pastelera → siempre
+        if(!k) return true; // apoyo/pastelera â siempre
         return !cub[k][s.fr];
       });
 
       if(!pendientes.length){
-        // Todos los slots que puede ya están cubiertos → libre
+        // Todos los slots que puede ya estÃ¡n cubiertos â libre
         S.horarios[wk][e.id][dk]='libre'; return;
       }
 
-      // Elegir el slot más urgente: el que tiene MENOS candidatos restantes capaces de cubrirlo
+      // Elegir el slot mÃ¡s urgente: el que tiene MENOS candidatos restantes capaces de cubrirlo
       var restantes = candidatos.filter(function(x){
         return !S.horarios[wk][x.id] || S.horarios[wk][x.id][dk]===undefined;
       });
@@ -2364,15 +2367,15 @@ document.getElementById('btn-auto').addEventListener('click', function(){
       }
     });
 
-    // ── Sin asignar → libre ─────────────────────────────────────────────
+    // ââ Sin asignar â libre âââââââââââââââââââââââââââââââââââââââââââââ
     activas.forEach(function(e){
       if(S.horarios[wk][e.id][dk]===undefined) S.horarios[wk][e.id][dk]='libre';
     });
 
-    // ═══════════════════════════════════════════════════════════════════
-    // PASO 3 — NOVEDADES AUTOMÁTICAS por falta de cobertura
-    // ═══════════════════════════════════════════════════════════════════
-    // ¿Hay pastelera activa que pueda trabajar hoy?
+    // âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+    // PASO 3 â NOVEDADES AUTOMÃTICAS por falta de cobertura
+    // âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+    // Â¿Hay pastelera activa que pueda trabajar hoy?
     var hayPastelera = pasteleras.some(function(p){ return puedeHoy(p); });
     var faltasM=[], faltasT=[];
     if(!cub.cocina.M)  faltasM.push('Cocina');
@@ -2381,9 +2384,9 @@ document.getElementById('btn-auto').addEventListener('click', function(){
     if(!cub.cocina.T)  faltasT.push('Cocina');
     if(!cub.mesera.T)  faltasT.push('Mesera');
     if(!cub.barista.T) faltasT.push('Barista');
-    // Novedad de pastelería: solo si hay pastelera activa y no fue asignada en ninguna franja
+    // Novedad de pastelerÃ­a: solo si hay pastelera activa y no fue asignada en ninguna franja
     if(hayPastelera && !cub.pastelera.M && !cub.pastelera.T && !cub.cocina.M && !cub.cocina.T){
-      faltasT.push('Pastelería');
+      faltasT.push('PastelerÃ­a');
     }
 
     function crearNovAuto(turno, roles){
@@ -2392,23 +2395,23 @@ document.getElementById('btn-auto').addEventListener('click', function(){
       S.novedades.push({
         id:id, empId:'', semKey:wk, fi:fs, ff:fs,
         tipo:'ausencia',
-        desc:'⚠️ Sin cobertura '+turno+' — '+txtRoles+' ('+DIAS_N[d]+')',
-        obs: '⚠️ SIN COBERTURA '+turno+': '+txtRoles+' — '+DIAS_N[d],
+        desc:'â ï¸ Sin cobertura '+turno+' â '+txtRoles+' ('+DIAS_N[d]+')',
+        obs: 'â ï¸ SIN COBERTURA '+turno+': '+txtRoles+' â '+DIAS_N[d],
         estado:'pendiente',
         soporte:'pendiente',
         auto:true
       });
     }
-    if(faltasM.length) crearNovAuto('MAÑANA', faltasM);
+    if(faltasM.length) crearNovAuto('MAÃANA', faltasM);
     if(faltasT.length) crearNovAuto('TARDE',  faltasT);
   }
 
   saveState();
   renderHor();
-  toast('✅ Horario generado');
+  toast('â Horario generado');
 });
 
-// ══════ NOVEDADES ══════
+// ââââââ NOVEDADES ââââââ
 function renderNovs(){
   var fe=document.getElementById('f-emp'), cv=fe.value;
   fe.innerHTML='<option value="">Todas las empleadas</option>'
@@ -2422,42 +2425,42 @@ function renderNovs(){
   if(fs.value) novs=novs.filter(function(n){ return n.semKey===fs.value; });
   var ft=document.getElementById('f-tipo').value; if(ft) novs=novs.filter(function(n){ return n.tipo===ft; });
   if(fe.value) novs=novs.filter(function(n){
-    // Las novedades auto (empId vacío) se muestran siempre, no se filtran por empleada
+    // Las novedades auto (empId vacÃ­o) se muestran siempre, no se filtran por empleada
     return n.empId===fe.value || (!n.empId && n.auto);
   });
   var fst=document.getElementById('f-estado').value; if(fst) novs=novs.filter(function(n){ return n.estado===fst; });
   var list=document.getElementById('nov-list');
   list.innerHTML=novs.length===0
-    ?'<div class="empty"><div class="empty-ico">📋</div>No hay novedades con esos filtros</div>'
+    ?'<div class="empty"><div class="empty-ico">ð</div>No hay novedades con esos filtros</div>'
     :novs.map(function(n){
         var e=getEmp(n.empId);
         return '<div class="nov-item">'
           +'<div style="flex:1">'
-          +'<div style="font-weight:600;font-size:15px;margin-bottom:4px">'+(e?e.nombre:'—')+'</div>'
+          +'<div style="font-weight:600;font-size:15px;margin-bottom:4px">'+(e?e.nombre:'â')+'</div>'
           +'<span class="tag '+(TIPO_TAG[n.tipo]||'t-nov')+'">'+(TIPOS[n.tipo]||n.tipo)+'</span>'
           +'<span class="tag '+(EST_TAG[n.estado]||'t-gris')+'">'+(EST_LBL[n.estado]||n.estado)+'</span>'
-          +'<div style="font-size:13px;margin-top:6px">'+(n.desc||n.obs||'Sin descripción')+'</div>'
-          +'<div class="small" style="margin-top:5px">📅 '+n.fi+(n.ff&&n.ff!==n.fi?' → '+n.ff:'')
-            +(n.hi?' · ⏰ '+n.hi+(n.hf?' – '+n.hf:''):'')
-            +' · Soporte: '+(n.soporte==='si'?'✅ Sí':n.soporte==='no'?'❌ No':n.soporte==='pendiente'?'⏳':'—')+'</div>'
+          +'<div style="font-size:13px;margin-top:6px">'+(n.desc||n.obs||'Sin descripciÃ³n')+'</div>'
+          +'<div class="small" style="margin-top:5px">ð '+n.fi+(n.ff&&n.ff!==n.fi?' â '+n.ff:'')
+            +(n.hi?' Â· â° '+n.hi+(n.hf?' â '+n.hf:''):'')
+            +' Â· Soporte: '+(n.soporte==='si'?'â SÃ­':n.soporte==='no'?'â No':n.soporte==='pendiente'?'â³':'â')+'</div>'
           +'<div class="small">Semana: '+n.semKey+'</div>'
           +'</div>'
           +'<div style="display:flex;flex-direction:column;gap:6px;flex-shrink:0">'
-          +'<button class="btn btn-sm btn-outline" data-nid="'+n.id+'" data-action="edit">✏️</button>'
-          +'<button class="btn btn-sm btn-danger" data-nid="'+n.id+'" data-action="del">🗑️</button>'
+          +'<button class="btn btn-sm btn-outline" data-nid="'+n.id+'" data-action="edit">âï¸</button>'
+          +'<button class="btn btn-sm btn-danger" data-nid="'+n.id+'" data-action="del">ðï¸</button>'
           +'</div></div>';
       }).join('');
 }
 
 function openNovModal(id){
-  document.getElementById('m-nov-title').textContent = id ? '✏️ Editar Novedad' : '📋 Registrar Novedad';
+  document.getElementById('m-nov-title').textContent = id ? 'âï¸ Editar Novedad' : 'ð Registrar Novedad';
   document.getElementById('ni').value = id||'';
   document.getElementById('n-emp').innerHTML =
     S.empleadas.map(function(e){ return '<option value="'+e.id+'">'+e.nombre+'</option>'; }).join('');
   var hoy=new Date().toISOString().slice(0,10);
   var wk=weekKey(S.weekOff);
   var l=getLunes(S.weekOff), dm=new Date(l); dm.setDate(l.getDate()+6);
-  document.getElementById('n-semref').value = fmtDate(l)+' – '+fmtDate(dm)+' '+l.getFullYear()+' ('+wk+')';
+  document.getElementById('n-semref').value = fmtDate(l)+' â '+fmtDate(dm)+' '+l.getFullYear()+' ('+wk+')';
   var n = id ? S.novedades.find(function(x){ return x.id===id; }) : null;
   document.getElementById('n-tipo').value    = n ? n.tipo : 'cita_medica';
   document.getElementById('n-emp').value     = n ? n.empId : (S.empleadas[0]?S.empleadas[0].id:'');
@@ -2486,7 +2489,7 @@ function saveNov(){
   if(!empId||!fi||!desc){ toast('Completa los campos obligatorios','err'); return; }
   var hi=document.getElementById('n-hi').value, hf=document.getElementById('n-hf').value;
   if(hi&&hi<'08:00'){ toast('Hora inicio no puede ser antes de las 8:00 AM','err'); return; }
-  if(hf&&hf>'20:00'){ toast('Hora fin no puede ser después de las 8:00 PM','err'); return; }
+  if(hf&&hf>'20:00'){ toast('Hora fin no puede ser despuÃ©s de las 8:00 PM','err'); return; }
   var fd=new Date(fi), dn=fd.getUTCDay()||7; fd.setUTCDate(fd.getUTCDate()+4-dn);
   var ys=new Date(Date.UTC(fd.getUTCFullYear(),0,1));
   var wn=Math.ceil((((fd-ys)/86400000)+1)/7);
@@ -2501,8 +2504,8 @@ function saveNov(){
     estado:document.getElementById('n-estado').value,
     semKey:semKey, semRef:document.getElementById('n-semref').value,
   };
-  if(id){ var i=S.novedades.findIndex(function(n){ return n.id===id; }); S.novedades[i]=obj; toast('Novedad actualizada ✓'); }
-  else { S.novedades.push(obj); toast('Novedad registrada ✓'); }
+  if(id){ var i=S.novedades.findIndex(function(n){ return n.id===id; }); S.novedades[i]=obj; toast('Novedad actualizada â'); }
+  else { S.novedades.push(obj); toast('Novedad registrada â'); }
   saveState(); closeModal('m-nov'); renderNovs(); renderDash();
 }
 
@@ -2511,7 +2514,7 @@ document.getElementById('nov-list').addEventListener('click', function(ev){
   var nid=btn.dataset.nid, action=btn.dataset.action;
   if(action==='edit') openNovModal(nid);
   if(action==='del'){
-    if(!confirm('¿Eliminar esta novedad?')) return;
+    if(!confirm('Â¿Eliminar esta novedad?')) return;
     S.novedades=S.novedades.filter(function(n){ return n.id!==nid; });
     saveState(); toast('Novedad eliminada'); renderNovs(); renderDash();
   }
@@ -2522,7 +2525,7 @@ document.getElementById('nov-list').addEventListener('click', function(ev){
 document.getElementById('btn-nueva-nov').addEventListener('click', function(){ openNovModal(null); });
 document.getElementById('btn-save-nov').addEventListener('click', saveNov);
 
-// ══════ ROLES ══════
+// ââââââ ROLES ââââââ
 function renderRoles(){
   document.getElementById('rol-list').innerHTML = S.roles.map(function(r){
     return '<div class="rol-item">'
@@ -2531,14 +2534,14 @@ function renderRoles(){
       +'<div><div style="font-weight:600">'+r.nombre+'</div><div class="small">'+(r.desc||'')+'</div></div>'
       +'</div>'
       +'<div style="display:flex;gap:6px">'
-      +'<button class="btn btn-sm btn-outline" data-rid="'+r.id+'" data-action="edit">✏️</button>'
-      +'<button class="btn btn-sm btn-danger" data-rid="'+r.id+'" data-action="del">🗑️</button>'
+      +'<button class="btn btn-sm btn-outline" data-rid="'+r.id+'" data-action="edit">âï¸</button>'
+      +'<button class="btn btn-sm btn-danger" data-rid="'+r.id+'" data-action="del">ðï¸</button>'
       +'</div></div>';
   }).join('');
 }
 
 function openRolModal(id){
-  document.getElementById('m-rol-title').textContent = id ? '✏️ Editar Cargo' : '🏷️ Nuevo Cargo';
+  document.getElementById('m-rol-title').textContent = id ? 'âï¸ Editar Cargo' : 'ð·ï¸ Nuevo Cargo';
   document.getElementById('ri').value = id||'';
   var r = id ? S.roles.find(function(x){ return x.id===id; }) : null;
   document.getElementById('r-nombre').value = r ? r.nombre : '';
@@ -2552,8 +2555,8 @@ function saveRol(){
   if(!nombre){ toast('Nombre del cargo requerido','err'); return; }
   var id=document.getElementById('ri').value;
   var obj={id:id||uid(),nombre:nombre,desc:document.getElementById('r-desc').value.trim(),color:document.getElementById('r-color').value};
-  if(id){ var i=S.roles.findIndex(function(r){ return r.id===id; }); S.roles[i]=obj; toast('Cargo actualizado ✓'); }
-  else { S.roles.push(obj); toast('Cargo creado ✓'); }
+  if(id){ var i=S.roles.findIndex(function(r){ return r.id===id; }); S.roles[i]=obj; toast('Cargo actualizado â'); }
+  else { S.roles.push(obj); toast('Cargo creado â'); }
   saveState(); closeModal('m-rol'); renderRoles();
 }
 
@@ -2562,8 +2565,8 @@ document.getElementById('rol-list').addEventListener('click', function(ev){
   var rid=btn.dataset.rid, action=btn.dataset.action;
   if(action==='edit') openRolModal(rid);
   if(action==='del'){
-    if(S.empleadas.some(function(e){ return e.roles&&e.roles.indexOf(rid)>=0; })){ toast('Este cargo está asignado a empleadas activas','err'); return; }
-    if(!confirm('¿Eliminar este cargo?')) return;
+    if(S.empleadas.some(function(e){ return e.roles&&e.roles.indexOf(rid)>=0; })){ toast('Este cargo estÃ¡ asignado a empleadas activas','err'); return; }
+    if(!confirm('Â¿Eliminar este cargo?')) return;
     S.roles=S.roles.filter(function(r){ return r.id!==rid; });
     saveState(); toast('Cargo eliminado'); renderRoles();
   }
@@ -2571,7 +2574,7 @@ document.getElementById('rol-list').addEventListener('click', function(ev){
 document.getElementById('btn-nuevo-rol').addEventListener('click', function(){ openRolModal(null); });
 document.getElementById('btn-save-rol').addEventListener('click', saveRol);
 
-// ══════ CIERRE MODALES ══════
+// ââââââ CIERRE MODALES ââââââ
 document.querySelectorAll('.overlay').forEach(function(o){
   o.addEventListener('click', function(e){ if(e.target===o) o.classList.remove('open'); });
 });
@@ -2579,7 +2582,7 @@ document.addEventListener('keydown', function(e){
   if(e.key==='Escape') document.querySelectorAll('.overlay.open').forEach(function(m){ m.classList.remove('open'); });
 });
 
-// ══════ INIT ══════
+// ââââââ INIT ââââââ
 loadState();
 renderDash();
 
@@ -2590,26 +2593,26 @@ renderDash();
   if(_storageOk){
     var saved = localStorage.getItem(STORE_KEY);
     if(saved){
-      if(st) st.textContent = '✅ localStorage activo';
+      if(st) st.textContent = 'â localStorage activo';
     } else {
-      if(st) st.textContent = '✅ localStorage listo';
+      if(st) st.textContent = 'â localStorage listo';
     }
   } else {
-    if(st) st.textContent = '⚠️ Sin persistencia';
+    if(st) st.textContent = 'â ï¸ Sin persistencia';
     if(ind){
-      ind.textContent = '⚠️ Datos no se guardan — usa Backup';
+      ind.textContent = 'â ï¸ Datos no se guardan â usa Backup';
       ind.classList.add('show');
       ind.style.color = '#E8B96A';
     }
     // Mostrar alerta solo una vez
     setTimeout(function(){
-      alert('⚠️ ATENCIÓN: Los datos NO se guardarán automáticamente en este navegador/contexto.\n\n✅ SOLUCIÓN: Usa los botones "Backup" para descargar tus datos, e "Importar" para recuperarlos.\n\nSi abres el archivo con doble clic (file://), localStorage puede estar bloqueado. Para activarlo abre el archivo desde un servidor local o usa Chrome con --allow-file-access-from-files.');
+      alert('â ï¸ ATENCIÃN: Los datos NO se guardarÃ¡n automÃ¡ticamente en este navegador/contexto.\n\nâ SOLUCIÃN: Usa los botones "Backup" para descargar tus datos, e "Importar" para recuperarlos.\n\nSi abres el archivo con doble clic (file://), localStorage puede estar bloqueado. Para activarlo abre el archivo desde un servidor local o usa Chrome con --allow-file-access-from-files.');
     }, 800);
   }
 })();
 </script>
 <script>
-// ── Registro del Service Worker (PWA offline) ──────────────────────────────
+// ââ Registro del Service Worker (PWA offline) ââââââââââââââââââââââââââââââ
 if('serviceWorker' in navigator){
   window.addEventListener('load', function(){
     navigator.serviceWorker.register('./sw.js')
